@@ -1,3 +1,11 @@
+# Alfred Settings
+- Web Bookmarks:  show bookmarks via keyword bm  (works for chrome and safari)
+- Calculator : Enable advanced calulator and standard calculator.
+- Clipboard double alt, snippet double cmd, Alfred Hotkey double shift.
+
+
+
+
 # ALFRED
 My Alfred workflows and publications
 
