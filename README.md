@@ -4,10 +4,11 @@
 - Clipboard double alt, snippet double cmd, Alfred Hotkey double shift.
 
 
-
-
-# ALFRED
-My Alfred workflows and publications
+## Snippet working for substring
+> example: Pandas data manipulation
+  `df...gri`  expands to `df.groupby([''], as_index=False)['']`.
+  Auto Expansion Options check on Expand snippet mid-string.
+  
 
 # Replace substring from copied text
 ```python
