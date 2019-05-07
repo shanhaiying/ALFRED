@@ -6,6 +6,7 @@
 # Alfred Tips
 - We can use SQL like string search in Clipboard search: eg. `pa%das` search `pandas`.
 - We can use `cmd s` to save clipboard history content as the snippet.
+- When downloading collections of [Emojis workflow](http://joelcalifa.com/blog/alfred-emoji-snippet-pack/) unckeck strip option to keep all emojis text expansion options. e.g. :joy: will expand to joy symbol.
 
 
 # Snippet working for substring
