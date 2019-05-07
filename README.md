@@ -19,6 +19,8 @@ Table of Contents
 # Usage Tricks
 1. Using action modifiers
   + For example type `github`, hit ctrl you will see fallback option, hit ctrl enter, it will google search github.
+  
+2. Use `bm` to search Safari and Chrome bookmarks.
 
 
 # Snippet working for substring
