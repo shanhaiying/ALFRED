@@ -5,6 +5,7 @@
 
 # Alfred Tips
 - We can use SQL like string search in Clipboard search: eg. `pa%das` search `pandas`.
+- We can use `cmd s` to save clipboard history content as the snippet.
 
 
 # Snippet working for substring
