@@ -16,6 +16,10 @@ Table of Contents
 - We can use `cmd s` to save clipboard history content as the snippet.
 - When downloading collections of [Emojis workflow](http://joelcalifa.com/blog/alfred-emoji-snippet-pack/) unckeck strip option to keep all emojis text expansion options. e.g. :joy: will expand to joy symbol.
 
+# Usage Tricks
+1. Using action modifiers
+  + For example type `github`, hit ctrl you will see fallback option, hit ctrl enter, it will google search github.
+
 
 # Snippet working for substring
 > example: Pandas data manipulation
