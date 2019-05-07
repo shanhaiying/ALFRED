@@ -1,3 +1,11 @@
+Table of Contents
+=================
+   * [Alfred Settings](#alfred-settings)
+   * [Alfred Tips](#alfred-tips)
+   * [Snippet working for substring](#snippet-working-for-substring)
+   * [Replace substring from copied text](#replace-substring-from-copied-text)
+   * [Useful Links](#useful-links)
+
 # Alfred Settings
 - Web Bookmarks:  show bookmarks via keyword bm  (works for chrome and safari)
 - Calculator : Enable advanced calulator and standard calculator.
@@ -30,3 +38,6 @@ lines = "\n".join([l.replace(old,new) for l in lines])
 
 sys.stdout.write(lines)
 ```
+
+# Useful Links
+https://www.alfredapp.com/xmascalendar/
