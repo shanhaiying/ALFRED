@@ -27,6 +27,26 @@ Table of Contents
   
 2. Use `bm` to search Safari and Chrome bookmarks.
 
+# Workflow python2 and python3
+Most of Alfred workflows are in python2. For exmple "adsinspire", "arxiv" research workflows does not work with python3.
+To fix this we can set up python as python2.  
+Some errors:
+```
+1. cPickle not found.
+2. .decode('utf-8') does work.
+3. There are so many places to edit the fixes.
+4. Also, fixum workflow does not work in python3.
+```
+```bash
+/usr/bin/python --version # Python 3.5.2 -- Enthought, Inc. (x86_64)
+sudo mv /usr/bin/python /usr/bin/python36 # create backup
+
+which python2 # /usr/local/bin/python2
+sudo ln -s /usr/local/bin/python2 /usr/bin/python
+
+/usr/bin/python --version # Python 2.7.14
+# Now Workflow will work.
+```
 
 # Snippet working for substring
 > example: Pandas data manipulation
