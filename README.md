@@ -16,6 +16,7 @@ Table of Contents
 - We can use SQL like string search in Clipboard search: eg. `pa%das` search `pandas`.
 - First copy some contents, hit `alt alt` to view clipboard history, hit `cmd s` to save as the snippet.
 - When downloading collections of [Emojis workflow](http://joelcalifa.com/blog/alfred-emoji-snippet-pack/) unckeck strip option to keep all emojis text expansion options. e.g. :joy: will expand to joy symbol.
+- `Alfred > Clipboard > Merging > Select Fast append selected text`. Then copy something, select another text and hit `cmd c c`, it will be appended to previous copy and can be pasted as a whole.
 
 # Usage Tricks
 1. Using action modifiers
