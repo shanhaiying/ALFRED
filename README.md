@@ -18,6 +18,9 @@ Table of Contents
 - When downloading collections of [Emojis workflow](http://joelcalifa.com/blog/alfred-emoji-snippet-pack/) unckeck strip option to keep all emojis text expansion options. e.g. :joy: will expand to joy symbol.
 - `Alfred > Clipboard > Merging > Select Fast append selected text`. Then copy something, select another text and hit `cmd c c`, it will be appended to previous copy and can be pasted as a whole.
 
+# My useful workflows
+- Copy something or copy from clipboard viewer. Hit `qq` or `qq sh (for shell)` then we can see copied text in Fenetre app where we can see syntax highlight and also copy file contents.
+
 # Usage Tricks
 1. Using action modifiers
   + For example type `github`, hit ctrl you will see fallback option, hit ctrl enter, it will google search github.
