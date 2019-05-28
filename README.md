@@ -1,10 +1,24 @@
 Table of Contents
 =================
+   * [Currently Useful Shortcuts](#currently-useful-shortcuts)
    * [Alfred Settings](#alfred-settings)
    * [Alfred Tips](#alfred-tips)
+   * [My useful workflows](#my-useful-workflows)
+   * [Usage Tricks](#usage-tricks)
+   * [Workflow python2 and python3](#workflow-python2-and-python3)
    * [Snippet working for substring](#snippet-working-for-substring)
    * [Replace substring from copied text](#replace-substring-from-copied-text)
    * [Useful Links](#useful-links)
+   
+# Currently Useful Shortcuts
+```
+1. qq or qq sh  # quick view of clipboard in fenetre.
+2. Alt cmd c  ==> copy content of selected file to clipboard.
+3. opsh ==> open dropbox shared folder.
+4. hely, helps, helt ==> Open website youtube, pandas, tedTalk, in Helium.
+5. pdf hello ==> search hello.pdf file.
+6. bswitch ==> toggle current url in safari and chrome
+```
 
 # Alfred Settings
 - Web Bookmarks:  show bookmarks via keyword bm  (works for chrome and safari)
