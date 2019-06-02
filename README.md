@@ -8,8 +8,9 @@ Table of Contents
    * [Workflow python2 and python3](#workflow-python2-and-python3)
    * [Snippet working for substring](#snippet-working-for-substring)
    * [Replace substring from copied text](#replace-substring-from-copied-text)
+   * [Workflow Tips](#workflow-tips)
    * [Useful Links](#useful-links)
-   
+
 # Currently Useful Shortcuts
 ```
 1. qq or qq sh  # quick view of clipboard in fenetre.
@@ -82,6 +83,17 @@ lines = subprocess.check_output('pbpaste').split('\n')
 lines = "\n".join([l.replace(old,new) for l in lines])
 
 sys.stdout.write(lines)
+```
+
+# Workflow Tips
+To use args in python:
+https://www.alfredforum.com/topic/9070-how-to-workflowenvironment-variables/
+```python
+import os
+browser = os.environ['browser']
+
+# Or
+browser = os.getenv('browser')
 ```
 
 # Useful Links
