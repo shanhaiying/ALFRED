@@ -13,12 +13,48 @@ Table of Contents
 
 # Currently Useful Shortcuts
 ```
+NOTE: Please regularly disable unused workflows and unused key mappings.
 1. qq or qq sh  # quick view of clipboard in fenetre.
 2. Alt cmd c  ==> copy content of selected file to clipboard.
 3. opsh ==> open dropbox shared folder.
 4. hely, helps, helt ==> Open website youtube, pandas, tedTalk, in Helium.
 5. pdf hello ==> search hello.pdf file.
 6. bswitch ==> toggle current url in safari and chrome
+7. cmd shift d ==> duplicate line (aa text manipulation)
+   cmd shift ] ==> indent
+```
+
+# New Alfred Settings
+```
+Note: Web searches are deleted if we upgrade Alfred3 to Alfred 4, but workflows are kept intact.
+
+1. alfred hot key: General >  shift shift
+
+2. Features > Clipboard History 
+   hotkey: cmd cmd  (mnemonic c means clipboard)
+   check: keep plain text 3 month, images 24 hr, file 24 hr
+   uncheck: snippets, simply use clipboards not snippets
+   merging: use fast append and place merged back to macos
+           (copy line1, select line2 hold cmd hit cc, then paste)
+   
+3. Features > Snippets > alt alt
+   type ?snip in alfred to open snippet window
+   type snip hello to search snippet hello in alfred.
+   
+4. Features > Actions  keep it default opt cmd \  to do file action
+   Go to File Actions and unckech unwanted file actions.
+   Go to finder, select a file, hit opt cmd \, this will take to file action in Alfred.
+   
+5. Features > Web Bookmarks
+   check safari and chrome bookmarks
+   There is no bm keyword for bookmark in Alfred4, simply type bookmared website name, it will show it.
+   
+ 6. Features > Calculator
+    Enable standard calculator
+    
+ 7. Features > iTunes
+    Disable hotkey and keywords, I don't use iTunes.
+
 ```
 
 # Alfred Settings
