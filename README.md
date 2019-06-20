@@ -38,7 +38,8 @@ Note: Web searches are deleted if we upgrade Alfred3 to Alfred 4, but workflows 
            (copy line1, select line2 hold cmd hit cc, then paste)
    
 3. Features > Snippets > alt alt
-   click Auto Expansion Options > then turn off sound.
+   check Automatically expand snippets by keyword.
+   click Auto Expansion Options below it and then turn off sound.
    type ?snip in alfred to open snippet window
    type snip hello to search snippet hello in alfred.
    
