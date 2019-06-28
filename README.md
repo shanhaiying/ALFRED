@@ -70,6 +70,7 @@ Note: Web searches are deleted if we upgrade Alfred3 to Alfred 4, but workflows 
 - First copy some contents, hit `alt alt` to view clipboard history, hit `cmd s` to save as the snippet.
 - When downloading collections of [Emojis workflow](http://joelcalifa.com/blog/alfred-emoji-snippet-pack/) unckeck strip option to keep all emojis text expansion options. e.g. :joy: will expand to joy symbol.
 - `Alfred > Clipboard > Merging > Select Fast append selected text`. Then copy something, select another text and hit `cmd c c`, it will be appended to previous copy and can be pasted as a whole.
+- Open URL supports {query}. Example: Use `http://www.google.com/search?q={query}&btnI` for google lucky query.
 
 # My useful workflows
 - Copy something or copy from clipboard viewer. Hit `qq` or `qq sh (for shell)` then we can see copied text in Fenetre app where we can see syntax highlight and also copy file contents.
