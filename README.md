@@ -26,6 +26,9 @@ NOTE: Please regularly disable unused workflows and unused key mappings.
 - Jupyter notebook
   cmd sh enter ==> make clipboard markdown and enter
   alt sh enter ==> make clipbpard markdown header and enter
+- Leetcode
+  copy the python class from leetcode
+  leet keyword will reformat the class and paste in visual studio code.
 ```
 
 # New Alfred Settings
