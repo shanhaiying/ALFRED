@@ -14,14 +14,18 @@ Table of Contents
 # Currently Useful Shortcuts
 ```
 NOTE: Please regularly disable unused workflows and unused key mappings.
-1. qq or qq sh  # quick view of clipboard in fenetre.
-2. Alt cmd c  ==> copy content of selected file to clipboard.
-3. opsh ==> open dropbox shared folder.
-4. hely, helps, helt ==> Open website youtube, pandas, tedTalk, in Helium.
-5. pdf hello ==> search hello.pdf file.
-6. bswitch ==> toggle current url in safari and chrome
-7. cmd shift d ==> duplicate line (aa text manipulation)
+- qq or qq sh  # quick view of clipboard in fenetre.
+- cpd or cpda  # copy latest downloads to PWD or copy all downloads to PWD
+- Alt cmd c  ==> copy content of selected file to clipboard.
+- opsh ==> open dropbox shared folder.
+- hely, helps, helt ==> Open website youtube, pandas, tedTalk, in Helium.
+- pdf hello ==> search hello.pdf file.
+- bswitch ==> toggle current url in safari and chrome
+- cmd shift d ==> duplicate line (aa text manipulation)
    cmd shift ] ==> indent
+- Jupyter notebook
+  cmd sh enter ==> make clipboard markdown and enter
+  alt sh enter ==> make clipbpard markdown header and enter
 ```
 
 # New Alfred Settings
