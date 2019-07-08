@@ -14,7 +14,9 @@ Table of Contents
 # Currently Useful Shortcuts
 ```
 NOTE: Please regularly disable unused workflows and unused key mappings.
-- qq or qq sh  # quick view of clipboard in fenetre.
+- (May be copy something form cmd cmd to clipboard) Then, qq or qq sh  # quick view of clipboard in fenetre.
+  Then alt shift o (default keymap from Fenetre) to open all opened files in Fentre.
+  (Click eye button in Fentere instead of Close button. Alt H to hide window.)
 - cpd or cpda  # copy latest downloads to PWD or copy all downloads to PWD
 - Alt cmd c  ==> copy content of selected file to clipboard.
 - opsh ==> open dropbox shared folder.
