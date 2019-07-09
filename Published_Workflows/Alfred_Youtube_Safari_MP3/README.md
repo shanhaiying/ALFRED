@@ -15,8 +15,11 @@ If there are multiple tabs of youtube in safari, only the first tab's video will
 
 1. Go to https://yt-dl.org/downloads/latest/youtube-dl  and download youtube-dl
 2. Make it executable
-```chmod a+rx /usr/local/bin/youtube-dl
-#or, sudo chmod a+rx /usr/local/bin/youtube-dl
+
+```bash
+chmod a+rx /usr/local/bin/youtube-dl
+
+# or, sudo chmod a+rx /usr/local/bin/youtube-dl
 ```
 3. Copy it to workflow directory
 4. Download ffmpeg from https://www.ffmpeg.org and also put this in workflow directory.
