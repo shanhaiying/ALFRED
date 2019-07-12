@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "def facetgridplot(df,x,y,hue):\n    (sns.FacetGrid(df,hue=hue,size=8)\n        .map(plt.scatter,x,y));\n    plt.show()",
+    "uid" : "56825EC7-E620-4590-8484-69EF9AC6AC7A",
+    "name" : "plot facetgrid seaborn",
+    "keyword" : "facetgridplot"
+  }
+}

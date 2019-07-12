@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "def plot_bar_total_pd(df1):\n    \"\"\"\n    Examples:\n    df1 = df[['year','n_killed','n_injured','casualities']].groupby('year').sum()\n    df1 = df.groupby(['Category','Sex'])['Laureate ID']\n     .count().unstack()\n    .reset_index().set_index('Category')\n    \"\"\"\n    ax = df1.plot(kind='bar',figsize=(12,8))\n    for p in ax.patches:\n        ax.annotate(np.round(p.get_height(), decimals=2), \n                    (p.get_x()+p.get_width()\/2.,p.get_height()), \n                    ha='center', \n                    va='center', \n                    xytext=(0, 10), \n                    rotation=30,\n                    textcoords='offset points')\nplot_bar_total_pd(df1)",
+    "uid" : "D816FC1E-26FB-420C-ACEF-8A9E3CCDF314",
+    "name" : "plot bar total pandas",
+    "keyword" : "pd_bar_total"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "def box_swarmplot(df,x,y):\n    sns.set(style=\"darkgrid\")\n    fig=plt.gcf()\n    fig.set_size_inches(12,8)\n    fig= sns.boxplot(x=x, y=y, data=df, whis=np.inf)\n    fig= sns.swarmplot(x=x, y=y, data=df, color=\".2\")",
+    "uid" : "0A3A1A30-DF71-4551-A5DD-42832EB68C72",
+    "name" : "plot box_swarmplot seaborn",
+    "keyword" : "box_swarmplot"
+  }
+}

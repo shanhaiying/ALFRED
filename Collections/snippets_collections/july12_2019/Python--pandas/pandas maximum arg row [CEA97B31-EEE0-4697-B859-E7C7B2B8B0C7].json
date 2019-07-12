@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "df.loc[df['{cursor}'].idxmax()]",
+    "uid" : "CEA97B31-EEE0-4697-B859-E7C7B2B8B0C7",
+    "name" : "pandas maximum arg row",
+    "keyword" : "pd_max_arg_row"
+  }
+}

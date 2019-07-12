@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "def add_wcs(field):\n    # Read field\n    field = str(field)\n    field_hdu = fits.open(field)\n\n    # Get fake wcs from astropy\n    w = wcs.WCS(naxis=2)\n    w.wcs.crpix = [1800.0, 1800.0]\n    w.wcs.crval = [0.1, 0.1]\n    w.wcs.cdelt = np.array([-5.55555555555556E-05,5.55555555555556E-05])\n    w.wcs.ctype = [\"RA---TAN\", \"DEC--TAN\"]\n    wcs_hdr = w.to_header()\n\n    # Add fake wcs to header of output file\n    hdr = field_hdu[0].header\n    hdr += wcs_hdr\n\n    # Write output file\n    field_hdu.writeto(field,overwrite=True)\n    field_hdu.close()\n\n    # Print\n    print('Fake WCS added to the galaxy field: {}'.format(field))",
+    "uid" : "72B3A55D-5C95-4605-A0B5-996BD10B5D39",
+    "name" : "rsh add fake wcs to fitsfile",
+    "keyword" : "add_wcs"
+  }
+}

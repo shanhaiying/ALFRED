@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "import matplotlib as plt\n\n%matplotlib inline\n%config InlineBackend.figure_format = 'svg' # 'retina' for png\n\nimport matplotlib as mpl\nmpl.rc(\"savefig\", dpi=300)",
+    "uid" : "933E51F8-986D-4B3D-AB6D-2976ED503CFB",
+    "name" : "ipython high quality image",
+    "keyword" : "high"
+  }
+}

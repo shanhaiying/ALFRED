@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "import numpy as np\nimport pandas as pd\nimport seaborn as sns\nimport statsmodels.api as sm\nfrom sklearn import datasets\n\n\niris = sns.load_dataset('iris')\niris = sm.datasets.get_rdataset('iris').data\niris = datasets.load_iris().data \n\n# Datasets available\n#----------------------------------------------------------------------\n# seaborn :  iris tips titanic diamonds flights exercise mpg etc\n#               : print(sns.get_dataset_names())\n#\n# sm: co2 cancer etc\n# statsmodels with R: iris and other thousands of dataset\n#\n# sklearn: iris wine boston diabetes breast_cancer etc\n#            : [ i for i in dir(datasets) if 'load_' in i]\n#\n#            :  .data gives numpy array\n#            : .data .feature_names .target .target_names .filename .DESCR\n\n# Dataset description\n#-----------------------------------------------------------------------\n# sns: This does not provide data description.\n#         only two attributes  'get_dataset_names' and  'load_dataset'\n#\n# sm: print(sm.datasets.co2.DESCRLONG)\n# sm: print(sm.datasets.get_rdataset('iris').__doc__)\n#\n# sklearn: print(datasets.load_iris().DESCR)\n\n",
+    "uid" : "A166B709-4038-4779-82C8-BAA73963DB78",
+    "name" : "practice data",
+    "keyword" : "practice_data"
+  }
+}

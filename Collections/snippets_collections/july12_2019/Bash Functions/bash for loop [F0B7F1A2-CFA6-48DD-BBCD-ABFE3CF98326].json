@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "start=1\nend=10\nfor ((i=start; i<=end; i++))\ndo\n   echo \"i: $i\"\ndone\n\n# example 2\n# https:\/\/stackoverflow.com\/questions\/8880603\/loop-through-an-array-of-strings-in-bash\n%%bash\nfor i in numpy pandas plotly cufflinks ;\n  do\n    pip freeze | grep $i\n  done\n\n# example 3\nfor Item in Item1 \\\n            Item2 \\\n            Item3 \\\n            Item4\n  do\n    echo $Item\n  done\n\n# example 4\nList=( Item1 Item2 Item3 )\nfor Item in ${List[*]} \n  do\n    echo $Item \n  done",
+    "uid" : "F0B7F1A2-CFA6-48DD-BBCD-ABFE3CF98326",
+    "name" : "bash for loop",
+    "keyword" : "for"
+  }
+}

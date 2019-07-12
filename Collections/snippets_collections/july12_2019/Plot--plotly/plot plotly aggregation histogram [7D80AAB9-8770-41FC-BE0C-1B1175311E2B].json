@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "df = pd.read_csv(\"https:\/\/plot.ly\/~public.health\/17.csv\")\n\ndata = [dict(\n  x = df['date'],\n  autobinx = False,\n  autobiny = True,\n  marker = dict(color = 'rgb(68, 68, 68)'),\n  name = 'date',\n  type = 'histogram',\n  xbins = dict(\n    end = '2016-12-31 12:00',\n    size = 'M1',\n    start = '1983-12-31 12:00'\n  )\n)]\n\nlayout = dict(\n  paper_bgcolor = 'rgb(240, 240, 240)',\n  plot_bgcolor = 'rgb(240, 240, 240)',\n  title = '<b>Shooting Incidents<\/b>',\n  xaxis = dict(\n    title = '',\n    type = 'date'\n  ),\n  yaxis = dict(\n    title = 'Shootings Incidents',\n    type = 'linear'\n  ),\n  updatemenus = [dict(\n        x = 0.1,\n        y = 1.15,\n        xref = 'paper',\n        yref = 'paper',\n        yanchor = 'top',\n        active = 1,\n        showactive = True,\n        buttons = [\n        dict(\n            args = ['xbins.size', 'D1'],\n            label = 'Day',\n            method = 'restyle',\n        ), dict(\n            args = ['xbins.size', 'M1'],\n            label = 'Month',\n            method = 'restyle',\n        ), dict(\n            args = ['xbins.size', 'M3'],\n            label = 'Quater',\n            method = 'restyle',\n        ), dict(\n            args = ['xbins.size', 'M6'],\n            label = 'Half Year',\n            method = 'restyle',\n        ), dict(\n            args = ['xbins.size', 'M12'],\n            label = 'Year',\n            method = 'restyle',\n        )]\n  )]\n)\n\niplot({'data': data,'layout': layout}, validate=False)",
+    "uid" : "7D80AAB9-8770-41FC-BE0C-1B1175311E2B",
+    "name" : "plot plotly aggregation histogram",
+    "keyword" : "plot_plotly_aggregation_histogram"
+  }
+}

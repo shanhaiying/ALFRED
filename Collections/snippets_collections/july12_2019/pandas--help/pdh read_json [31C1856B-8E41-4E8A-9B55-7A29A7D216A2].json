@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "pd.read_json('[{\"A\": 1, \"B\": 2}, {\"A\": 3, \"B\": 4}]')\n   A  B\n0  1  2\n1  3  4",
+    "uid" : "31C1856B-8E41-4E8A-9B55-7A29A7D216A2",
+    "name" : "pdh read_json",
+    "keyword" : "pdh-read_json"
+  }
+}

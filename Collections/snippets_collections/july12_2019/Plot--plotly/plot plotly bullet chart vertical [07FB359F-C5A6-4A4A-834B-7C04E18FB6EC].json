@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "data = (\n  {\"label\": \"Revenue\", \"sublabel\": \"US$, in thousands\",\n   \"range\": [150, 225, 300], \"performance\": [220,270], \"point\": [250]},\n  {\"label\": \"Profit\", \"sublabel\": \"%\", \"range\": [20, 25, 30],\n   \"performance\": [21, 23], \"point\": [26]},\n  {\"label\": \"Order Size\", \"sublabel\":\"US$, average\",\"range\": [350, 500, 600],\n   \"performance\": [100,320],\"point\": [550]},\n  {\"label\": \"New Customers\", \"sublabel\": \"count\", \"range\": [1400, 2000, 2500],\n   \"performance\": [1000, 1650],\"point\": [2100]},\n  {\"label\": \"Satisfaction\", \"sublabel\": \"out of 5\",\"range\": [3.5, 4.25, 5],\n   \"performance\": [3.2, 4.7], \"point\": [4.4]}\n)\n\nfig = ff.create_bullet(\n    data, titles='label', subtitles='sublabel', markers='point',\n    measures='performance', ranges='range', orientation='v',\n)\n\niplot(fig, filename='bullet chart from dict')",
+    "uid" : "07FB359F-C5A6-4A4A-834B-7C04E18FB6EC",
+    "name" : "plot plotly bullet chart vertical",
+    "keyword" : "plot_plotly_bullet_chart_vertical"
+  }
+}

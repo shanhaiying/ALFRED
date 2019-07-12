@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "def norm_scale(X, axis=0):\n    mx = np.max(X, axis=axis)\n    mi = np.min(X, axis=axis)\n    epsilon = 10**-32\n    return (X — mi) \/ (np.abs(mi) + mx + epsilon)\n    \nnorm = norm_scale(X)\nassert np.min(norm) >= 0\nassert np.max(norm) <= 1",
+    "uid" : "C56423A4-0B35-4DBE-97B3-1DBDB9174630",
+    "name" : "normalize",
+    "keyword" : "normalize"
+  }
+}

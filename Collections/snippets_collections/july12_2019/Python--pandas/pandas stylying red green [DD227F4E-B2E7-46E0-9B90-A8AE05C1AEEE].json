@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "def highlight(df):\n    c1 = 'background-color: #83AF9B'\n    c2 = 'background-color: #A7226E'\n    df1 = pd.DataFrame(c2, index=df.index, columns=df.columns)\n    \n    # mask\n    colA,colB = 'c0', 'c1'\n    mask = df[colA] < df[colB] \n    df1.loc[mask] = c1\n\n    return df1\n\ndf3.style.apply(highlight, axis=None)",
+    "uid" : "DD227F4E-B2E7-46E0-9B90-A8AE05C1AEEE",
+    "name" : "pandas stylying red green",
+    "keyword" : "pd_sytlying_red_green"
+  }
+}

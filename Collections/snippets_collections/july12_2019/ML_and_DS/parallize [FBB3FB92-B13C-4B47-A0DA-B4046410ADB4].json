@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "import numpy as np\nimport pandas as pd\nimport multiprocessing\n\nnp.random.seed(100)\ns = pd.Series(np.random.randint(0,10, 10))\n\ndef two_args(x, low,high):\n    return x+low+high\n\n\ndef multi_run_wrapper(args):\n    return two_args(*args)\n\ndef parallelize(data, func,low,high):\n    ncores = multiprocessing.cpu_count()\n    pool = multiprocessing.Pool(ncores)\n    \n    \n    data_split = np.array_split(data, ncores)\n    data_split_lst = [(d,low,high) for d in data_split]\n    \n    data = np.concatenate(pool.map(multi_run_wrapper,data_split_lst))\n    data = pd.Series(data)\n    pool.close()\n    pool.join()\n    return data\n\nresult = parallelize(s.values, multi_run_wrapper,2,3)\n\nprint(s.values)\nprint(result.values)",
+    "uid" : "FBB3FB92-B13C-4B47-A0DA-B4046410ADB4",
+    "name" : "parallize",
+    "keyword" : "parallize"
+  }
+}

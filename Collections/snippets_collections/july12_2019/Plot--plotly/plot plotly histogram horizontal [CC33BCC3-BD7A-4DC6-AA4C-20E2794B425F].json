@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "y = np.random.randn(500)\ndata = [go.Histogram(y=y)]\niplot(data, filename='horizontal histogram')",
+    "uid" : "CC33BCC3-BD7A-4DC6-AA4C-20E2794B425F",
+    "name" : "plot plotly histogram horizontal",
+    "keyword" : "plot_plotly_histogram_horizontal"
+  }
+}

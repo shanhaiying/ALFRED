@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "def swarmplot(df,x,y):\n    sns.swarmplot(x=x, y=y, data=df)\n    plt.show()",
+    "uid" : "17FCD0B3-B3E1-4012-BE3E-E71A734974D6",
+    "name" : "plot swarmplot seaborn",
+    "keyword" : "swarmplot"
+  }
+}

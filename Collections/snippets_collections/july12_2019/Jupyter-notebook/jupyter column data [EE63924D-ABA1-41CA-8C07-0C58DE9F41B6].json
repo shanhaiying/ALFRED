@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "import IPython\nimport numpy as np\nimport pandas as pd\nimport seaborn as sns\n\ndf = sns.load_dataset('tips')\ngrouped = df.groupby('tip')\n\nmeth = [method_name for method_name in dir(grouped)\n    if callable(getattr(grouped, method_name)) \n    & ~method_name.startswith('_')]\n\n\nprint(IPython.utils.text.columnize(meth))",
+    "uid" : "EE63924D-ABA1-41CA-8C07-0C58DE9F41B6",
+    "name" : "jupyter column data",
+    "keyword" : "jnb_columnize"
+  }
+}

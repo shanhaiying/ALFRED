@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "def highlight_diff(df1,df2,common_col):\n    \"\"\"\n    Highlight differences between two dataframes when both\n    dataframes have same shape and same column names.\n    \"\"\"\n    dfa = pd.concat([df1.set_index(common_col), df2.set_index(common_col)], \n                   axis='columns', keys=['First', 'Second'])\n    \n    other_cols = [i for i in df1.columns.values if i != common_col]\n    dfb = dfa.swaplevel(axis='columns')[other_cols]\n    \n    color = 'yellow'\n    attr = 'background-color: {}'.format(color)\n    other = dfb.xs('First', axis='columns', level=-1)\n    \n    dfc = pd.DataFrame(np.where(dfb.ne(other, level=0), attr, ''),\n                        index=dfb.index, columns=dfb.columns)\n    \n    return dfb.style.apply(lambda x: dfc, axis=None)",
+    "uid" : "303045C4-0C81-410E-A1D7-6C52274E29CA",
+    "name" : "utility hightlight diff pandas dfs",
+    "keyword" : "highlight_diff"
+  }
+}

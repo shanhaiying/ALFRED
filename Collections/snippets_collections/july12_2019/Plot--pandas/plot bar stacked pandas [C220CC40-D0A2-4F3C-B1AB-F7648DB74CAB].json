@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "def stacked_barplots(df,x,y,bars):\n    \"\"\" Plot stacked barplot.\n    \n    Example:\n    df = sns.load_dataset('titanic')\n    stacked_barplots(df, 'class', 'fare', 'sex')\n    \"\"\"\n    df_plot = df[[x,y,bars]].groupby([x,bars])[y].sum().unstack(level=1)\n    ax = df_plot.plot.bar(stacked=True)\n\n    # plot properties\n    ax.set_ylabel(y)\n    ax.set_facecolor(\"ghostwhite\")\n    plt.grid(True, alpha=.3)\n    plt.xticks(rotation=0)\n    plt.legend(prop={\"size\":20})\n    \n    title = \"Total {} per {} per {}\".format(y,x,bars)\n    plt.title(title,fontsize = 20)\n    plt.show()\n\nstacked_barplots(df, 'class', 'fare', 'sex')",
+    "uid" : "C220CC40-D0A2-4F3C-B1AB-F7648DB74CAB",
+    "name" : "plot bar stacked pandas",
+    "keyword" : "stacked_bar_plots"
+  }
+}

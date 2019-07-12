@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "x = ['Product A', 'Product B', 'Product C']\ny = [20, 14, 23]\n\ndata = [go.Bar(\n            x=x,\n            y=y,\n            text=y,\n            textposition = 'auto',\n            marker=dict(\n                color='rgb(158,202,225)',\n                line=dict(\n                    color='rgb(8,48,107)',\n                    width=1.5),\n            ),\n            opacity=0.6\n        )]\n\niplot(data, filename='bar-direct-labels')",
+    "uid" : "A0DA5916-7378-49B5-811A-9E85F561862E",
+    "name" : "plot plotly barplot labels",
+    "keyword" : "plot_plotly_barplot_labels"
+  }
+}

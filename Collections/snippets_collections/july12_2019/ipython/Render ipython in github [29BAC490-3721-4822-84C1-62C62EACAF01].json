@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "We can view the rendered version of notebook using [nbviewer](http:\/\/nbviewer.ipython.org\/github\/bhishanpdl\/REPO\/tree\/master).",
+    "uid" : "29BAC490-3721-4822-84C1-62C62EACAF01",
+    "name" : "Render ipython in github",
+    "keyword" : "ipy_github"
+  }
+}

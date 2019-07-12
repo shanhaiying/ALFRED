@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "def combine_colA_colBDict(dff, col, colDict, key, series_name):\n    '''\n    Example:\n    title      revenue      belongs_to_collection \n    Toy Story  373554033.0  {'id': 10194, 'name': 'Toy Story Collection'}\n    Jumanji    262797249.0  NaN   # this is np.nan\n\n    Usage:\n    df = movie[['belongs_to_collection','revenue']].copy()\n    franchise_revenue = combine_colA_colBDict(\n                           df, 'revenue', 'belongs_to_collection',\n                           'name', 'company')\n    franchise_revenue.head()\n    franchise_revenue.sort_values('sum', ascending=False).head(10)\n    sns.barplot('company','sum',data=top10) and plt.xticks(rotation=90)\n    '''\n    df = dff[dff[colDict].notnull()].copy()\n    df[colDict] = df[colDict].apply(ast.literal_eval)\n    df[colDict] = df[colDict].apply(lambda x: x[key] if isinstance(x, dict)\n                                    else np.nan)\n    df = df[df[colDict].notnull()]\n    df_pivot = df.pivot_table(index=colDict, values=col,\n                              aggfunc={col: ['mean', 'sum', 'count']})\n    df_pivot = df_pivot.reset_index()\n    return df_pivot",
+    "uid" : "C48870BF-070D-428F-8AB1-8B8FF8848659",
+    "name" : "data cleaning 1",
+    "keyword" : "data_cleaning1"
+  }
+}

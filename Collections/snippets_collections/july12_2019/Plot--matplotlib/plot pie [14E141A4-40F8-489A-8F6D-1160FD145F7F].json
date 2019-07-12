@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nplt.style.use('ggplot')\n\ndef pie_plot(labels,sizes):\n\n    colors = ['Y','B','#00ff00','C','R','G','silver','white','M']\n    explode = (0,0,0.1,0,0,0,0,0,0) # explode the third place\n    plt.pie(sizes, explode=explode, labels=labels, colors=colors,\n           autopct='%1.1f%%',shadow=True,startangle=90)\n    plt.axis('equal')\n    plt.title('')\n    plt.plot()\n    fig=plt.gcf()\n    fig.set_size_inches(6,6)\n    plt.show()\n\nlabels= 'Water','Normal','Grass','Bug','Psychic','Fire','Electric','Rock','Other'\nsizes =[112,98,70,69,57,52,44,44,175]\npie_plot(labels,sizes)",
+    "uid" : "14E141A4-40F8-489A-8F6D-1160FD145F7F",
+    "name" : "plot pie",
+    "keyword" : "pie1"
+  }
+}

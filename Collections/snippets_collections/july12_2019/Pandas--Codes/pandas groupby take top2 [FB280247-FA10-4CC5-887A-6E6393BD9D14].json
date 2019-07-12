@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "# groupby id and take only top 2 values.\ndf = pd.DataFrame({'id':[1,1,1,1,1,1,1,1,1,2,2,2,2,2], \n               'value':[20,20,20,30,30,30,30,40, 40,10, 10, 40,40,40]})\n\n(df.groupby('id')['value']\n.value_counts()\n.groupby(level=0)\n.nlargest(2)\n.to_frame()\n.rename(columns={'value':'count'})\n.reset_index([1,2]) # do not reset index 0, only reset 1 and 2\n.reset_index(drop=True)\n)\n\n",
+    "uid" : "FB280247-FA10-4CC5-887A-6E6393BD9D14",
+    "name" : "pandas groupby take top2",
+    "keyword" : "pd_gropuby_take_top2"
+  }
+}

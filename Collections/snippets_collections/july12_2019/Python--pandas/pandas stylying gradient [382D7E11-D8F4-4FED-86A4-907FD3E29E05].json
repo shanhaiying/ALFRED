@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "# seaborn heat map\nimport seaborn as sns\ncm = sns.light_palette(\"green\", as_cmap=True)\ndf.style.background_gradient(cmap=cm)",
+    "uid" : "382D7E11-D8F4-4FED-86A4-907FD3E29E05",
+    "name" : "pandas stylying gradient",
+    "keyword" : "pd_stylygin_gradient"
+  }
+}

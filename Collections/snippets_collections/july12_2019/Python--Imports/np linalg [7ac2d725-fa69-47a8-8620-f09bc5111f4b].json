@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "from numpy.linalg import inv,norm,lstsq",
+    "uid" : "7ac2d725-fa69-47a8-8620-f09bc5111f4b",
+    "name" : "np linalg",
+    "keyword" : "linalg"
+  }
+}

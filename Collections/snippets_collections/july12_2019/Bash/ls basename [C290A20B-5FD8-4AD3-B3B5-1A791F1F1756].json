@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "ls dir1\/dir2\/*.txt | xargs -n 1 basename",
+    "uid" : "C290A20B-5FD8-4AD3-B3B5-1A791F1F1756",
+    "name" : "ls basename",
+    "keyword" : "ls_basename"
+  }
+}

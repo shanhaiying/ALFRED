@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "# To install graphviz magic in jupyter\n\n# Use python3 in terminal\nsource activate dataSc # only use this env\n\npip install git+https:\/\/github.com\/tla\/ipython-hierarchymagic.git\n\n# Now go to jupyter notebook\n\n%load_ext hierarchymagic\n\n%%dot\ndigraph G{\n    rankdir=LR;\n    hello -> world;\n    goodbye -> cruel -> world;\n    world -> of -> warcraft;\n}",
+    "uid" : "CB3A646A-A522-42F7-BE9A-E777F75AE3E8",
+    "name" : "graphviz eg",
+    "keyword" : "eg"
+  }
+}

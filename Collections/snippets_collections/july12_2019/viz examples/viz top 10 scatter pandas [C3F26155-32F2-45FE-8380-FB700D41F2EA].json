@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "colors15 = ['#78C850', '#F08030', '#6890F0', '#A8B820', '#A8A878',\n            '#A040A0', '#F8D030', '#E0C068', '#EE99AC', '#C03028',\n            '#F85888', '#B8A038', '#705898', '#98D8D8', '#7038F8']\n\nfig, ax = plt.subplots(figsize=(15,15))\n\n(gdp\n     .drop('country_code',1)\n     .query(\"\"\" year in [2014,2015,2016,2017] \"\"\")\n     .set_index('country_name')\n     .groupby('year')['value']\n     .nlargest(10)\n     .unstack()\n     .div(1e12) # make trillions dollar\n     .plot(ax=ax,color=colors15,marker='o',markersize=15)\n)\n\nplt.xticks(range(2013,2019),fontsize=20)\nplt.yticks(range(0,22,2),fontsize=20)\nplt.xlabel('Year', fontsize=20)\nplt.ylabel('GDP  ($Trillions)', fontsize=20)\nplt.title('Top 10 Hightest GDP countries',fontsize=20)\nplt.legend(fontsize=20)",
+    "uid" : "C3F26155-32F2-45FE-8380-FB700D41F2EA",
+    "name" : "viz top 10 scatter pandas",
+    "keyword" : "viz_top10_scatter_pandas"
+  }
+}

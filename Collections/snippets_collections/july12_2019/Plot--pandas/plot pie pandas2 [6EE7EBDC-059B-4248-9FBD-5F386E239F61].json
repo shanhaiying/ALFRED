@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "df1 = (df['c0']\n       .dropna()\n       .apply(lambda x : \"4+\" if x>4 else str(int(x)))\n       .value_counts())\n\ndf1.plot(kind='pie',\n         y='values',\n         title='',\n         figsize=(8,8),\n         autopct=\"%1.0f%%\",\n         shadow=False,\n         startangle=115,\n         rotatelabels=True,\n         explode=(0, 0, 0, 0.1, 0),\n         colors=sns.color_palette(\"husl\",len(df1)),\n         wedgeprops={\"linewidth\":2,\"edgecolor\":\"white\"});",
+    "uid" : "6EE7EBDC-059B-4248-9FBD-5F386E239F61",
+    "name" : "plot pie pandas2",
+    "keyword" : "plot_pie_pd2"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "vim -e -c \"hardcopy > %.ps\" -c q $1 >\/dev\/null;",
+    "uid" : "30017078-A55D-4451-B53B-A401D8510841",
+    "name" : "vim syntax highlighed pdf",
+    "keyword" : "vim_syntax_pdf"
+  }
+}

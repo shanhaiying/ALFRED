@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "ser = pd.Series(np.random.randn(100))\nfactor = pd.qcut(ser, [0, .25, .5, .75, 1.])\nser.groupby(factor).mean()",
+    "uid" : "805B80D0-D008-4F9F-B01A-CEAFB7C47D1E",
+    "name" : "pdh qcut",
+    "keyword" : "pdh-qcut"
+  }
+}

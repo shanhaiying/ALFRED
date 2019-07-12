@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "from wordcloud import WordCloud\nfrom PIL import  Image\ndef wordcloud(df,x):\n    words = df[x].value_counts().keys()\n    wc = WordCloud(max_words=60,scale=5,colormap=\"magma\",\n                   background_color=\"dimgrey\").generate(\" \".join(words))\n    plt.figure(figsize=(13,8))\n    plt.imshow(wc,interpolation=\"bilinear\")\n    plt.axis(\"off\")\n    plt.title(x)",
+    "uid" : "D821B8E6-7256-4CC3-8763-F2CF59B93C8E",
+    "name" : "wordcloud",
+    "keyword" : "wordcloud"
+  }
+}

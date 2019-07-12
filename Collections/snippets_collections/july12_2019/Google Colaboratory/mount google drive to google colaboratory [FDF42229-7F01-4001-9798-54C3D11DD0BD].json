@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "import sys\nfrom google.colab import drive\n\ndrive.mount('\/content\/drive')\nsys.path.append('drive\/My Drive\/Colab Notebooks\/mymodules\/')\n\ndat_dir = 'drive\/My Drive\/Colab Notebooks\/data\/'",
+    "uid" : "FDF42229-7F01-4001-9798-54C3D11DD0BD",
+    "name" : "mount google drive to google colaboratory",
+    "keyword" : "gcolab"
+  }
+}

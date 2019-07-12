@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "<div class=\"alert alert-block alert-danger\">\nWarning: \n<\/div>",
+    "uid" : "CB0750A5-DC98-43F8-8B27-B20D7331AB0B",
+    "name" : "jupyter red danger",
+    "keyword" : "jnb_red"
+  }
+}

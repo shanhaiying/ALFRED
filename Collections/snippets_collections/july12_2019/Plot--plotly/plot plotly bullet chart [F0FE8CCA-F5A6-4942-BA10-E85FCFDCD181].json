@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "df = pd.read_json('https:\/\/cdn.rawgit.com\/plotly\/datasets\/master\/BulletData.json')\nfig = ff.create_bullet(\n    df, markers='markers', measures='measures',\n    ranges='ranges', subtitles='subtitle', titles='title',\n)\n\niplot(fig, filename='bullet chart from a dataframe')",
+    "uid" : "F0FE8CCA-F5A6-4942-BA10-E85FCFDCD181",
+    "name" : "plot plotly bullet chart",
+    "keyword" : "plot_plotly_bullet_chart"
+  }
+}

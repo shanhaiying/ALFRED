@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "x = x+ 2*y      # slow\nx +=y; x +=y  # fast",
+    "uid" : "7E04D779-46EA-4162-9D72-60A7386F9A33",
+    "name" : "py speed 2",
+    "keyword" : "pyspeed2"
+  }
+}

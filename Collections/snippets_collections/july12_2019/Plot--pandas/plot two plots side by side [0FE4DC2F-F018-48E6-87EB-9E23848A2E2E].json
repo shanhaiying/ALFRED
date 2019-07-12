@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "fig, (ax1, ax2) = plt.subplots(ncols=2,figsize=(10,8),sharey=True)\ndf.plot(kind='scatter', x='', y='',  c='',  cmap='rainbow', ax=ax1)\ndf2.plot(kind='scatter', x='', y='', c='', cmap='rainbow', ax=ax2) ",
+    "uid" : "0FE4DC2F-F018-48E6-87EB-9E23848A2E2E",
+    "name" : "plot two plots side by side",
+    "keyword" : "two_plots"
+  }
+}

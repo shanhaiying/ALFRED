@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "# p-value ( if p-value < significance, then reject H0)\nnsided = 2\ndof = nx + ny -2\np_value = scipy.stats.t.sf(np.abs(T), dof) * nsided\nround(p_value,2)",
+    "uid" : "3082A82F-0977-4B43-8FAB-2D074DF711FE",
+    "name" : "p value t",
+    "keyword" : "p_value_t"
+  }
+}

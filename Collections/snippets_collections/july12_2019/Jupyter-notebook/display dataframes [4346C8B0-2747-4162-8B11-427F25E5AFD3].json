@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "def display_frames(frames, num_spaces=0):\n    from IPython.display import display_html\n    t_style = '<table style=\"display: inline;\"'\n    tables_html = [df.to_html().replace('<table', t_style) for df in frames]\n\n    space = '&nbsp;' * num_spaces\n    display_html(space.join(tables_html), raw=True)\n\ndisplay_frames([df1,df2], 30)",
+    "uid" : "4346C8B0-2747-4162-8B11-427F25E5AFD3",
+    "name" : "display dataframes",
+    "keyword" : "display_dataframes"
+  }
+}

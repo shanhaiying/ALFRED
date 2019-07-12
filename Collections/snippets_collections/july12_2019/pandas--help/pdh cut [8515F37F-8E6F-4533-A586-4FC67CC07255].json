@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "df = pd.DataFrame({'A': [40,50,70,80],'B': [400,500,700,800]})\nbins = [0, 40, 60, 80, np.inf]\nlabels=[1, 2, 3, 4] # categories (40 is in group2 not 1 since include_lowest is True)\ndf['A_cat'] = pd.cut(df['A'], bins=bins, labels=labels,include_lowest=True,right=False)\n# 40=2 50=2 70=3 80=4\n\ndf = pd.DataFrame({'A': [40,50,70,80],'B': [400,500,700,800]})\nbins = [0, 40, 60, 80, np.inf]\nlabels=['Fail', 'Third', 'Second', 'First']\ncuts = pd.cut(df['A'], bins=bins, labels=labels,include_lowest=True,right=False)\ndf.groupby(cuts)['B'].count().plot.bar()\n",
+    "uid" : "8515F37F-8E6F-4533-A586-4FC67CC07255",
+    "name" : "pdh cut",
+    "keyword" : "pdh-cut"
+  }
+}

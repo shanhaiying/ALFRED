@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "import numpy as np\nprint('time taken = {:.0f} minutes {:.2f} seconds'.format(*np.divmod(t2-t1,60)))",
+    "uid" : "83F19EEC-4B74-49D3-B58D-3BF50D13E9FA",
+    "name" : "print time taken",
+    "keyword" : "prt"
+  }
+}

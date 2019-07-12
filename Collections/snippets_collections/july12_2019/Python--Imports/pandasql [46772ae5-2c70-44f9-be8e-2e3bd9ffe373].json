@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "import pandasql as pdsql\npysql = lambda q: pdsql.sqldf(q, globals())\n",
+    "uid" : "46772ae5-2c70-44f9-be8e-2e3bd9ffe373",
+    "name" : "pandasql",
+    "keyword" : "pdsql"
+  }
+}

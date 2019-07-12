@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "import numpy as np\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\n# create dummy pandas dataframes\npd1 = pd.DataFrame({'a':np.random.random(22),'b':np.random.random(22),\n                    'c':np.random.random(22)})\npd2 = pd.DataFrame({'J':np.random.random(22),'K':np.random.random(22),\n                    'P':np.random.random(22)})\n#create subplot figure with having two side by side plots\nfig, axes = plt.subplots(nrows=3,ncols=2,figsize=(12,6))\n# plot first pandas frame in subplot style\npd1.plot(ax = axes[:,0],subplots=True) \n# plot second pandas frame in subplot style\npd2.plot(ax = axes[:,1],subplots=True)\n\nplt.show()",
+    "uid" : "3B03B54A-2616-4821-B88A-FB1531E62566",
+    "name" : "plot multiplot pandas 1",
+    "keyword" : "plot_multiplot_pd1"
+  }
+}

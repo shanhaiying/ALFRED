@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "def plot_pointplots(df,ys):\n    fig = plt.figure(figsize=(12,8))\n    colors = ['r','g','b','c','m','y','k']\n    linestyles = ['-','--'] * len(ys)\n    for i in range(len(ys)):\n        plt.plot(df.index, df[ys[i]],\n                color=colors[i],\n                marker='o',\n                linestyle=linestyles[i])\n\n    plt.ylabel()\n    plt.xlabel()\n    plt.xticks(rotation=90)\n    plt.title()\n    plt.legend()\n    plt.show()",
+    "uid" : "78A827EA-68EA-4664-B8BA-09BCB22918F3",
+    "name" : "plot pointplots",
+    "keyword" : "pointplots"
+  }
+}

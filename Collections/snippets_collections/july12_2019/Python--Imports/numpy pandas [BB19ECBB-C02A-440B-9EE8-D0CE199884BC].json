@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "import numpy as np\nimport pandas as pd\n\npd.options.display.max_columns = 500\npd.options.display.max_rows = 500",
+    "uid" : "BB19ECBB-C02A-440B-9EE8-D0CE199884BC",
+    "name" : "numpy pandas",
+    "keyword" : "npd"
+  }
+}

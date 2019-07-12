@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "import itertools\n\n#---------- example 1\ns = 'AAABCAA'\n[(key,len(list(igroup))) for key,igroup in itertools.groupby(s)]\n\n\n#---------- example 2\n [k for k, igroup in itertools.groupby('AAAABBBCCDAABBB')] --> A B C D A B\n [list(igroup) for k, igroup in itertools.groupby('AAAABBBCCD')] --> AAAA BBB CC D\n\n#---------- example 3\nthings = [(\"a\", 1), (\"a\", 2), (\"b\", \"x\"), (\"b\", \"z\"), ('a', 3), ('b', 'w')]\n[ (k,list(ig) ) for k,ig in itertools.groupby(things, lambda x: x[0])]",
+    "uid" : "E2F54F8F-204B-4845-B8A2-2C839336BC8A",
+    "name" : "itertools groupby",
+    "keyword" : "itertools_groupby"
+  }
+}

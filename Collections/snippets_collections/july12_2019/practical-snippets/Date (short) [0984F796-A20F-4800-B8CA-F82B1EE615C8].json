@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "{date:short}\n\nAlfred tip: Find out more about formatting your Dynamic Placeholders here:\nhttps:\/\/www.alfredapp.com\/help\/features\/clipboard\/dynamic-placeholders\/\n\nYou can set your preferred local format in your Mac's System Preferences, or use Unicode LDML formats to be more specific.",
+    "dontautoexpand" : true,
+    "uid" : "0984F796-A20F-4800-B8CA-F82B1EE615C8",
+    "name" : "Date (short)",
+    "keyword" : "!date"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "def yearly_barplots(df,x1,x2,y):\n    \"\"\"\n    Example:\n    x1 = year\n    x2 = state\n    y = casualities\n    \"\"\"\n    df1 = (df.groupby([x1,x2])[[y]]\n           .sum()\n           .reset_index()\n           .sort_values(by=[x1,y],ascending=False))\n\n    years  = df[x1].unique().tolist()\n    length = len(years)\n\n    fig = plt.figure(figsize=(12,18))\n    NUM = 10\n\n    for i,j in itertools.zip_longest(years,range(length)):\n        plt.subplot(3,2,j+1)\n        ax = sns.barplot(y,x2,\n                         data=df1[df1[x1] == i][:NUM],\n                         palette=\"Blues_r\",\n                         linewidth = 1 ,\n                         edgecolor = \"k\"*NUM)\n        plt.title(i,fontsize=20,color=\"b\")\n        plt.ylabel(\"\")\n        plt.subplots_adjust(wspace=.35,hspace=.4)\n        plt.yticks(fontsize=12)\n        for i,j in enumerate(df1[df1[x1] == i][y][:NUM]):\n            plt.text(.7,i,j,weight=\"bold\")\n        fig.set_facecolor(\"y\")",
+    "uid" : "A8DBE159-C3A6-4133-97BD-1BBDA35B77C5",
+    "name" : "yearly barplots",
+    "keyword" : "yearly_barplots"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "def notify():\n    \"\"\"Using desktop notifications in MacOS.\n   \n    ..note::\n\n    To keep the notification button until you close it change the\n    system preferences of the notifications.\n    System Preferences > Notifications > Script Editor > Check all and choose alert\n     \n    \"\"\"\n\n\nimport os\ndef notify(title, text):\n    os.system(\"\"\"\n              osascript -e 'display notification \"{}\" with title \"{}\"'\n              \"\"\".format(text, title))\n\nnotify(\"Title\", \"Heres an alert\")",
+    "uid" : "1554D74D-E49C-4800-8176-9EF80161D261",
+    "name" : "utility notify",
+    "keyword" : "notify"
+  }
+}

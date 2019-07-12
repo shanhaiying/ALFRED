@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "⌘",
+    "dontautoexpand" : true,
+    "uid" : "d20ed17f-8301-454b-9401-8ac8635c4d00",
+    "name" : "Cmd (⌘)",
+    "keyword" : ";cmd"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "%>% nrow()",
+    "uid" : "8C4FA28D-965E-44F4-BFB0-21F7506C2B54",
+    "name" : "pipe nrow",
+    "keyword" : "rr"
+  }
+}

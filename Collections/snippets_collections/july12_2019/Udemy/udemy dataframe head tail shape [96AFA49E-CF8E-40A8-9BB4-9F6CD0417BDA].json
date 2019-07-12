@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "print(df.head(5))\nprint()\nprint(df.tail(5))\nprint(df.shape)",
+    "uid" : "96AFA49E-CF8E-40A8-9BB4-9F6CD0417BDA",
+    "name" : "udemy dataframe head tail shape",
+    "keyword" : "hts"
+  }
+}

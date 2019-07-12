@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "%%javascript\nIPython.OutputArea.prototype._should_scroll = function(lines) {\n    return false;\n}",
+    "uid" : "4F58F085-F7B4-4870-A0FF-8D6F290A492F",
+    "name" : "jupyter notebook disable autoscroll",
+    "keyword" : "jupyter_notebook_disable_autoscroll"
+  }
+}

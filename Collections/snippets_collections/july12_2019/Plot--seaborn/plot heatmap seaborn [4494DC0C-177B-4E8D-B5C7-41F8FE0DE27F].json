@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "sns.heatmap(df.corr(), annot=True)",
+    "uid" : "4494DC0C-177B-4E8D-B5C7-41F8FE0DE27F",
+    "name" : "plot heatmap seaborn",
+    "keyword" : "plot_heatmap_seaborn"
+  }
+}

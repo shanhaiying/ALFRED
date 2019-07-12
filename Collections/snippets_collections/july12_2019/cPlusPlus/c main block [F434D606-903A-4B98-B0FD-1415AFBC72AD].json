@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "int main(){\n    {cursor}\n\n    return 0;\n}\n",
+    "uid" : "F434D606-903A-4B98-B0FD-1415AFBC72AD",
+    "name" : "c++ main block",
+    "keyword" : "cmain"
+  }
+}

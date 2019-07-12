@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "import numpy as np\nimport pandas as pd\n",
+    "uid" : "e1d3886a-f566-44eb-9769-2c5659bc0e97",
+    "name" : "pandas numpy",
+    "keyword" : "pdnp"
+  }
+}

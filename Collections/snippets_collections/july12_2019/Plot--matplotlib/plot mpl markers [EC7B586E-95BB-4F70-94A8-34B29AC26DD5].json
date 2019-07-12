@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "markers=(['o', 's', 'p', 'x', '^', '+', '*', '<', 'D', 'h', '>','v','d','H','P','X']*100)[:mpg['class'].nunique()] ",
+    "uid" : "EC7B586E-95BB-4F70-94A8-34B29AC26DD5",
+    "name" : "plot mpl markers",
+    "keyword" : "plot_mpl_markers"
+  }
+}

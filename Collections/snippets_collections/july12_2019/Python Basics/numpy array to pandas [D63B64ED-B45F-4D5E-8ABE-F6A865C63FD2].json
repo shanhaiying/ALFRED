@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "pd.DataFrame({clipboard}).head()",
+    "uid" : "D63B64ED-B45F-4D5E-8ABE-F6A865C63FD2",
+    "name" : "numpy array to pandas",
+    "keyword" : "pdh"
+  }
+}

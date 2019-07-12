@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "# Remove nans from textfile output of dmstack and only extract x,y,e1,e2\n# Author: Bhishan Poudel\n\nimport pandas as pd\nimport numpy as np\nimport sys\n\ndef remove_nans(ifile):\n    df = pd.read_csv(ifile, sep=\",\",header=None,comment='#',usecols=(10,11,37,38))\n    for c in df.columns:\n        df[c] = pd.to_numeric(df[c],errors='coerce')\n\n    # drop na\n    df = df.dropna()\n\n    # write file\n    df.to_csv(ifile[0:-4]+'.txt',index=None,header=None,sep='\\t')\n    \nifile = sys.argv[1]\nremove_nans(ifile)",
+    "uid" : "A8E420AE-6A91-4B42-A9FF-F76F8B3B0DCC",
+    "name" : "rsh remove nans dmstack",
+    "keyword" : "remove_nans_\n# Remove nans from textfile output of dmstack and only extract x,y,e1,e2\n# Author: Bhishan Poudel\nimport pandas as pd\nimport numpy as np\nimport sys\n\ndef remove_nans(ifile):\n    df = pd.read_csv(ifile, sep=\",\",header=None,comment='#',usecols=(10,11,37,38))\n    for c in df.columns:\n        df[c] = pd.to_numeric(df[c],errors='coerce')\n\n    # drop na\n    df = df.dropna()\n\n    # write file\n    df.to_csv(ifile[0:-4]+'.txt',index=None,header=None,sep='\\t')\n    \nifile = sys.argv[1]\nremove_nans(ifile)dmstack"
+  }
+}

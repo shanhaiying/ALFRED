@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "from bokeh.plotting import figure\nfrom bokeh.resources import INLINE\nfrom bokeh.io import output_notebook, show\nimport bokeh.io\n\nx_values = [1, 2, 3, 4, 5]\ny_values = [6, 7, 2, 3, 6]\n\np = figure()\np.circle(x=x_values, y=y_values)\n\nbokeh.io.output_notebook(INLINE)\nshow(p)",
+    "uid" : "8DEC9BF7-C8D9-4433-BCA6-F1D6B3B9687D",
+    "name" : "bokeh example",
+    "keyword" : "bokeh_eg"
+  }
+}

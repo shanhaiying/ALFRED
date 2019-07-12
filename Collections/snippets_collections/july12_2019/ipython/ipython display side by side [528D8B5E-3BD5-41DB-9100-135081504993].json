@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "from IPython.display import display, HTML\n\nCSS = \"\"\"\n.output {\n    flex-direction: row;\n}\n\"\"\"\n\nHTML('<style>{}<\/style>'.format(CSS))",
+    "uid" : "528D8B5E-3BD5-41DB-9100-135081504993",
+    "name" : "ipython display side by side",
+    "keyword" : "ipython_display_side_by_side"
+  }
+}

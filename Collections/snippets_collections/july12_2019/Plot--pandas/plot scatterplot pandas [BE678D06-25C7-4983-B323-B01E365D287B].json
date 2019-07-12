@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "def scatterplot(df,x,y,c,colormap='viridis',figsize=(12,8)):\n    df.plot.scatter(x=x,y=y,c=c,colormap=colormap,figsize=figsize);\n    plt.show()",
+    "uid" : "BE678D06-25C7-4983-B323-B01E365D287B",
+    "name" : "plot scatterplot pandas",
+    "keyword" : "scatterplot"
+  }
+}

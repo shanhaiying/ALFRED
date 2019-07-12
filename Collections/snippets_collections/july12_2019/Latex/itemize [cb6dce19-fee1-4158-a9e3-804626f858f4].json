@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "\\begin{itemize}\n \\item {cursor}\n \\item \n \\item \n\\end{itemize}",
+    "uid" : "cb6dce19-fee1-4158-a9e3-804626f858f4",
+    "name" : "itemize",
+    "keyword" : "itm"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "import matplotlib.pyplot as plt\n\nplt.xlabel = 'xlabel' # this is wrong and instead of creating xlabel, it changes the plt.xlabel object\n\nplt.xlabel('xlabel') # TypeError: 'str' object is not callable\n\nTo fix:\n================\nfrom importlib import reload \nreload(matplotlib.pyplot)\n\nimport matplotlib.pyplot as plt\n\nplt.plot([10,20])\nplt.xlabel('xlabel')",
+    "uid" : "5018DB3C-493B-4C0D-BD82-6A2DFDD783B9",
+    "name" : "type error str object is not callable",
+    "keyword" : "type_error"
+  }
+}

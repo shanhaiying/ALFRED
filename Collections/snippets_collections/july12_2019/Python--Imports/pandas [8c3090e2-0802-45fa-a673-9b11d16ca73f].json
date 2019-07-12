@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "import pandas as pd\npd.options.display.max_columns = 500\npd.options.display.max_rows = 500",
+    "uid" : "8c3090e2-0802-45fa-a673-9b11d16ca73f",
+    "name" : "pandas",
+    "keyword" : "pd"
+  }
+}

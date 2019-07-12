@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "pd.DataFrame({'':[], '': []})",
+    "uid" : "6F7E6E12-F44B-4AC6-9340-9AC4675563DC",
+    "name" : "pandas dataframe",
+    "keyword" : "pdff"
+  }
+}

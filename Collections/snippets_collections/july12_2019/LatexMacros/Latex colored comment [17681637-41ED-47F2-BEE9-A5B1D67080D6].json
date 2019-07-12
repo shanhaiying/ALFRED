@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "% BP green box, and DC red box\n%% Usage \\mycomment[BP]{Text here.}\n\\usepackage{todonotes,ifthen}\n\\newcounter{mycomment}\n\\newcommand{\\mycomment}[2][]{%\n   % initials of the author (optional) + note in the margin\n   \\refstepcounter{mycomment}%\n   \\ifthenelse{\\equal{#1}{BP}}\n   {\\todo[color={green!40},size=\\small, inline]{% \n    \\textbf{{#1}\\themycomment:}~#2}%\n   }{\\ifthenelse{\\equal{#1}{DC}}\n       {\\todo[color={red!40},size=\\small, inline]{% \n    \t \\textbf{{#1}\\themycomment:}~#2}%\n   \t}{}}\\noindent}",
+    "uid" : "17681637-41ED-47F2-BEE9-A5B1D67080D6",
+    "name" : "Latex colored comment",
+    "keyword" : "mycomment"
+  }
+}

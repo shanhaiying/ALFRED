@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : " \\begin{eqnarray}\\label{[eq:{cursor}]}\n\n \\end{eqnarray}",
+    "uid" : "87b43831-bacd-49d9-8a40-711d31b6e82c",
+    "name" : "equation array",
+    "keyword" : "eqna"
+  }
+}

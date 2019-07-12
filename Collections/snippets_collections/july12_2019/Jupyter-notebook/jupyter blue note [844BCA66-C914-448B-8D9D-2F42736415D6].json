@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "<div class=\"alert alert-block alert-info\">\n<b>NOTE:<\/b> \n<\/div>",
+    "uid" : "844BCA66-C914-448B-8D9D-2F42736415D6",
+    "name" : "jupyter blue note",
+    "keyword" : "jnb_blue"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "import re\n\nColumns:\n['movie_title', 'actor_1_name', 'actor_2_name', 'actor_3_name',\n       'actor_1_facebook_likes', 'actor_2_facebook_likes',\n       'actor_3_facebook_likes']\n    \nactor_1_name ==> actor_1  and actor_1_facebook_likes ==> actor_facebook_likes_1\ndf.rename(columns=lambda x: x.replace('_name','') if '_name' in x \n               else re.sub(r'(actor_)(\\d)_(facebook_likes)', r'\\1\\3_\\2',x) if 'facebook' in x \n               else x)\n               \n# now we can tidy up the dataframe from wide to long\nstubs = ['actor', 'actor_facebook_likes']\ndf = pd.wide_to_long(df, \n                       stubnames=stubs, # columns will become rows\n                       i=['movie_title'], # keep this untouched\n                       j='actor_num',  # new name\n                       sep='_').reset_index()\n",
+    "uid" : "5B6BA464-D858-4713-930F-98771465410F",
+    "name" : "pdh rename",
+    "keyword" : "pdh-rename"
+  }
+}

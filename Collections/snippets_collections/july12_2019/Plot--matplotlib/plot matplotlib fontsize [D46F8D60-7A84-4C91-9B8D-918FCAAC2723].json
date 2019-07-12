@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "plt.xlabel('',fontsize=30)\nplt.ylabel('',fontsize=30)\nplt.tick_params(labelsize=20) # plt.xticks(fontsize=20) \nplt.title('',fontsize=40,fontweight='bold')\nplt.legend(loc='upper right',fontsize=30)",
+    "uid" : "D46F8D60-7A84-4C91-9B8D-918FCAAC2723",
+    "name" : "plot matplotlib fontsize",
+    "keyword" : "plot_matplotlib_fontsize"
+  }
+}

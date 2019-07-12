@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "import matplotlib.pyplot as plt\nplt.pie([10,20,30],labels=['a','b','c'] ,\n       autopct='%1.1f%%', textprops={'fontsize': 20})\n\n# method 2\npatches, texts, autotexts = plt.pie([10,20,30],labels=['a','b','c'], autopct='%1.1f%%')\n[ t.set_fontsize(20) for t in texts ]",
+    "uid" : "7EF934C2-4AE0-44F2-99CA-2559824B1A3B",
+    "name" : "plot pie text fontsize",
+    "keyword" : "pieplot_text_fontsize"
+  }
+}

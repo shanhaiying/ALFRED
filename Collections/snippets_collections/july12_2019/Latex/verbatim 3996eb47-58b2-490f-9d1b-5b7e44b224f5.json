@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : " \\begin{verbatim}\n{cursor}\n\\end{verbatim}",
+    "uid" : "3996eb47-58b2-490f-9d1b-5b7e44b224f5",
+    "name" : "verbatim",
+    "keyword" : "vrb"
+  }
+}

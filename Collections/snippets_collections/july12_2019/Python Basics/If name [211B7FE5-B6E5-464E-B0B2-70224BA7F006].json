@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "if __name__ == '__main__':\n    # run the program",
+    "uid" : "211B7FE5-B6E5-464E-B0B2-70224BA7F006",
+    "name" : "If name",
+    "keyword" : "name"
+  }
+}

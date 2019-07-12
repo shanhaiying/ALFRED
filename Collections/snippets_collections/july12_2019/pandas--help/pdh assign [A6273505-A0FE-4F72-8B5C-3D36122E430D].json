@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "df = pd.DataFrame({'BP': ['100\/80'],'Sex': ['M']})\n\n# using str split\ndf[['sys','dias']] = df['BP'].str.split(pat='\/', expand=True)\n\n# using str extract\ndf[['sys','dias']] = df['BP'].str.extract(r'(\\d+)\/(\\d+)',expand=True)\n\n# using one-liner\ndf.drop('BP', 1).join(\n    df['BP'].str.split('\/', expand=True)\n            .set_axis(['BPS', 'BPD'], axis=1, inplace=False)\n            .astype(float))\n\n# using assign **pop extract\ndf2 = (df.drop('BP',axis=1)\n       .assign(BPS =  lambda x: df.BP.str.extract('(?P<BPS>\\d+)\/').astype(float))\n       .assign(BPD =  lambda x: df.BP.str.extract('\/(?P<BPD>\\d+)').astype(float)))\n# another method\ndf = df.assign(**df.pop('BP').str.extract(r'(?P<BPS>\\d+)\/(?P<BPD>\\d+)',expand=True).astype(float))\n",
+    "uid" : "A6273505-A0FE-4F72-8B5C-3D36122E430D",
+    "name" : "pdh assign",
+    "keyword" : "pdh-assign"
+  }
+}

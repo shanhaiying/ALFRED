@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "int main(int argc, char **argv){\n    {cursor}\n    return 0;\n}\n",
+    "uid" : "76F889DB-E137-46D7-9D44-36372A901377",
+    "name" : "c++ main block args",
+    "keyword" : "cmainn"
+  }
+}

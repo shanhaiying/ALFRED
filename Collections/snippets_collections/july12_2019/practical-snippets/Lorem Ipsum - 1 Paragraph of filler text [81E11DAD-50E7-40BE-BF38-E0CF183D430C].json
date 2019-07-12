@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec cursus tincidunt est id fringilla. In convallis commodo sem. Quisque ultricies purus et fermentum blandit. Pellentesque pellentesque est non ligula malesuada sodales. Aliquam auctor dui leo, sit amet ultrices lectus tempus euismod. Nulla facilisi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin dignissim at orci non vulputate. ",
+    "dontautoexpand" : true,
+    "uid" : "81E11DAD-50E7-40BE-BF38-E0CF183D430C",
+    "name" : "Lorem Ipsum - 1 Paragraph of filler text",
+    "keyword" : "!lipsum1"
+  }
+}

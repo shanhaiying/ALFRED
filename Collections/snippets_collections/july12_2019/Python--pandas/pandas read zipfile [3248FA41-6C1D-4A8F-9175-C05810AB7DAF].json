@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "fname = \"gun-violence-data_01-2013_03-2018.csv\"\nzf = zipfile.ZipFile('data\/' + fname + '.zip')\ndf = pd.read_csv(zf.open(fname))",
+    "uid" : "3248FA41-6C1D-4A8F-9175-C05810AB7DAF",
+    "name" : "pandas read zipfile",
+    "keyword" : "pd_read_zipfile"
+  }
+}

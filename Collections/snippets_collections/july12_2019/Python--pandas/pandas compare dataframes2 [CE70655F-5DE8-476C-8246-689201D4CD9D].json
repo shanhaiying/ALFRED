@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "def compare_dfs(df1,df2,idx_cols):\n    df = pd.concat([df1,df2]) \n    df = df.set_index(idx_cols)\n    changes = df.groupby(level=idx_cols).agg(\n        lambda x: x[0] if x[0] == x[1] else '{} | {}'.format(*x))\n    return changes\n\n# example\ncompare_dfs(df1,df2,['id', 'Name'])",
+    "uid" : "CE70655F-5DE8-476C-8246-689201D4CD9D",
+    "name" : "pandas compare dataframes2",
+    "keyword" : "pd_compare_dfs"
+  }
+}

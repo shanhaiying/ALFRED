@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "df = pd.DataFrame({'Name': list('ABC'),\n                  'Date': np.arange(2010,2013),\n                 'Info': ['Height', 'Weight','Size'],\n                 'Value': [6, 160, 3]})\n                 \n(df.set_index(['Name','Date', 'Info'])\n          .squeeze()\n          .unstack('Info')\n          .reset_index()\n          .rename_axis(None, axis='columns'))\n          \n# using pivot_table\n(df.pivot_table(index=['Name', 'Date'], \n                        columns='Info', \n                        values='Value', \n                        aggfunc='first')\n           .reset_index()\n           .rename_axis(None, axis='columns'))",
+    "uid" : "ADA928D8-886C-4601-B193-5053172BC59D",
+    "name" : "tidy multiple value in same column",
+    "keyword" : "tidy_multiple_values_same_column"
+  }
+}

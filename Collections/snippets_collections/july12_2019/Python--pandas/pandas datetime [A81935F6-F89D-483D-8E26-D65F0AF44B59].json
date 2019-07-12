@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "import pandas as pd\nimport calendar\n\n# Ref: https:\/\/docs.python.org\/2\/library\/datetime.html\n\n\ndf['release_year'] = pd.to_datetime(df['release_date'], format='%m\/%d\/%y')\n\ndf['release_month'] = df['release_year'].dt.month\n\ndf['month_name'] = df['release_month'].apply(lambda x: calendar.month_abbr[x])\n\n\n# 2018-02-28 21:03:37\ndf[''] = pd.to_datetime(df[''], format='%Y-%m-%d %H:%M:%S')\ndf.dtypes",
+    "uid" : "A81935F6-F89D-483D-8E26-D65F0AF44B59",
+    "name" : "pandas datetime",
+    "keyword" : "pd_datetime"
+  }
+}

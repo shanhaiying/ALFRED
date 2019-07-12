@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "%%bash\n\n# example1 (tr is translate)\n#===============================\n# a.csv # a,b,c,de\nfirst=`head -n 1 a.csv`\n\ndeclare -i count=1\n\nfor i in $(echo \"$first\" | tr \",\" \"\\n\")\ndo\n    echo \"$count\" \"$i\"\n    count+=1\ndone\n#===============================\n\n\n# example 2\n#===============================\nCOUNT=1\nIN=abc,123,def\nsaveIFS=$IFS\nIFS=, \nfor i in $IN\ndo\n    echo \"$COUNT :\" \"$i\"\n    let COUNT+=1\ndone\nIFS=$saveIFS\n#===============================\n\n# using cut\nhead -n 1 src_txt\/src_lsst_mono_z0.7_000.csv | cut -d \",\" -f 11",
+    "uid" : "8351ABC8-00FF-4C0C-8582-101F4E7520F3",
+    "name" : "bash print comma separated fields",
+    "keyword" : "comma_sep"
+  }
+}

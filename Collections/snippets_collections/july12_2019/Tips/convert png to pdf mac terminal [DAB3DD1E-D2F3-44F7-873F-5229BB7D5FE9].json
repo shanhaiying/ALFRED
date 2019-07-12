@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "sips -s format pdf a.png --out a.pdf",
+    "uid" : "DAB3DD1E-D2F3-44F7-873F-5229BB7D5FE9",
+    "name" : "convert png to pdf mac terminal",
+    "keyword" : "convert_png_to_pdf_mac_terminal"
+  }
+}

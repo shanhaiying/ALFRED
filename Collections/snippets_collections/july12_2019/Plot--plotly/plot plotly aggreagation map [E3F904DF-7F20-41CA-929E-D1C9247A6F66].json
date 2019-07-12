@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "df = pd.read_csv(\"https:\/\/raw.githubusercontent.com\/bcdunbar\/datasets\/master\/worldhappiness.csv\")\n\naggs = [\"count\",\"sum\",\"avg\",\"median\",\"mode\",\"rms\",\"stddev\",\"min\",\"max\",\"first\",\"last\"]\n\nagg = []\nagg_func = []\nfor i in range(0, len(aggs)):\n    agg = dict(\n        args=['transforms[0].aggregations[0].func', aggs[i]],\n        label=aggs[i],\n        method='restyle'\n    )\n    agg_func.append(agg)\n\ndata = [dict(\n  type = 'choropleth',\n  locationmode = 'country names',\n  locations = df['Country'],\n  z = df['HappinessScore'],\n  autocolorscale = False,\n  colorscale = 'Portland',\n  reversescale = True,\n  transforms = [dict(\n    type = 'aggregate',\n    groups = df['Country'],\n    aggregations = [dict(\n        target = 'z', func = 'sum', enabled = True)\n    ]\n  )]\n)]\n\nlayout = dict(\n  title = '<b>Plotly Aggregations<\/b><br>use dropdown to change aggregation',\n  xaxis = dict(title = 'Subject'),\n  yaxis = dict(title = 'Score', range = [0,22]),\n  height = 600,\n  width = 900,\n  updatemenus = [dict(\n        x = 0.85,\n        y = 1.15,\n        xref = 'paper',\n        yref = 'paper',\n        yanchor = 'top',\n        active = 1,\n        showactive = False,\n        buttons = agg_func\n  )]\n)\n\niplot({'data': data,'layout': layout}, validate=False)\n",
+    "uid" : "E3F904DF-7F20-41CA-929E-D1C9247A6F66",
+    "name" : "plot plotly aggreagation map",
+    "keyword" : "plot_plotly_aggreagation_map"
+  }
+}

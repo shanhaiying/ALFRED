@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "import uuid\nfrom IPython.display import display_javascript, display_html, display\nimport json\n\nclass collapsible_json(object):\n    def __init__(self, json_data):\n        if isinstance(json_data, dict):\n            self.json_str = json.dumps(json_data)\n        else:\n            self.json_str = json_data\n        self.uuid = str(uuid.uuid4())\n\n    def _ipython_display_(self):\n        display_html('<div id=\"{}\" style=\"height: 600px; width:100%;\"><\/div>'.format(self.uuid), raw=True)\n        display_javascript(\"\"\"\n        require([\"https:\/\/rawgit.com\/caldwell\/renderjson\/master\/renderjson.js\"], function() {\n        document.getElementById('%s').appendChild(renderjson(%s))\n        });\n        \"\"\" % (self.uuid, self.json_str), raw=True)",
+    "uid" : "0E338646-2A0A-4CAE-A34D-BBE00D9A5A72",
+    "name" : "collapsible json",
+    "keyword" : "collapsible_json"
+  }
+}

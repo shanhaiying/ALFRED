@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "%matplotlib inline\n\nfrom pandas import Series\nimport matplotlib.pyplot as plt\n\nheights = Series(\n    [165, 170, 195, 190, 170, \n     170, 185, 160, 170, 165, \n     185, 195, 185, 195, 200, \n     195, 185, 180, 185, 195],\n    name='Heights'\n)\nfreq = heights.value_counts().sort_index()\n\nfreq_frame = freq.to_frame()\n\nmean = heights.mean()\nmedian = heights.median()\n\nplt.bar(freq_frame.index,freq_frame['Heights'],\n        width=3,align='center')\n\nplt.xlabel('Height (cm)')\nplt.ylabel('Count')\n\nplt.axvline(mean, color='r', linestyle='--')\nplt.axvline(median, color='g', linestyle='--')\n\nplt.show()",
+    "uid" : "C6893734-500A-4450-AEC2-D0D5D184411D",
+    "name" : "plot bar",
+    "keyword" : "plot_bar2"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "fig,ax = plt.subplots(2,2, figsize=(12,8))\nfig.suptitle(\"Title for whole figure\", fontsize=16)\n\ndf['A'].value_counts().sort_index().plot.bar(ax=ax[0][0], fontsize=12,color='mediumvioletred',title='plot1',label='label1')\ndf['B'].value_counts().sort_index().plot.bar(ax=ax[0][1], fontsize=12,color='red',title='plot2',label='label2')\ndf['C'].value_counts().sort_index().plot.bar(ax=ax[1][0], fontsize=12,color='violet',title='plot2')\ndf['D'].value_counts().sort_index().plot.bar(ax=ax[1][1], fontsize=12,color='blue',title='plot2')\n\n# update axes\nax[0][0].set_title(r\"$New\\  Title\\  \\alpha_i$\", fontsize=18,color='red')\nax[0][0].set_xlabel('plot1 xlabel')\nax[0][0].set_xticks(range(10))\nax[0][0].legend(loc='upper right')\nax[0][1].legend(loc='upper left')\n# ax[0][0].set_xticklabels(['a','b','c'],color='b',fontsize=20)\n\n# reset to just one plot\nplt.sca(ax[0, 1])\nplt.xticks(range(3,6), ['A', 'B', 'C'], color='magenta')\n\n\n# other params\nfig.tight_layout()\n\n# get xticklabels\nxticklabels = ax[0][0].get_xticklabels()\nprint(list(xticklabels))",
+    "uid" : "7A884CCC-363D-4DD6-9DE2-1C5FA66A5CDF",
+    "name" : "subplots",
+    "keyword" : "subplots"
+  }
+}

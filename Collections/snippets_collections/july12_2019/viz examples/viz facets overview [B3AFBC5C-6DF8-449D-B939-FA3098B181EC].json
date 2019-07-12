@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "def facets_overview(df_train, df_test,output_html_path):\n\n    # Add the path to the feature stats generation code.\n    import sys\n    sys.path.insert(0, '\/Users\/poudel\/Softwares\/facets\/facets_overview\/python\/')\n\n    # Create the feature stats for the datasets and stringify it.\n    import base64\n    from generic_feature_statistics_generator import GenericFeatureStatisticsGenerator\n\n    gfsg = GenericFeatureStatisticsGenerator()\n    proto = gfsg.ProtoFromDataFrames([{'name': 'train', 'table': df_train},\n                                  {'name': 'test', 'table': df_test}])\n\n    protostr = base64.b64encode(proto.SerializeToString()).decode(\"utf-8\")\n\n    # Display the facets overview visualization for this data\n    from IPython.core.display import display, HTML\n\n    HTML_TEMPLATE = \"\"\"\n          <script src=\"https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/webcomponentsjs\/1.3.3\/webcomponents-lite.js\"><\/script>\n          <link rel=\"import\" href=\"https:\/\/raw.githubusercontent.com\/PAIR-code\/facets\/master\/facets-dist\/facets-jupyter.html\" >\n          <facets-overview id=\"elem\"><\/facets-overview>\n          <script>\n            document.querySelector(\"#elem\").protoInput = \"{protostr}\";\n          <\/script>\"\"\"\n    html_str = HTML_TEMPLATE.format(protostr=protostr)\n    html = HTML(html_str)\n    \n    with open(output_html_path,'w') as fo:\n        fo.write(html_str)\n    \nfacets_overview(train_data, test_data,'output_overview.html')\n!open output_overview.html",
+    "uid" : "B3AFBC5C-6DF8-449D-B939-FA3098B181EC",
+    "name" : "viz facets overview",
+    "keyword" : "viz_facets_overview"
+  }
+}

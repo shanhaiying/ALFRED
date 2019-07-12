@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "Suffix: BP HST MD 0123\nab = \\bar{\\alpha}       Bar\nap = \\alpha\\prime       Prime\n\nah = \\hat{\\alpha}       Hat\nas = \\alpha^*           Star\nat = \\tilde{\\alpha}     Tilde\n\nam = \\lvert\\alpha\\rvert Modulus\nad = \\dot{\\alpha}       Dot\n\na0 = \\alpha_0",
+    "uid" : "22e7acfe-909d-4909-b4bf-78c1613bb38a",
+    "name" : "Latex Greek suffices",
+    "keyword" : "suffix"
+  }
+}

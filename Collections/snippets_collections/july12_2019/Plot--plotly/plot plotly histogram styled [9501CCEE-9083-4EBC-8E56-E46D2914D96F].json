@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "x0 = np.random.randn(500)\nx1 = np.random.randn(500)+1\n\ntrace1 = go.Histogram(\n    x=x0,\n    histnorm='percent',\n    name='control',\n    xbins=dict(\n        start=-4.0,\n        end=3.0,\n        size=0.5\n    ),\n    marker=dict(\n        color='#FFD7E9',\n    ),\n    opacity=0.75\n)\ntrace2 = go.Histogram(\n    x=x1,\n    name='experimental',\n    xbins=dict(\n        start=-3.0,\n        end=4,\n        size=0.5\n    ),\n    marker=dict(\n        color='#EB89B5'\n    ),\n    opacity=0.75\n)\ndata = [trace1, trace2]\n\nlayout = go.Layout(\n    title='Sampled Results',\n    xaxis=dict(\n        title='Value'\n    ),\n    yaxis=dict(\n        title='Count'\n    ),\n    bargap=0.2,\n    bargroupgap=0.1\n)\n\nfig = go.Figure(data=data, layout=layout)\niplot(fig, filename='styled histogram')",
+    "uid" : "9501CCEE-9083-4EBC-8E56-E46D2914D96F",
+    "name" : "plot plotly histogram styled",
+    "keyword" : "plot_plotly_histogram_styled"
+  }
+}

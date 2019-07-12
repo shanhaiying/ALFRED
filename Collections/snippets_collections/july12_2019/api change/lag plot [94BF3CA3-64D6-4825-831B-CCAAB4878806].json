@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "old:   from pandas.tools.plotting import lag_plot\nnew:  from pandas.plotting import lag_plot",
+    "uid" : "94BF3CA3-64D6-4825-831B-CCAAB4878806",
+    "name" : "lag plot",
+    "keyword" : "lag_plot"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "# python list remove pop del\n```python\na = [0, 2, 3, 2]\n\n# remove is inplace\na = [1,2,2,2,3]\na.remove(3)\na # [1, 2, 2, 2]\n\n# pop returns value, but does not support range\na = [1,2,2,2,3]\na.pop(3) # pop returns value, e.g. 2\na # [1, 2, 2, 3]\n\n# del returns None but support range\na = [1,2,2,2,3]\ndel a[3] # delete returns nothing\na # [1, 2, 2, 3]  same as pop(3)\n\na = [1,2,2,2,3]\ndel a[3:] # delete returns nothing and supports range\na # [1, 2, 2]\n```",
+    "uid" : "376F0956-667E-41F9-9670-4DDC3EC6B070",
+    "name" : "python list remove pop del",
+    "keyword" : "python_list_remove_pop_del"
+  }
+}

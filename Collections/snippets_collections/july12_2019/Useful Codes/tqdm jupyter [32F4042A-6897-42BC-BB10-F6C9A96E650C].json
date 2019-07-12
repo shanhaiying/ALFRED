@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "%%capture\nfrom tqdm import tqdm_notebook as tqdm\ntqdm().pandas()\n\nimport pandas as pd\nimport numpy as np\n\ndf = pd.DataFrame(np.random.randint(0, int(1e8), (10000, 1000)))\ndf.groupby(0).progress_apply(lambda x: x**2)",
+    "uid" : "32F4042A-6897-42BC-BB10-F6C9A96E650C",
+    "name" : "tqdm jupyter",
+    "keyword" : "tqdm_jupyter"
+  }
+}

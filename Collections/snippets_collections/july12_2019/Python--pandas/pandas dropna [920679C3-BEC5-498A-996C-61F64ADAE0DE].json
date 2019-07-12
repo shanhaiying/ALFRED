@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : ".apply(pd.to_numeric,errors='coerce').dropna()",
+    "uid" : "920679C3-BEC5-498A-996C-61F64ADAE0DE",
+    "name" : "pandas dropna",
+    "keyword" : "dropna"
+  }
+}

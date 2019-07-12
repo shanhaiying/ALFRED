@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "# list comprehension\n[i for i in range(10) if i>5 if i<7]\n\n\n\n\n['yes' if v == 1 else 'no' if v == 2 else 'idle' for v in range(5) ]",
+    "uid" : "53214422-92E4-43C7-847F-201836406A95",
+    "name" : "list comp",
+    "keyword" : "list_comp"
+  }
+}

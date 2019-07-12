@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "# jot function print sequential or random data. -r is for random\njot -r 100 | rs 10 10",
+    "uid" : "C9175C1C-B57B-4D1B-9FF7-0756A2637EBB",
+    "name" : "bash ten by ten random array",
+    "keyword" : "random array"
+  }
+}

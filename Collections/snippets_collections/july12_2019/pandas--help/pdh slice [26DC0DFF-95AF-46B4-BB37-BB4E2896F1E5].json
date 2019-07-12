@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "## extract letters between two underscores\ndf = pd.DataFrame.from_dict({'c0': ['T2 0uM_A1_A01.fcs'], 'MFI': [6995], 'Count': [8505]})\ndf['new'] = df['c0'].str.extract(r'_(.*?)_')  # e.g. A1 is extracted\n\n## slice dataframe column values\ndf['name'] = df['gdp'].str.slice(0,3) # gdp == 'GDP-2013' to name = GDP\ndf['year'] = df['gdp'].str.slice(4).astype(int) # gdp == 'GDP-2013' to year = 2013, does not work for nans\ndf['year'] = df['gdp'].str.slice(4).astype(float) # gdp == 'GDP-2013' to year = 2013, works for nans\ndf['year'] = df['gdp'].str[4:].astype(float) # gdp == 'GDP-2013' to year = 2013, if there are nans",
+    "uid" : "26DC0DFF-95AF-46B4-BB37-BB4E2896F1E5",
+    "name" : "pdh slice",
+    "keyword" : "pdh-slice"
+  }
+}

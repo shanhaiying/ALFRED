@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "df.loc['Total'] = df.sum(numeric_only=True)",
+    "uid" : "A18CDD92-24FE-4EB9-8DDF-59AE6874167C",
+    "name" : "pandas total row",
+    "keyword" : "pd_total_row"
+  }
+}

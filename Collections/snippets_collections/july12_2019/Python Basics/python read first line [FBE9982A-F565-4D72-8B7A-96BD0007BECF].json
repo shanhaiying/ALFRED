@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "import csv\n\nwith open(infile) as fi:\n    reader = csv.reader(fi)\n    row0_lst = next(reader)\n    \nprint(row0_lst)",
+    "uid" : "FBE9982A-F565-4D72-8B7A-96BD0007BECF",
+    "name" : "python read first line",
+    "keyword" : "python_read_first_line"
+  }
+}

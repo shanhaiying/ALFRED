@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "date_formatted = datetime.datetime.strptime(date,\"%m-%d-%y\").strftime(\"%Y-%m-%d\")",
+    "uid" : "9F4A4DDE-DC2A-4F4E-BF30-0B6E2FCE90A9",
+    "name" : "datetime strptime",
+    "keyword" : "datetime1"
+  }
+}

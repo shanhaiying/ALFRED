@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "def unnesting(df, col_list):\n    ''' Create big dataframe using one column having list elements.\n    \n    This function will take name of column which contains list\n    and creates a big dataframe using all elements of that list for all other columns.\n        \n    Usage: unnesting(df,['colname']).head()\n\n    '''\n    idx=df.index.repeat(df[col_list[0]].str.len())\n    df1=pd.concat([pd.DataFrame({x:np.concatenate(df[x].values)} )for x in col_list],axis=1)\n    df1.index=idx\n    return df1.join(df.drop(col_list,1),how='left')\nunnesting(df,['{cursor}']).head()",
+    "uid" : "E71F68B3-5055-404B-A879-9FC1019B5141",
+    "name" : "pandas unnesting",
+    "keyword" : "pd_unnesting"
+  }
+}

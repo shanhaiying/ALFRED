@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "def barhplot_plotly(df,x,y,xlabel,ylabel,title,filename):\n    data = [\n        go.Bar(\n            x=df[x],\n            y=df[y],\n            orientation='h'\n        )\n    ]\n\n    layout = go.Layout(autosize=False,\n                       title=title,\n                       xaxis=dict(title=xlabel),\n                       yaxis=dict(title=ylabel),\n                       margin=dict(l=100,pad=4)\n                      )\n    fig = go.Figure(data=data, layout=layout)\n    # iplot to show image in jupyter notebook\n    iplot(fig, filename=filename)\n\n# plot\nimport pandas as pd\n\ndf = pd.DataFrame({'x':[10,20,30],'y':[100,200,300]})\nx,y = 'x', 'y'\nxlabel, ylabel = 'x', 'y'\ntitle = 'plot'\nfilename = 'pandas-horizontal-bar.html'\nbarhplot_plotly(df,x,y,xlabel,ylabel,title,filename)",
+    "uid" : "C61F9A1F-D996-49BF-8990-41CF9E2B80C0",
+    "name" : "plot plotly barhplot",
+    "keyword" : "plot_barhplot_plotly"
+  }
+}

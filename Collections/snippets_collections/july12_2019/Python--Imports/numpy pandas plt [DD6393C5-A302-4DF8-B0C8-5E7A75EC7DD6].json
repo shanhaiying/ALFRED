@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "import numpy as np\nimport pandas as pd\nimport matplotlib.pyplot as plt",
+    "uid" : "DD6393C5-A302-4DF8-B0C8-5E7A75EC7DD6",
+    "name" : "numpy pandas plt",
+    "keyword" : "npdt"
+  }
+}

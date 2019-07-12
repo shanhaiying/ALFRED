@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "·",
+    "dontautoexpand" : true,
+    "uid" : "c2b800ff-381d-4ce3-b97d-2d3f164f1a5c",
+    "name" : "\\textperiodcentered",
+    "keyword" : ";\\textperiodcentered"
+  }
+}

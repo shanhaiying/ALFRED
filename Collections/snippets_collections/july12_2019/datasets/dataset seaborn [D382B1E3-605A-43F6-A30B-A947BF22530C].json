@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "import seaborn as sns\niris = sns.load_dataset('iris')\n\nprint(sns.get_dataset_names())\n\n'anscombe', 'attention', 'brain_networks', 'car_crashes', \n'diamonds', 'dots', 'exercise', 'flights', 'fmri', \n'gammas', 'iris', 'mpg', 'planets', 'tips', 'titanic'",
+    "uid" : "D382B1E3-605A-43F6-A30B-A947BF22530C",
+    "name" : "dataset seaborn",
+    "keyword" : "dataset_seaborn"
+  }
+}

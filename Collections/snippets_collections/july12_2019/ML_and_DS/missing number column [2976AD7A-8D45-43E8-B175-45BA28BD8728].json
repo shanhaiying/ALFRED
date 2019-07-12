@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "def missing_number_percent_column(df,column):\n  total = df[column].value_counts(dropna=False)\n  percent = df[column].value_counts(dropna=False,normalize=True).round(4) * 100\n  res = pd.concat([total, percent], axis = 1,keys= ['Total', 'Percent'])\n  return res",
+    "uid" : "2976AD7A-8D45-43E8-B175-45BA28BD8728",
+    "name" : "missing number column",
+    "keyword" : "missing_number_column"
+  }
+}

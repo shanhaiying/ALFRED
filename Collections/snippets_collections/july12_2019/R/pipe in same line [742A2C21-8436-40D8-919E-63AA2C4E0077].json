@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : " %>% head(2)",
+    "uid" : "742A2C21-8436-40D8-919E-63AA2C4E0077",
+    "name" : "pipe in same line",
+    "keyword" : "rh"
+  }
+}

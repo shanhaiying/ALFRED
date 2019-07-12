@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "\/*\nAuthor: Bhishan Poudel\nDate: {date}\nRef: \nPurpose:\n*\/\n#include <iostream>\n#include <vector>\n#include <string>\n\nusing namespace std;",
+    "uid" : "34D8C1CC-A862-4481-BF03-D7C99F0E6B54",
+    "name" : "C++ Header",
+    "keyword" : "chdr"
+  }
+}

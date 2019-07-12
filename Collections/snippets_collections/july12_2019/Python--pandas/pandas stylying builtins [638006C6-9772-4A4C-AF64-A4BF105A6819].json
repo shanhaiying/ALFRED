@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "# built-in stylers\n## max,min,null\ndf.style.highlight_max(subset=['Count'],color='yellow',axis=0) # subset = None, yellow is default\ndf.style.highlight_min() # yellow hightlight to all columns min values\ndf.style.highlight_null(null_color='red')",
+    "uid" : "638006C6-9772-4A4C-AF64-A4BF105A6819",
+    "name" : "pandas stylying builtins",
+    "keyword" : "pd_stylying_builtins"
+  }
+}

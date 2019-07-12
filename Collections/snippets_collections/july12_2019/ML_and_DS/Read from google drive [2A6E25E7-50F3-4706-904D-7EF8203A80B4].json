@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "import pandas as pd\nimport requests\nfrom io import StringIO\n\norig_url='https:\/\/drive.google.com\/file\/d\/0B6GhBwm5vaB2ekdlZW5WZnppb28\/view?usp=sharing'\n\nfile_id = orig_url.split('\/')[-2]\ndwn_url='https:\/\/drive.google.com\/uc?export=download&id=' + file_id\nurl = requests.get(dwn_url).text\ncsv_raw = StringIO(url)\ndf1 = pd.read_csv(csv_raw)\ndf1.head()",
+    "uid" : "2A6E25E7-50F3-4706-904D-7EF8203A80B4",
+    "name" : "Read from google drive",
+    "keyword" : "dataframe_from_google_drive"
+  }
+}

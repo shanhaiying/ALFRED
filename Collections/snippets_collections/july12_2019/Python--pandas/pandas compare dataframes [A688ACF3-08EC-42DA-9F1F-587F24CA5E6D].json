@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "def compare_dataframes(df1, df2):\n    \"\"\"Identify differences between two pandas DataFrames\"\"\"\n    assert (df1.columns == df2.columns).all(), \\\n        \"DataFrame column names are different\"\n    if any(df1.dtypes != df2.dtypes):\n        \"Data Types are different, trying to convert\"\n        df2 = df2.astype(df1.dtypes)\n    if df1.equals(df2):\n        return None\n    else:\n        # need to account for np.nan != np.nan returning True\n        diff_mask = (df1 != df2) & ~(df1.isnull() & df2.isnull())\n        ne_stacked = diff_mask.stack()\n        changed = ne_stacked[ne_stacked]\n        changed.index.names = ['id', 'col']\n        difference_locations = np.where(diff_mask)\n        changed_from = df1.values[difference_locations]\n        changed_to = df2.values[difference_locations]\n        return pd.DataFrame({'from': changed_from, 'to': changed_to},\n                            index=changed.index)",
+    "uid" : "A688ACF3-08EC-42DA-9F1F-587F24CA5E6D",
+    "name" : "pandas compare dataframes",
+    "keyword" : "pd_compare_dataframes"
+  }
+}

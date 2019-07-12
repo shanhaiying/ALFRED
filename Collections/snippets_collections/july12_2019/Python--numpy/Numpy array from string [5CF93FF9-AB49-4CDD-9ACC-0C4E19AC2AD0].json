@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "import pandas as pd\nimport numpy as np\n\ntry:\n    from StringIO import StringIO\nexcept ImportError:\n    from io import StringIO\n\narr = np.genfromtxt(StringIO(data), delimiter=' ', dtype=None,encoding=None)",
+    "uid" : "5CF93FF9-AB49-4CDD-9ACC-0C4E19AC2AD0",
+    "name" : "Numpy array from string",
+    "keyword" : "nparr_str"
+  }
+}

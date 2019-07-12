@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "import statsmodels.api as sm\ntitanic = sm.datasets.get_rdataset(\"titanic\",\"COUNT\").data",
+    "uid" : "C35BA45B-6D18-46A9-ACBF-5F69827375E3",
+    "name" : "dataset titanic sm",
+    "keyword" : "dataset_titanic"
+  }
+}

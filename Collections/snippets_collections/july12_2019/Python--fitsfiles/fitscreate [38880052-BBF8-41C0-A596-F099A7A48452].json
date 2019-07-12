@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "#!python\n# -*- coding: utf-8 -*-#\n\"\"\"\nCreate fitsfile.\n    \nAuthor : Bhishan Poudel\nDate    :  \"\"\"\n# Imports\nimport numpy as np\nfrom astropy.io import fits\n    \ndef create_fitsfile(outfile):\n    data = np.arange(1,21).reshape(4,5)\n    print(data)\n    \n    fits.writeto(outfile,data,clobber=True)\n    \ndef main():\n    \"\"\"Run main function.\"\"\"\n    outfile = 'a.fits'\n    create_fitsfile(outfile)\n    \nif __name__ == \"__main__\":\n    main()",
+    "uid" : "38880052-BBF8-41C0-A596-F099A7A48452",
+    "name" : "fitscreate",
+    "keyword" : "fitscreate"
+  }
+}

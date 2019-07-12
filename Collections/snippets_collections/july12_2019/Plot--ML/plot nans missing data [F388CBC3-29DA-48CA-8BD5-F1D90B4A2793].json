@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "def plot_missing_data(df):\n    df.isna().mean().mul(100).iloc[::-1].sort_values().plot(\n        kind='barh', figsize=(14,5), grid=True, \n        title='Percentage of missing values for each feature', color='#ff4500')\n    plt.xlabel('Percentage')\n    plt.ylabel('Feature')\n    plt.show()\n    \nplot_missing_data(df)\n\ndef missing_percent(df):\n    total = df.isnull().sum().sort_values(ascending = False)\n    percent = (df.isnull().sum()\/df.isnull().count()*100).sort_values(ascending = False)\n    missing  = pd.concat([total, percent], axis=1, keys=['Total', 'Percent'])\n    return missing\n\nmissing_percent(df)",
+    "uid" : "F388CBC3-29DA-48CA-8BD5-F1D90B4A2793",
+    "name" : "plot nans missing data",
+    "keyword" : "plot_nans"
+  }
+}

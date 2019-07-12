@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "pd.Series()",
+    "uid" : "7F2A1DA0-274B-4CBB-A9A0-0E93060563DD",
+    "name" : "pandas Series",
+    "keyword" : "pds"
+  }
+}

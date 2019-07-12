@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "!mpiexec -n 4 python ",
+    "uid" : "E98AD4CE-B0B5-4F91-B316-68F07B0EDC04",
+    "name" : "python mpiexec",
+    "keyword" : "!mp"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "def barhplot(df,x,y,figsize=(8,6), title=None):\n    '''\n    Example:\n    df = sns.load_dataset('iris')\n    x = 'species'\n    y = 'sepal_length'\n    '''\n    plt.figure(figsize=figsize)\n    ax = df.groupby(x)[y].mean().plot.barh(color='coral')\n    \n\n    for p in ax.patches:\n        x = p.get_width()*0.8\n        y = p.get_y()+ 0.2\n        text = '{:.2g}'.format(p.get_width())\n        ax.text(x, y,text,fontsize=15,color='indigo')\n    \n    if title:\n        plt.title(title)\n    plt.xticks(rotation=90)\n    plt.tight_layout()\n    plt.show()",
+    "uid" : "5999119F-D0F8-4BA6-AED1-C70A22364899",
+    "name" : "plot barh pandas",
+    "keyword" : "barhplot_pandas"
+  }
+}

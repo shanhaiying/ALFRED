@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "df1 = df[[\"state\",\"child\",\"teen\", \"adult\"]].groupby(df[\"state\"]).sum()\ndf1.plot(kind='line',\n         xticks=range(51),\n         rot=90,\n         marker='o',\n         title='',\n         style= {'child':'-', 'teen':'--','adult':'-.'},\n         figsize=(12,8));",
+    "uid" : "38CFE678-D6CA-4491-922C-C9425D656D07",
+    "name" : "plot line pandas",
+    "keyword" : "plot_pd_line"
+  }
+}

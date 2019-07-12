@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "# highlight certain columns\n# dictionary of column colors\ncoldict = {'c0':'brown', 'c1':'brown','c2':'green','c3':'green'}\n\ndef highlight_cols(s, coldict):\n    if s.name in coldict.keys():\n        return ['background-color: {}'.format(coldict[s.name])] * len(s)\n    return [''] * len(s)\n\ndf.style.apply(highlight_cols, coldict=coldict)",
+    "uid" : "48C180F0-4411-4D79-BB4A-8C09614804B2",
+    "name" : "pandas stylying 3",
+    "keyword" : "pd_stylying3"
+  }
+}

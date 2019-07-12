@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "#!\/usr\/bin\/env Rscript\n#\n# Date: {date}\n# Ref: \n# Topic: \n#==========================================",
+    "uid" : "B6216BF6-C54E-457A-81EE-A501CC506C8F",
+    "name" : "R shebang",
+    "keyword" : "rs"
+  }
+}

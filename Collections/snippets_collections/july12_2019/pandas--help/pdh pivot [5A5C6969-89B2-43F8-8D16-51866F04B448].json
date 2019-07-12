@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "# data: https:\/\/raw.githubusercontent.com\/PacktPublishing\/Pandas-Cookbook\/master\/data\/weight_loss.csv\ndef find_perc_loss(s):\n    return (s - s.iloc[0]) \/ s.iloc[0]\n    \n# transform data, it will reset each month and gives same number of rows as original\npcnt_loss = weight_loss.groupby(['Name','Month'])['Weight'].transform(find_perc_loss)\n\n# new column\nweight_loss['Perc Weight Loss'] = pcnt_loss.round(3)\n\n# get week4 to find winner\nweek4 = weight_loss.query('Week == \"Week 4\"')\n\n# make month chronological rather than alphabetical\nweek4['Month'] = pd.Categorical(week4['Month'],\n                                categories=week4['Month'].unique(),\n                                ordered=True)\n                                \n# find winner\nwinner = week4.pivot(index='Month', columns='Name',\n                    values='Perc Weight Loss')\n\n# winner column\nwinner['Winner'] = np.where(winner['Amy'] < winner['Bob'], 'Amy', 'Bob')\n\n# sytle hightlight\nwinner.style.highlight_min(axis=1)",
+    "uid" : "5A5C6969-89B2-43F8-8D16-51866F04B448",
+    "name" : "pdh pivot",
+    "keyword" : "pdh-pivot"
+  }
+}

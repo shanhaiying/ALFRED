@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "Go to this {cursor} after some time. And this is second {cursor} just near to me.",
+    "uid" : "B77C7B11-69A4-4238-897C-42719CE02DE8",
+    "name" : "mycursor",
+    "keyword" : "mycursor"
+  }
+}

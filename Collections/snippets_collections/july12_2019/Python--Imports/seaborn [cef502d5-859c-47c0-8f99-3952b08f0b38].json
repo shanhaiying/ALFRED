@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "import seaborn as sns\nsns.set(color_codes=True)",
+    "uid" : "cef502d5-859c-47c0-8f99-3952b08f0b38",
+    "name" : "seaborn",
+    "keyword" : "sns"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "from mpi4py import MPI\nimport numpy as np\n\ncomm = MPI.COMM_WORLD\nrank = comm.Get_rank()\nsize = comm.Get_size()",
+    "uid" : "5103C641-A436-49D4-A947-A5F7B739D807",
+    "name" : "python mpi",
+    "keyword" : "mpi"
+  }
+}

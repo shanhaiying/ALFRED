@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "def barplot(df,figsize=(12,8), palette=None):\n    \"\"\"\n    Example: \n    df1 = df['c0'].value_counts().nlargest(10)\n    \"\"\"\n    \n    palettes = ['Accent','Accent_r', 'cool_r', 'CMRmap_r','Dark2','Dark2_r',\n            'gist_heat','gist_heat_r','gist_stern','gist_stern_r',\n            'icefire','icefire_r','inferno','inferno_r','magma',\n            'magma_r','mako','mako_r','plasma','plasma_r','PuRd',\n            'PuRd_r','rainbow','rainbow_r','RdPu','RdPu_r','RdYlGn',\n            'RdYlGn_r','Reds','Reds_r','rocket','rocket_r','spring_r',\n            'summer','twilight','twilight_r','viridis','viridis_r']\n\n\n    if palette == None:\n        palette = palettes[np.random.randint(len(palettes))]\n        \n    plt.figure(figsize=figsize)\n    ax = sns.barplot(x=df1.index, y=df1.values, alpha=0.8,palette=palette)\n    plt.ylabel('', fontsize=15)\n    plt.xlabel('', fontsize=12,rotation=90)\n\n    # total counts\n    rects = ax.patches\n    labels = df1.values\n    for rect, label in zip(rects, labels):\n        height = rect.get_height()\n        ax.text(rect.get_x() + rect.get_width()\/2, \n                height* 0.9, label, ha='center', va='bottom')\n        \n    loc, labels = plt.xticks()\n    ax.set_xticklabels(labels, rotation=45)\n    plt.show()",
+    "uid" : "2C5865C6-D556-476F-ABD3-BF2D098429BD",
+    "name" : "plot bar seaborn value counts",
+    "keyword" : "plot_bar_sns_value_counts"
+  }
+}

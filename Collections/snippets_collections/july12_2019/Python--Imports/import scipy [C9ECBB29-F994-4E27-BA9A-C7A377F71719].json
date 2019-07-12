@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "import scipy # scipy.stats.norm.ppf etc",
+    "uid" : "C9ECBB29-F994-4E27-BA9A-C7A377F71719",
+    "name" : "import scipy",
+    "keyword" : "sp"
+  }
+}

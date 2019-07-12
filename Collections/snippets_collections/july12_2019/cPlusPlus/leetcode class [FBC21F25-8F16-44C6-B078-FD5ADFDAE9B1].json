@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "class Solution{\npublic:\n    {cursor}\n\n};",
+    "uid" : "FBC21F25-8F16-44C6-B078-FD5ADFDAE9B1",
+    "name" : "leetcode class",
+    "keyword" : "clsl"
+  }
+}

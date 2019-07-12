@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "def violinplot(df,x,y):\n    sns.violinplot(x=x,y=y,data=df)\n    plt.show()",
+    "uid" : "4DEE475B-BD1C-40BF-B44F-117AC65FEEC8",
+    "name" : "plot violinplot seaborn",
+    "keyword" : "violinplot"
+  }
+}

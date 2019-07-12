@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "import seaborn as sns\n\n# count, factor, dist, strip, swarm, lm --plots\nsns.countplot(x='Survived', data=df_train);\nsns.factorplot(x='Survived', col='Sex', kind='count', data=df_train);\nsns.distplot(df_train.Fare, kde=False);\nsns.stripplot(x='Survived', y='Fare', data=df_train, alpha=0.3, jitter=True);\nsns.swarmplot(x='Survived', y='Fare', data=df_train);\nsns.lmplot(x='Age', y='Fare', hue='Survived', data=df_train, fit_reg=False, scatter_kws={'alpha':0.5});\ndf_train.groupby('Survived').Fare.hist(alpha=0.6);",
+    "uid" : "8962A1C9-5EC2-4EE3-94C9-B862E20F2024",
+    "name" : "plot seaborn",
+    "keyword" : "sns_plots"
+  }
+}

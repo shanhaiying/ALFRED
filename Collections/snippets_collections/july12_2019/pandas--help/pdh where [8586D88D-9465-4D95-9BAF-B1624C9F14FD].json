@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "df.where(mask, -df) # mask = df % 3 == 0  # divisibles of 3 are positive (eg. 0, 3, 6, 9)\ndf.where(lambda x: x > 4, lambda x: x + 10) # if value is larger than 4, add 10 to it.",
+    "uid" : "8586D88D-9465-4D95-9BAF-B1624C9F14FD",
+    "name" : "pdh where",
+    "keyword" : "pdh-where"
+  }
+}

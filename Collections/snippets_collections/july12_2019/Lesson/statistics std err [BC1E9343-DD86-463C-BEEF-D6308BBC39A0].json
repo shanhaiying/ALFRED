@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "1. Dependent Sample\ne.g drug test on sampe samples before and after\n\nxbar = df['diff'].mean()\ns = df['diff'].std()\nn = df.shape[0]\nstd_err = s\/np.sqrt(n)\n\nmu0 = 0.0\nT_score = (xbar - mu0) \/ std_err\n\nn = 10\nnsided = 1\np_value = scipy.stats.t.sf(np.abs(T_score), n-1)*nsided # sf is survival function\n\nREJECT IF p-value < significance.\n\n\n\n2.  independent sampls, known variance\n\nSE = sqrt(sigma1**2\/n1 + sigma2**2\/n2)\nZ = xbar - mu0 \n      ------------\n      sqrt(sigma1**2\/n1 + sigma2**2\/n2)\n\n\n3. independent samples, unknown variances not equal\n\nsp is pooled sample standard deviation\nsp**2 is pooled sample variance\n\nsp**2 =  (nx-1) sx**2 + (ny-1) sy**2\n               ----------------------------\n               nx + ny -2\n\n\ne.g nx,ny = 10,8\neg apple prices in NY and LA.",
+    "uid" : "BC1E9343-DD86-463C-BEEF-D6308BBC39A0",
+    "name" : "statistics std err",
+    "keyword" : "std_err"
+  }
+}

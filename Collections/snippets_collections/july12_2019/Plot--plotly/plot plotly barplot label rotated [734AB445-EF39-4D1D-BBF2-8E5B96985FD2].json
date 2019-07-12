@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "trace0 = go.Bar(\n    x=['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',\n       'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],\n    y=[20, 14, 25, 16, 18, 22, 19, 15, 12, 16, 14, 17],\n    name='Primary Product',\n    marker=dict(\n        color='rgb(49,130,189)'\n    )\n)\ntrace1 = go.Bar(\n    x=['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',\n       'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],\n    y=[19, 14, 22, 14, 16, 19, 15, 14, 10, 12, 12, 16],\n    name='Secondary Product',\n    marker=dict(\n        color='rgb(204,204,204)',\n    )\n)\n\ndata = [trace0, trace1]\nlayout = go.Layout(\n    xaxis=dict(tickangle=-45),\n    barmode='group',\n)\n\nfig = go.Figure(data=data, layout=layout)\niplot(fig, filename='angled-text-bar')",
+    "uid" : "734AB445-EF39-4D1D-BBF2-8E5B96985FD2",
+    "name" : "plot plotly barplot label rotated",
+    "keyword" : "plot_plotly_barplot_label_rotated"
+  }
+}

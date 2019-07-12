@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "num=0; for i in *; do mv \"$i\" \"$(printf 'hello_%04d' $num).${i#*.}\"; ((num++)); done",
+    "uid" : "1EC4F842-C621-40EC-A338-2F0202D7C6F7",
+    "name" : "bash rename_photos",
+    "keyword" : "rename_photos"
+  }
+}

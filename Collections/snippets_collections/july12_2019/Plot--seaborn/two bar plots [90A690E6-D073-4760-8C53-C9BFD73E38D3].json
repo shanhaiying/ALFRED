@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "def two_barplots(df,x1,x2,y):\n    df1 = df.groupby(y)[x1].sum().reset_index().sort_values(by=x1,ascending=False)\n    df2 = df.groupby(y)[x2].sum().reset_index().sort_values(by=x2,ascending=False)\n    NUM = 10\n\n    fig = plt.figure(figsize=(12,10))\n\n    # first plot\n    plt.subplot(121)\n    ax = sns.barplot(x=x1, y = y,data=df1[:NUM],\n                     palette=\"Greens_r\",linewidth=1,edgecolor = \"k\"*NUM)\n    plt.ylabel(y,fontsize=15)\n    plt.xlabel(x1,fontsize=15)\n    plt.title(x1)\n    for i,j in enumerate(df1[x1][:NUM]):\n        ax.text(.9,i,j,weight=\"bold\",fontsize=15)\n    plt.grid(True,alpha= .3)\n\n\n    # second plot\n    plt.subplot(122)\n    ax = sns.barplot(x=x2,y=y,data=df2[:NUM],\n                     palette=\"Blues_r\",linewidth=1,edgecolor = \"k\"*NUM)\n    plt.ylabel(\"\")\n    plt.xlabel(x2,fontsize=15)\n    plt.subplots_adjust(wspace=.3)\n    plt.title(x2)\n    for i,j in enumerate(df2[x2][:NUM]):\n        ax.text(.9,i,j,weight=\"bold\",fontsize=15)\n    plt.grid(True,alpha= .3)\n\n    fig.set_facecolor(\"w\");",
+    "uid" : "90A690E6-D073-4760-8C53-C9BFD73E38D3",
+    "name" : "two bar plots",
+    "keyword" : "two barh plots"
+  }
+}

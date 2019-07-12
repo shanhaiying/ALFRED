@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "def multiple_lineplots_plotly(df):\n    data = []\n    for col in df.columns:\n        trace = go.Scatter(\n            x=[1,2],\n            y=df.loc[:,col],\n            mode = 'lines+markers',\n            name = col,\n            line = dict(width=4),\n            marker=dict(size=12)\n        )\n        data.append(trace)\n\n\n    layout= go.Layout(\n        title= '',\n        hovermode= 'closest',\n        autosize=False,\n        width=800,\n        height=800,\n        showlegend= True,\n        xaxis= dict(title= 'x',ticklen= 5,zeroline= False,gridwidth= 2,\n                    tickvals=[1,2]),\n        yaxis=dict(title= 'y',ticklen= 5,gridwidth= 2),\n        annotations=[ dict(x=1,y=df.loc[1,df.columns[-1]],\n                           text=df.columns[-1],ax=10,ay=-20)]\n        \n    )\n\n    fig= go.Figure(data=data, layout=layout)\n    return iplot(fig,filename='myfile.html')\n\nimport seaborn as sns\nsns.set(color_codes=True)\n\ndf = sns.load_dataset('titanic')\ndf.head()\n\nmultiple_lineplots_plotly(df)",
+    "uid" : "5F64AFFB-3868-49CF-9B9F-8A862166A457",
+    "name" : "plot plotly multiple scatter plots",
+    "keyword" : "plot_plotly_multiple_scatter_plots"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "import pprint\n\npprint.pprint(x, width=-1)",
+    "uid" : "E604011D-8B85-46EA-9486-0676CE11CF8A",
+    "name" : "pprint",
+    "keyword" : "pprint"
+  }
+}

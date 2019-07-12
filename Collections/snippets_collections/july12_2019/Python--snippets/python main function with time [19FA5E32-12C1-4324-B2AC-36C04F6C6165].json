@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "def main():\n    \"\"\"Run main function.\"\"\"\n    \n    \nif __name__ == \"__main__\":\n        import time, os\n    \n        # Beginning time\n        program_begin_time = time.time()\n        begin_ctime        = time.ctime()\n    \n        #  Run the main program\n        main()\n    \n        # Print the time taken\n        program_end_time = time.time()\n        end_ctime        = time.ctime()\n        seconds          = program_end_time - program_begin_time\n        m, s             = divmod(seconds, 60)\n        h, m             = divmod(m, 60)\n        d, h             = divmod(h, 24)\n        print(\"\\n\\nBegin time: \", begin_ctime)\n        print(\"End   time: \", end_ctime, \"\\n\")\n        print(\"Time taken: {0: .0f} days, {1: .0f} hours, \\\n              {2: .0f} minutes, {3: f} seconds.\".format(d, h, m, s))\n        print(\"End of Program: {}\".format(os.path.basename(__file__)))\n        print(\"\\n\")",
+    "uid" : "19FA5E32-12C1-4324-B2AC-36C04F6C6165",
+    "name" : "python main function with time",
+    "keyword" : "maint"
+  }
+}

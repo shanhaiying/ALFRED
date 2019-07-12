@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "df.head().style.set_precision(2)",
+    "uid" : "07514AB2-0212-432F-BA5E-4F71801637E5",
+    "name" : "dataframe header 2 precision",
+    "keyword" : "dfh"
+  }
+}

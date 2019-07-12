@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "from astropy.io import fits",
+    "uid" : "2bfd4a3a-4291-42fb-b022-e2ad534e7460",
+    "name" : "astropy fits",
+    "keyword" : "fits"
+  }
+}

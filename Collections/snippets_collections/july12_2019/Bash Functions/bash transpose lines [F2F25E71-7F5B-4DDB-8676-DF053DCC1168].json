@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "# for 3 column file called \"abc\"\n# \n# given file abc\na:b:c\nhello:hi:there\ni:am:bhishan\n\n# method rs (reshape array)\n# -c':' is column separator, -C is output column separator, -T is transpose\ncat abc | rs -c':' -C' ' -T\n\n# this method is slow (for fast method we need to use awk and long code)\nfor f in 1 2 3 ; do cut -d ':' -f $f abc | xargs echo ; done\n\n# python method\npython -c \"import sys; print('\\n'.join(' '.join(c) for c in zip(*(l.strip().split(':') for l in sys.stdin.readlines() if l.strip()))))\" < abc > output; cat output",
+    "uid" : "F2F25E71-7F5B-4DDB-8676-DF053DCC1168",
+    "name" : "bash transpose lines",
+    "keyword" : "bf2"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "import matplotlib\nimport matplotlib.pyplot as plt\nplt.rcParams[\"figure.figsize\"] = [10, 8]\nplt.style.use('fivethirtyeight')\n%matplotlib inline",
+    "uid" : "E4B17E51-815D-4280-9FF3-7A9B9AC6F32C",
+    "name" : "matplotlib",
+    "keyword" : "plt"
+  }
+}

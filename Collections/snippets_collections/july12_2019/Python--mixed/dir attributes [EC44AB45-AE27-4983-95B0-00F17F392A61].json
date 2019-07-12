@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "_ = [i for i in dir(list) if i[0].islower()]\npd.DataFrame(np.array_split(_,8)).T.fillna('')",
+    "uid" : "EC44AB45-AE27-4983-95B0-00F17F392A61",
+    "name" : "dir attributes",
+    "keyword" : "dir"
+  }
+}

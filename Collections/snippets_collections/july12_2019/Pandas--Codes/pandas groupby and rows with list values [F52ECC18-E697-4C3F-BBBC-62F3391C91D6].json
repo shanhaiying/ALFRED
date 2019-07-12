@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "# groupby and rows with list values\ndf = pd.DataFrame({'id':[9,4,1,1,1,2,2,2,2,3,4],\n                   'value':[90,1,1,2,3,1,2,3,4,1,1]})\n\narr = [[n, g.nlargest(2).tolist()] for n, g in df.groupby('id')['value']]\ndct = dict([n, g.nlargest(2).tolist()] for n, g in df.groupby('id')['value'])\npd.DataFrame(arr)",
+    "uid" : "F52ECC18-E697-4C3F-BBBC-62F3391C91D6",
+    "name" : "pandas groupby and rows with list values",
+    "keyword" : "pd_groupby_and_rows_with_list_values"
+  }
+}

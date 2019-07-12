@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "conda install -n dataSc -c conda-forge numpy",
+    "uid" : "D2250B2B-0ED3-4F9F-8C5F-22D729B139D1",
+    "name" : "Conda install",
+    "keyword" : "condains"
+  }
+}

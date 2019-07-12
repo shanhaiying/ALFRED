@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "# concatenating lists\nimport itertools\ns = pd.Series(list(itertools.chain.from_iterable(movie['production_countries']))",
+    "uid" : "195F6240-1730-42AD-A53D-6F771428ADA5",
+    "name" : "py speed 1",
+    "keyword" : "py_speed1"
+  }
+}

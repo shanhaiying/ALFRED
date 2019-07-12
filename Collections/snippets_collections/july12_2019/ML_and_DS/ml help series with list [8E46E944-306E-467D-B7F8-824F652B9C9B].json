@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "df1 = (pd.DataFrame(df['col'].tolist())\n             .stack()\n             .reset_index(drop=True)\n             .to_frame(''))\n\ndf1  = (pd.DataFrame(movie['production_countries'].tolist())\n             .stack()\n             .reset_index(drop=True)\n             .value_counts()\n             .reset_index()\n             .rename(columns={'index':'country', 0:'num_movies'})\n            )",
+    "uid" : "8E46E944-306E-467D-B7F8-824F652B9C9B",
+    "name" : "ml help series with list",
+    "keyword" : "series_with_list"
+  }
+}

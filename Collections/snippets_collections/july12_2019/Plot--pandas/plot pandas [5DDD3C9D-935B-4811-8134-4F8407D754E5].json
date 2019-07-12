@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "df.set_index('First_col').T.plot(kind='bar', stacked=True,figsize=(16,8))\n\n\n# Here df has column stop_time and drugs_related_stop\n# stop_time = 05:10   and drugs_related_stop = False\ndf['stop_time'] = pd.to_datetime(df.stop_datetime, format=\"%H:%S\")\ndf.groupby(df.stop_time.dt.hour).drugs_related_stop.sum().plot(kind='bar')\n\n# labels\nax.set(xlabel='Purchase Month', ylabel='Item Cogs',title='Monthly Item COGS')",
+    "uid" : "5DDD3C9D-935B-4811-8134-4F8407D754E5",
+    "name" : "plot pandas",
+    "keyword" : "pd_plot"
+  }
+}

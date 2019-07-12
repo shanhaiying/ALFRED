@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "%-----------------------------------------------------\n%  Frame : \n%-----------------------------------------------------\n%\n\\begin{frame}{}\n  \\begin{figure}[ht!]\n  \\includegraphics[height=0.5\\textwidth]{}\n  \\caption{}\n  \\label{[fig:]}\n\\end{figure}\n\\end{frame}\n",
+    "uid" : "db79d567-1d3c-4caa-a1bf-efd696b064fc",
+    "name" : "beamer frame fig",
+    "keyword" : "bmfig"
+  }
+}

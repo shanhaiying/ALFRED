@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "# p-value\nnsided = 1\np_value = scipy.stats.norm.sf(np.abs(Z))*nsided # sf is survival function\nround(p_value,2)",
+    "uid" : "DF4A47BE-4C51-4B2E-B82E-03738770167C",
+    "name" : "p value norm",
+    "keyword" : "p_value norm"
+  }
+}

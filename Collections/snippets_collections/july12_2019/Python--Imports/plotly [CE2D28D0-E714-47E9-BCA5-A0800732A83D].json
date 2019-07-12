@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "import plotly\nimport plotly.offline as py\nimport plotly.plotly as pyp\nimport plotly.graph_objs as go\nimport plotly.figure_factory as ff\nfrom plotly import tools\nfrom plotly.offline import plot, iplot, init_notebook_mode\ninit_notebook_mode(connected=False)",
+    "uid" : "CE2D28D0-E714-47E9-BCA5-A0800732A83D",
+    "name" : "plotly",
+    "keyword" : "plotly"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "df.style.apply(lambda x: ['background: lightblue' if x.name == 0 else '' for i in x])",
+    "uid" : "50CB79D4-0A15-4361-94F3-8C1FDD03ECA3",
+    "name" : "pandas stylying column",
+    "keyword" : "pd_stylying_column"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "# create counters\ncnt = collections.Counter(['a', 'b', 'c', 'a', 'b', 'b'])\ncnt =  collections.Counter({'a':2, 'b':3, 'c':1})\ncnt =  collections.Counter(a=2, b=3, c=1)\n\nprint(cnt) # Counter({'b': 3, 'a': 2, 'c': 1})\n\n# add values\ncnt.update(a=20)  # a becomes 2 + 20 =22\n\n# most frequent\ncnt.most_common(2)  # it gives list\n\n# arithmetics and logical operations\nc1 + c2 # Combined counts  #  c1.add(c2)\nc1 - c2 # subtraction  # c1.subtract(c2)\nc1 & c2 # intersections\nc1 | c2 # union\n\n# common works\nsum(c.values())            # total of all counts\nc.clear()                       # reset all counts\nlist(c)                           # list unique elements\nset(c)                           # convert to a set\ndict(c)                          # convert to a regular dictionary\nc.items()                      # convert to a list of (elem, cnt) pairs\nCounter(dict(list_of_pairs))    # convert from a list of (elem, cnt) pairs\nc.most_common()[:-n-1:-1]   # n least common elements\nc += Counter()                      # remove zero and negative counts",
+    "uid" : "37903E4E-446F-4803-88C8-F6B36782B25C",
+    "name" : "collections Counter",
+    "keyword" : "collections_Counter"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "print('  =',  {cursor})",
+    "uid" : "BC7E7BA2-1753-4FE3-9D3D-1EDEFC40B922",
+    "name" : "print",
+    "keyword" : "prr"
+  }
+}

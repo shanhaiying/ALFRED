@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "from collections import defaultdict\n\n#-------------------------------------------------\n# creating dd\nd_int = defaultdict(int, a=10, b=12, c=13)\nkwargs = {'a':10,'b':12,'c':13}\nd_int = defaultdict(int, **kwargs)  # d_int['a'] gives 10\n\n#-------------------------------------------------\n# example\nsomedict = {}\nprint(somedict[3]) # KeyError\n\nsomeddict = defaultdict(int)\nprint(someddict[3]) # print int(), thus 0\n\n#-------------------------------------------------\n# using default value\ndef default_factory():\n    return 'default value'\n\nd = collections.defaultdict(default_factory, foo=10)\nd['bar'] # gives default value\nd.default_factory = lambda: 1  # changes default value \n\n#-------------------------------------------------\ns = [('yellow', 1), ('blue', 2), ('yellow', 3), ('blue', 4), ('red', 1)]\nd = defaultdict(list)\nfor k, v in s:\n    d[k].append(v)\n\nd.items()  # ==> [('blue', [2, 4]), ('red', [1]), ('yellow', [1, 3])]",
+    "uid" : "9264CD1F-4AAA-4A3D-B534-B2E397F1680C",
+    "name" : "collections defaultdict",
+    "keyword" : "collections_defaultdict"
+  }
+}

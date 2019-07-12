@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "import gspread\nfrom oauth2client.service_account import ServiceAccountCredentials\nimport os\nimport glob\n\n# NOTE: First share the required spreadsheets to gspread service email.\njson_dir = os.path.expanduser('~') + '\/bin\/'\ngspread_json = glob.glob(json_dir + 'gspread*.json')[0]\nscope = ['https:\/\/spreadsheets.google.com\/feeds',\n         'https:\/\/www.googleapis.com\/auth\/drive']\ncredentials = ServiceAccountCredentials.from_json_keyfile_name(gspread_json, scope)\ngc = gspread.authorize(credentials)\n\n# read sheet\nwks = gc.open(\"keep_this\").sheet1\nvals = wks.get_all_values()",
+    "uid" : "684A4CB3-181C-4457-96F1-95FCE9EDD68E",
+    "name" : "gspread template",
+    "keyword" : "gspread_template"
+  }
+}

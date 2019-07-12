@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "from IPython.core.display import HTML\n\ndef mdisplay(table_list):\n    return HTML(\n        '<table><tr style=\"background-color:white;\">' + \n        ''.join(['<td>' + table._repr_html_() + '<\/td>' for table in table_list]) +\n        '<\/tr><\/table>'\n    )\n    \nmdisplay([df1,df2])",
+    "uid" : "0C60F538-3B94-4BA6-A290-15F3F6A445C0",
+    "name" : "jupyter multi table display mdisplay",
+    "keyword" : "jnb_mdisplay"
+  }
+}

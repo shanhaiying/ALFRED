@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "pd.DataFrame({cursor})",
+    "uid" : "AEF6977F-9B8D-4887-8700-21B458F47B05",
+    "name" : "pandas dataframe",
+    "keyword" : "pdf"
+  }
+}

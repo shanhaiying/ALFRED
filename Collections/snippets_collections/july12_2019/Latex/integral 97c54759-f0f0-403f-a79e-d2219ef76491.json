@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "\\int_{\\lambda_{0}}^{\\lambda_{20}}",
+    "uid" : "97c54759-f0f0-403f-a79e-d2219ef76491",
+    "name" : "integral",
+    "keyword" : "int"
+  }
+}

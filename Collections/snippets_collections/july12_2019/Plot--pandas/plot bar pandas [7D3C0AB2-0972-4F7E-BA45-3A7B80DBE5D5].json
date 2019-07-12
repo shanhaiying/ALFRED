@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "def plot_bar_pd(df1,x,y,agg):\n    \"\"\"\n    Examples:\n\n    df1 = sns.load_dataset('titanic')\n    df1 = sns.load_dataset('titanic')\n    plot_bar_pd(df1,'deck','fare','mean')\n\n    \"\"\"\n    ax = df1.groupby(x)[y].agg(agg).sort_values(ascending=False).plot.bar()\n    ax.set_ylabel(y)\n    for p in ax.patches:\n        ax.annotate(np.round(p.get_height(), decimals=2), \n                (p.get_x()+p.get_width()\/2.,p.get_height()), \n                ha='center', \n                va='center', \n                xytext=(0, 10), \n                rotation=30,\n                textcoords='offset points')\n        \n",
+    "uid" : "7D3C0AB2-0972-4F7E-BA45-3A7B80DBE5D5",
+    "name" : "plot bar pandas",
+    "keyword" : "plot_bar_pandas"
+  }
+}

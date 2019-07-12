@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "# sql\nq = \"\"\"\n{cursor}\n\"\"\"\npd.read_sql_query(q,con)",
+    "uid" : "62B35D17-5B0E-48EF-B0FF-6A6EB510D9C1",
+    "name" : "pandas read_sql_query",
+    "keyword" : "sl"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "os.path.join(os.path.expanduser('~'), 'Dropbox', 'dmstack')",
+    "uid" : "eace2f43-04a2-4687-8c71-0a9940a6ad18",
+    "name" : "os path join",
+    "keyword" : "pathjoin"
+  }
+}

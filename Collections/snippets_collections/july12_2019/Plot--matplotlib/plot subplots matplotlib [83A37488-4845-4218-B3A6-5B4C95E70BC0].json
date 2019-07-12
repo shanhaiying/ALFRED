@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "import numpy as np\nimport matplotlib.pyplot as plt\nfrom numpy.random import random\n\nt = np.linspace(0, 1, 101)\n\nplt.figure()\nplt.subplot(2, 2, 1); plt.hist(random(20))\nplt.subplot(2, 2, 2); plt.plot(t, t**2, t, t**3 - t)\nplt.subplot(2, 2, 3); plt.plot(random(20), random(20), 'r*')\nplt.subplot(2, 2, 4); plt.plot(t*np.cos(10*t), t*np.sin(10*t))\nplt.show()",
+    "uid" : "83A37488-4845-4218-B3A6-5B4C95E70BC0",
+    "name" : "plot subplots matplotlib",
+    "keyword" : "subplot"
+  }
+}

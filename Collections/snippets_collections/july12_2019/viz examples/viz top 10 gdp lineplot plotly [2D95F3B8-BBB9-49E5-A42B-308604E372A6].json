@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "import plotly.plotly as py\nimport plotly.graph_objs as go\nimport plotly.figure_factory as ff\nfrom plotly.offline import iplot, init_notebook_mode, plot\ninit_notebook_mode(connected=True)\n\ndef muliple_lineplots_plotly(df1):\n    data = []\n    for col in df1.columns:\n        trace = go.Scatter(\n            x=[2014,2015,2016,2017],\n            y=df1.loc[:,col],\n            mode = 'lines+markers',\n            name = col,\n            line = dict(width=4),\n            marker=dict(size=12)\n        )\n        data.append(trace)\n\n\n    layout= go.Layout(\n        title= 'Top 10 GDP countries',\n        hovermode= 'closest',\n        autosize=False,\n        width=800,\n        height=800,\n        xaxis= dict(\n            title= 'Year',\n            ticklen= 5,\n            zeroline= False,\n            gridwidth= 2,\n            tickvals=[2014,2015,2016,2017]\n        ),\n        yaxis=dict(\n            title= 'GDP',\n            ticklen= 5,\n            gridwidth= 2,\n        ),\n        showlegend= True\n    )\n\n    fig= go.Figure(data=data, layout=layout)\n    return plot(fig,filename='myfile.html')\n\n\ndf1 = (gdp\n     .drop('country_code',1)\n     .query(\"\"\" year in [2014,2015,2016,2017] \"\"\")\n     .set_index('country_name')\n     .groupby('year')['value']\n     .nlargest(10)\n     .unstack()\n)\n\nmuliple_lineplots_plotly(df1)",
+    "uid" : "2D95F3B8-BBB9-49E5-A42B-308604E372A6",
+    "name" : "viz top 10 gdp lineplot plotly",
+    "keyword" : "viz_top10_gdp_lineplot_plotly"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "from scipy import stats\ndf[(np.abs(stats.zscore(df)) < 3).all(axis=1)] # all means for each row, all columns outliers",
+    "uid" : "BF63AA78-CA27-4B91-8924-38427E6A7D08",
+    "name" : "ds outliers zscore",
+    "keyword" : "ds_outliers_zscore"
+  }
+}

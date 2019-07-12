@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "def extract_params(ifile,colnames,params,hdrs,odir):\n    \"\"\"Extract DMstack parameters x y e1 and e2\n    \n    params =\n    base_NaiveCentroid_x\n    base_NaiveCentroid_y\n    ext_shapeHSM_HsmShapeRegauss_e1\n    ext_shapeHSM_HsmShapeRegauss_e2\n    ext_shapeHSM_HsmShapeRegauss_sigma\n\n\n    hdrs = ['x','y','e1','e2','sigma']\n    \n    All the headers are numeric and we coerce them to be numeric.\n    Any nan values row is excluded.\n    \n    NOTE: The values are separated with delimiter comma.\n    When using names=colnames we need to use header=None.\n\n    \"\"\"\n    df = pd.read_csv(ifile, sep=\",\", comment='#', header=None, names = colnames) \n    df = df[params]\n    df.columns = hdrs\n    df = df.copy() # avoid SettingWithCopyWarning\n    \n    # make all headers numeric\n    for h in hdrs:\n        df[h] = pd.to_numeric(df[h],errors='coerce')\n        \n    # remove nans\n    df = df.dropna(how='any')\n    \n    ofile = os.path.join(odir, os.path.basename(ifile))\n    df2.to_csv(ofile,index=False,sep='\\t')\n    return df",
+    "uid" : "64D5B7DE-9D33-4262-854F-288F19C8BDE3",
+    "name" : "rsh extract param names",
+    "keyword" : "extract_param_names"
+  }
+}

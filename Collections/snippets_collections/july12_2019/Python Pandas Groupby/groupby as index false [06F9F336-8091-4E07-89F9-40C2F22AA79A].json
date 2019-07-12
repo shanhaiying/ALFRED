@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "groupby(['{cursor}'], as_index=False)['']",
+    "uid" : "06F9F336-8091-4E07-89F9-40C2F22AA79A",
+    "name" : "groupby as index false",
+    "keyword" : "grp"
+  }
+}

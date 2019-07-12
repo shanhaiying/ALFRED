@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "df.style\\\n  .applymap(color_negative_red)\\\n  .apply(highlight_max)\\\n  .set_precision(2)",
+    "uid" : "708E712C-383C-41AA-A304-8D8028BF4A89",
+    "name" : "pandas stylying 2",
+    "keyword" : "pd_stylying2"
+  }
+}

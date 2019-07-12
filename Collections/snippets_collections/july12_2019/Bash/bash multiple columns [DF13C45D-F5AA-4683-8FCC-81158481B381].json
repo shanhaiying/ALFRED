@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "# using paste\npaste - - < a.txt\npaste - - -d, < a.txt # delimiter comma, default is tab\n\n# using pr (paginate or columnate command)\npr -3 -s -t  one_column_text.txt # -s avoid column truncation, -t avoid title header\n                                 # -w 100 fixed column width of 100 chars",
+    "uid" : "DF13C45D-F5AA-4683-8FCC-81158481B381",
+    "name" : "bash multiple columns",
+    "keyword" : "multi_cols"
+  }
+}

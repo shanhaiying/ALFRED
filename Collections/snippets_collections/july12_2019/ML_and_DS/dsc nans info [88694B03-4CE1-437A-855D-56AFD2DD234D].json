@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "def nans_info(df):\n    return pd.DataFrame({\n        'dtype': df.dtypes,\n        'NaNs': df.isnull().sum(),\n        'NaNs_pct': (df.isnull().sum()\/df.shape[0]*100).round(2).astype(str) + ' %'\n    }).sort_values('NaNs',ascending=False)\n\nnans_info(df)",
+    "uid" : "88694B03-4CE1-437A-855D-56AFD2DD234D",
+    "name" : "dsc nans info",
+    "keyword" : "dsc_nans_info"
+  }
+}

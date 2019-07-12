@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "def color_negative_red(val):\n    '''  Usage: df.style.applymap(color_negative_red) '''\n    color = 'red' if val < 0 else 'black'\n    return 'color: %s' % color\n\n# aliter:   df.style.applymap(lambda s: 'color: %s' % ('red' if s > 1 else 'black'))\n# aliter:   df.style.applymap(lambda s: 'color: {}'.format('red' if s > 1 else 'black'))",
+    "uid" : "E35B09B8-447C-4704-A2BE-15F8CCE07500",
+    "name" : "pandas stylying 1",
+    "keyword" : "pd_stylying1"
+  }
+}

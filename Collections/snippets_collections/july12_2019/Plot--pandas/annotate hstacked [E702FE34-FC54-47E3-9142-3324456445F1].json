@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "def annnotate_hstacked(df,col,agg,top=False):\n    '''\n    Example:\n    df = sns.load_dataset('iris')\n    col = 'species'\n    agg = mean  # sum, count, np.median\n    \n    Usage:\n    ax = df.groupby('species').agg(agg).plot.barh(stacked=True)\n    annnotate_hstacked(df,'species',agg)\n    \n    '''\n    ys = df.groupby(col).agg(agg).values\n    middle = ys.cumsum(axis=1) - ys\/2\n    for i in range(len(ys)):\n        for j in range(len(ys.T)):\n            x = middle[i][j]\n            y = i\n            val = '%.2g'%ys[i][j]\n            ax.text(x,y, val, ha=\"center\", va=\"bottom\")\n    if top:\n        for i,y in enumerate(ys.sum(axis=1)):\n            ax.text(y, i, \"%.2g\"%y, ha=\"center\", va=\"bottom\")\n            \n            \ndf = sns.load_dataset('iris')\nagg = 'sum'\nax = df.groupby('species').agg(agg).plot.barh(stacked=True)\nannnotate_hstacked(df,'species',agg)\nprint((df.groupby('species').agg('mean').reset_index()))",
+    "uid" : "E702FE34-FC54-47E3-9142-3324456445F1",
+    "name" : "annotate hstacked",
+    "keyword" : "ann_hstacked"
+  }
+}

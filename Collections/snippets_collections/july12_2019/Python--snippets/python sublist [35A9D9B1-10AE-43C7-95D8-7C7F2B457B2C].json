@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "l2= [ l[i:i+5] for i in range(0,len(l),5)]",
+    "uid" : "35A9D9B1-10AE-43C7-95D8-7C7F2B457B2C",
+    "name" : "python sublist",
+    "keyword" : "sublist"
+  }
+}

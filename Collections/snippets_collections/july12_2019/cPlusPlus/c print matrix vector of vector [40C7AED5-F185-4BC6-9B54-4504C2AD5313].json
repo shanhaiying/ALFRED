@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "template<class T>\nvoid printVector(vector<vector<T>> const &mat) {\n    for (auto &row: mat) {\n        for (auto &i: row) {cout << i << \" \"; }\n        cout << '\\n';\n    }\n}",
+    "uid" : "40C7AED5-F185-4BC6-9B54-4504C2AD5313",
+    "name" : "c++ print matrix vector of vector",
+    "keyword" : "cpp_vec_print"
+  }
+}

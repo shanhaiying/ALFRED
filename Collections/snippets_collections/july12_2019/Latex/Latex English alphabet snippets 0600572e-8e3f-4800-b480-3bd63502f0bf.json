@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "Text            A               Bold            Dollar\n-----------------------------------------------------------\nBold            tba             tba             tbax\nDollar          xxa             xxba            xxa\nScript          say             say             sayx\n\ntba = \\boldsymbol{a}\ntbax = $\\boldsymbol{a}$\nxxa = $a$\nxxba = $\\boldsymbol{a}$ \nsay = \\mathscr{A}\nsayx = $\\mathscr{A}$",
+    "uid" : "0600572e-8e3f-4800-b480-3bd63502f0bf",
+    "name" : "Latex English alphabet snippets",
+    "keyword" : "english"
+  }
+}

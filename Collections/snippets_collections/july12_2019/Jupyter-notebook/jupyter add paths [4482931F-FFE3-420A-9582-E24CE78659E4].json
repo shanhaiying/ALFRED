@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "%load_ext autoreload\n%autoreload 2\n\nimport sys\nsys.path.append('..\/..')\n\n# Display all cell outputs\nfrom IPython.core.interactiveshell import InteractiveShell\nInteractiveShell.ast_node_interactivity = 'all'",
+    "uid" : "4482931F-FFE3-420A-9582-E24CE78659E4",
+    "name" : "jupyter add paths",
+    "keyword" : "jupyter_add_paths"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "%load_ext version_information\n%version_information numpy,scipy,pandas,sklearn,matplotlib,seaborn,statsmodels,plotly",
+    "uid" : "46D48005-EC9B-4AD1-8638-7D31B4ADE3F7",
+    "name" : "version information",
+    "keyword" : "version"
+  }
+}

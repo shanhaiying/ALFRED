@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "# lower to upper\n$ echo \"WELCOME to {geeks} to geeks 3   spaces\" | tr \"[a-z]\" \"[A-Z]\"\nWELCOME TO {GEEKS} TO GEEKS 3   SPACES\n\n# lower to upper\n$ echo \"WELCOME to {geeks} to geeks 3   spaces\" | tr \"[:lower:]\" \"[:upper:]\"\nWELCOME TO {GEEKS} TO GEEKS 3   SPACES\n\n# translate brackets\n$ echo \"WELCOME to {geeks} to    geeks 3   spaces\" | tr \"{}\" \"()\"\nWELCOME to (geeks) to    geeks 3   spaces\n\n# sqeeze\n$ echo \"WELCOME to {geeks} to geeks 3   spaces\" | tr -s \"[:space:]\" ' '\nWELCOME to {geeks} to geeks 3 spaces\n\n# delete\n$ echo \"WELCOME to {geeks} to geeks 3   spaces\" | tr -d \"[:digit:]\"\nWELCOME to {geeks} to geeks    spaces\n\n# complement digits\n$ echo \"WELCOME to {geeks} to geeks 3   spaces\" | tr -cd \"[:digit:]\"\n3",
+    "uid" : "B97EC478-A8EF-429B-B5D2-066F6778CAB5",
+    "name" : "bash tr translate command",
+    "keyword" : "bash_tr"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "from tqdm import tnrange, tqdm_notebook\nfrom time import sleep\n\nfor i in tnrange(10, desc='1st loop'):\n    for j in tqdm_notebook(range(100), desc='2nd loop'):\n        sleep(0.01)",
+    "uid" : "BE47F12E-CA11-4042-86B1-82EDDBCDEA52",
+    "name" : "tqdm eg",
+    "keyword" : "tqdm_eg"
+  }
+}

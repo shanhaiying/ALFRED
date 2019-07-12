@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "x1 = np.random.randn(200)  \nx2 = np.random.randn(200) + 2    \nhist_data = [x1, x2]\n\ngroup_labels = ['Group 1', 'Group 2']\n\ncolors = ['#3A4750', '#F64E8B']\n\n# Create distplot with curve_type set to 'normal'\nfig = ff.create_distplot(hist_data, group_labels, bin_size=.5, curve_type='normal', colors=colors)\n\n# Add title\nfig['layout'].update(title='Distplot with Normal Distribution')\n\n# Plot!\niplot(fig, filename='Distplot with Normal Curve')\n",
+    "uid" : "4148BABF-1337-4ACC-8257-74DBED3FD54D",
+    "name" : "plot plotly distplot with normal curve",
+    "keyword" : "plot_plotly_distplot_with_normal_curve"
+  }
+}

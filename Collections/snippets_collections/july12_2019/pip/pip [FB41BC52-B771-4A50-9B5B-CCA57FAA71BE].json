@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "python -m pip install --user --upgrade pip setuptools wheel",
+    "uid" : "FB41BC52-B771-4A50-9B5B-CCA57FAA71BE",
+    "name" : "pip",
+    "keyword" : "pip"
+  }
+}

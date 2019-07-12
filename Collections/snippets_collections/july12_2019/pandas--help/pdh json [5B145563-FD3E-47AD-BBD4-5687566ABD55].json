@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "data = [{'state': 'Florida',\n              'shortname': 'FL',\n              'info': {\n                   'governor': 'Rick Scott'\n               },\n              'counties': [{'name': 'Dade', 'population': 12345},\n                          {'name': 'Broward', 'population': 40000},\n                          {'name': 'Palm Beach', 'population': 60000}]},\n             {'state': 'Ohio',\n              'shortname': 'OH',\n              'info': {\n                   'governor': 'John Kasich'\n              },\n              'counties': [{'name': 'Summit', 'population': 1234},\n                           {'name': 'Cuyahoga', 'population': 1337}]\n        }]\n        \njson_normalize(data=data,record_path='counties', meta=['state', 'shortname', ['info', 'governor']])",
+    "uid" : "5B145563-FD3E-47AD-BBD4-5687566ABD55",
+    "name" : "pdh json",
+    "keyword" : "pdh-json"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "infile = \"\"\ndf = pd.read_csv(infile,nrows=None,skiprows=None,sep=',')\nprint(df.shape)\ndf.head(2).append(df.tail(2))",
+    "uid" : "2A3E665C-7784-4CF2-8807-491F20749425",
+    "name" : "pandas dataframe read csv",
+    "keyword" : "dfrc"
+  }
+}

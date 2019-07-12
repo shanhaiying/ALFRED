@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "mydict = {'a': 'apple', 'b': 'banana','c': 'can'}\nkeys_lst = list(mydict.keys())\nvalues_lst = list(mydict.values())\nmyvals = ['apple','can'] # just want to get 'a'\n\nmykeys = [keys_lst[values_lst.index(val)] for val in myvals]\n\nprint(mykeys)  #  a and c",
+    "uid" : "2D230D10-6C11-4233-9179-EF7FAA9F415C",
+    "name" : "python dictionary keys from values",
+    "keyword" : "python_dictionary_keys_from_values"
+  }
+}

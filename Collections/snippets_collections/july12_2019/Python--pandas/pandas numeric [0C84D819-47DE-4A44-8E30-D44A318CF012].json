@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : ".apply(pd.to_numeric,errors='coerce')",
+    "uid" : "0C84D819-47DE-4A44-8E30-D44A318CF012",
+    "name" : "pandas numeric",
+    "keyword" : "pd_numeric"
+  }
+}

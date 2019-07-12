@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "def pieplot(df1,y,palette='terrain',startangle=90,\n            figsize=(8,8),autopct=\"%1.0f%%\"):\n\n    \"\"\" Pie plot\n    titanic = sns.load_dataset('titanic')\n    df1 = titanic.groupby('sex')['survived'].sum()\n    \"\"\"\n    df1.plot(kind='pie',\n             y=y,\n             figsize=figsize,\n             autopct=autopct,\n             shadow=False,\n             startangle=startangle,\n             rotatelabels=True,\n             explode=None,\n             colors=sns.color_palette(palette,len(df1)),\n             textprops={'fontsize': 14},\n             wedgeprops={\"linewidth\":2,\"edgecolor\":\"white\"});\n\n    plt.ylabel('')\n    plt.title('Pie plot of {}'.format(y),fontsize=14)",
+    "uid" : "97863872-E554-4176-B206-A4C50E621882",
+    "name" : "plot pie pandas",
+    "keyword" : "plot_pie_pd"
+  }
+}

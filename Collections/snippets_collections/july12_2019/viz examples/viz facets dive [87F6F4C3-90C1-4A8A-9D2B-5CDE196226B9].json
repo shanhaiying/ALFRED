@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "def facets_dive(df,output_html):\n    # Display the Dive visualization for the training data.\n    from IPython.core.display import display, HTML\n\n    jsonstr = df.to_json(orient='records')\n    HTML_TEMPLATE = \"\"\"\n          <script src=\"https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/webcomponentsjs\/1.3.3\/webcomponents-lite.js\"><\/script>\n          <link rel=\"import\" href=\"https:\/\/raw.githubusercontent.com\/PAIR-code\/facets\/master\/facets-dist\/facets-jupyter.html\">\n          <facets-dive id=\"elem\" height=\"600\"><\/facets-dive>\n          <script>\n            var data = {jsonstr};\n            document.querySelector(\"#elem\").data = data;\n          <\/script>\"\"\"\n    html_str = HTML_TEMPLATE.format(jsonstr=jsonstr)\n    html = HTML(html_str)\n    display(html)\n    \n    # save html file\n    with open(output_html,'w') as fo:\n        fo.write(html_str)\n\nfacets_dive(df,'output.html')\n!open output.html",
+    "uid" : "87F6F4C3-90C1-4A8A-9D2B-5CDE196226B9",
+    "name" : "viz facets dive",
+    "keyword" : "viz_facets_dive"
+  }
+}

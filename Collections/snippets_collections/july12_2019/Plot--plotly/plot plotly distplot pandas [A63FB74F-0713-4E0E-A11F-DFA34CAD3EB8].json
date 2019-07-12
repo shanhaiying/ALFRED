@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "df = pd.DataFrame({'2012': np.random.randn(200),\n                   '2013': np.random.randn(200)+1})\n\niplot(ff.create_distplot([df[c] for c in df.columns], df.columns, bin_size=.25),\n                            filename='distplot with pandas')",
+    "uid" : "A63FB74F-0713-4E0E-A11F-DFA34CAD3EB8",
+    "name" : "plot plotly distplot pandas",
+    "keyword" : "plot_plotly_distplot_pandas"
+  }
+}

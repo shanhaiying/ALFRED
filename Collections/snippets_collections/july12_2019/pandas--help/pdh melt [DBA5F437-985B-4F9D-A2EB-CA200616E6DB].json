@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "df = pd.DataFrame({'State' : ['Texas', 'Arizona', 'Florida'],\n          'Apple'  : [12, 9, 0],\n          'Orange' : [10, 7, 14],\n          'Banana' : [40, 12, 190]})\n\ndf.melt(id_vars=['State'],\n        value_vars=['Apple','Orange','Banana'],\n        var_name='Fruit',\n        value_name='Weight')\n        \n## example 2 *********************\n  Weight Category  M35 35-39  M40 40-44  M45 45-49  M50 50-54  M80 80+\n0              56        137        130        125        115        102   \n1              62        152        145        137        127        112\n\n(df.melt(id_vars='Weight Category', var_name='sex_age', value_name='Qual Total')\n   .assign(Sex      = lambda x: x['sex_age'].str.extract('([MF])', expand=True))\n   .assign(AgeGroup = lambda x: x['sex_age'].str.extract('(\\d{2}[-+](?:\\d{2})?)', expand=True))\n   .drop('sex_age', axis=1)\n   ).head(2)",
+    "uid" : "DBA5F437-985B-4F9D-A2EB-CA200616E6DB",
+    "name" : "pdh melt",
+    "keyword" : "pdh-melt"
+  }
+}

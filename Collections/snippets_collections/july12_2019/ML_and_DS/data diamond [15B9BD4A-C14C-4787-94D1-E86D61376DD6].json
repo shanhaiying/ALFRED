@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "df = pd.read_csv('http:\/\/vincentarelbundock.github.io\/Rdatasets\/csv\/ggplot2\/diamonds.csv')\nprint(df.shape)\ndf.head()",
+    "uid" : "15B9BD4A-C14C-4787-94D1-E86D61376DD6",
+    "name" : "data diamond",
+    "keyword" : "data_diamond"
+  }
+}

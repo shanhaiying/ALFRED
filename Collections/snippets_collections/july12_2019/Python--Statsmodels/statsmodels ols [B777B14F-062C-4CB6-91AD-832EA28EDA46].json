@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "import statsmodels.api as sm\nimport statsmodels.formula.api as smf\n\n# using sm\ny = df.Violence\nX1 = sm.add_constant(df.Unemployment)\nmod = sm.OLS(y, X1 )\nres = mod.fit()\nres.summary()\n\n# using smf\nformula = 'y ~ x'\nmod = smf.ols(formula=formula, data=df)\nres = mod.fit()\nres.summary()",
+    "uid" : "B777B14F-062C-4CB6-91AD-832EA28EDA46",
+    "name" : "statsmodels ols",
+    "keyword" : "sm_ols"
+  }
+}

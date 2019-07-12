@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "from mpl_toolkits.mplot3d import Axes3D\nimport matplotlib.pyplot as plt\n\n\nfig = plt.figure()\nax = fig.add_subplot(111, projection='3d')\n\nx =[1,2,3,4,5,6,7,8,9,10]\ny =[5,6,2,3,13,4,1,2,4,8]\nz =[2,3,3,3,5,7,9,11,9,10]\n\n\nax.scatter(x, y, z, c='r', marker='o')\n\nax.set_xlabel('X Label')\nax.set_ylabel('Y Label')\nax.set_zlabel('Z Label')\nplt.legend()\nplt.tight_layout()\nplt.show()",
+    "uid" : "0757D0E8-D42C-41F6-9D94-3B7D55B7C442",
+    "name" : "plot mpl 3d plot",
+    "keyword" : "plot_mpl_3d_plot"
+  }
+}

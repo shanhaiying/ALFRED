@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "df.head(2).append(df.tail(2)).iloc[:,-5:]",
+    "uid" : "F029257E-67EC-4E62-8773-58F7B00CECB5",
+    "name" : "dataframe head tail last 5",
+    "keyword" : "dfht5"
+  }
+}

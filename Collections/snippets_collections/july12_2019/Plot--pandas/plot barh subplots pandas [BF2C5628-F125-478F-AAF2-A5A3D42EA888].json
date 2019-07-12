@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "def plot_category_vs_demand_barh(warehouse_name, years):\n    fig, axes = plt.subplots(nrows=len(years), ncols=1)\n\n    dfA = (df.groupby(['Warehouse','Year','Product_Category'])['Order_Demand']\n           .mean().unstack().loc[[warehouse_name]])\n\n    for i,year in enumerate(years):\n        axx = (dfA.loc[(warehouse_name, year)]\n            .nlargest(10)\n            .nsmallest(10)\n            .plot(kind='barh',figsize=(8,16), title='Year ' + str(year), ax=axes[i]))\n        \n        axx.set_xlabel('Order Demand')\n        if i > 0:\n            axx.set_ylabel('')\n\n        for i in axx.patches:\n            axx.text(i.get_width()*0.8, i.get_y()+ 0.2, \\\n                str(round(i.get_width(), 2)))\n\n\n    plt.subplots_adjust(left=0.1, right=0.9, top=0.9, bottom=0.1)\n    plt.suptitle('ProductCategory vs OrderDemand for Warehouse ' + warehouse_name,fontweight=\"bold\")\n    plt.show()\n\n    \n# plot  \nyears = [2016,2015,2014]\nplot_category_vs_demand_barh('Whse_A', years)\n\n# data\ndf = pd.read_csv('https:\/\/github.com\/bhishanpdl\/Datasets\/blob\/master\/Historical%20Product%20Demand.csv?raw=true')\ndf['Date'] = pd.to_datetime(df['Date'])\ndf['Order_Demand'] = pd.to_numeric(df.Order_Demand, errors = 'coerce')\ndf = df.dropna()\ndf = df.sort_values('Date')\ndf['Year'] = df.Date.dt.year\ndf['Month'] = df.Date.dt.month\ndf.head()",
+    "uid" : "BF2C5628-F125-478F-AAF2-A5A3D42EA888",
+    "name" : "plot barh subplots pandas",
+    "keyword" : "plot_barh_subplots_pandas"
+  }
+}

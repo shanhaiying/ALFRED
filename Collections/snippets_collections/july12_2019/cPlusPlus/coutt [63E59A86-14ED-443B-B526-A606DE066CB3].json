@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "std::cout << \" {cursor}\" <<  std::endl;",
+    "uid" : "63E59A86-14ED-443B-B526-A606DE066CB3",
+    "name" : "coutt",
+    "keyword" : "coutt"
+  }
+}

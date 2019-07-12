@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "## bar\n# style bar does not highlight lowest values in each columns.\n# colors = ['red','green'] gives neg red. width is cell width.\n# align is default left and does not hightlight lowest, but align=mid hightlights all.\ndf.style.bar(color=['#d65f5f', '#5fba7d'],width=90,align='mid') ",
+    "uid" : "55813C24-6190-4AC4-AC40-68AB940DBCAC",
+    "name" : "pandas stylying bar",
+    "keyword" : "pd_stylying_bar"
+  }
+}

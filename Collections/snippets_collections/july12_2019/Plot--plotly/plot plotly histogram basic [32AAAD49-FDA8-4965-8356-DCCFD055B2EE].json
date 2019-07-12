@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "x = np.random.randn(500)\ndata = [go.Histogram(x=x)]\n\niplot(data, filename='basic histogram')\n",
+    "uid" : "32AAAD49-FDA8-4965-8356-DCCFD055B2EE",
+    "name" : "plot plotly histogram basic",
+    "keyword" : "plot_plotly_histogram_basic"
+  }
+}

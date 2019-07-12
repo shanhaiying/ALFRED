@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "df[\"date\"] = pd.to_datetime(df[\"date\"])\n\n# create new columns\ndf[\"day\"] = df[\"date\"].dt.day\ndf[\"month\"] = df[\"date\"].dt.month\ndf[\"year\"] = df[\"date\"].dt.year\ndf[\"weekday\"] = df[\"date\"].dt.weekday\ndf[\"week\"] = df[\"date\"].dt.week\ndf[\"quarter\"] = df[\"date\"].dt.quarter\n# df[\"day_of_week\"] = df[\"date\"].dt.day_name() # gives Tuesday\ndf[\"day_of_week\"] = df[['date']].apply(lambda x: dt.datetime.strftime(x['date'], '%a'), axis=1)\ndf[\"month_name\"] = df[['date']].apply(lambda x: dt.datetime.strftime(x['date'], '%b'), axis=1)\n\n# print new columns\ndf[['date', 'day','month', 'month_name','weekday','day_of_week']].head()",
+    "uid" : "B1246D48-60F8-4BBF-BBBD-1A297D312832",
+    "name" : "datetime columns pandas",
+    "keyword" : "datetime_columns_pandas"
+  }
+}

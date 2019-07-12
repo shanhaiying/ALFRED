@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "# Create new env \nconda create -n myenv python=3.7\nsource activate myenv\n\n# adding new kernel to ipython\n# Dont use sudo unless required.\nsource activate myenv\nconda install ipykernel  # NOTE there are TWO myenv below\npython -m ipykernel install --user --name myenv --display-name \"Python (myenv)\"\n\n# install required packages\nconda install -n myenv -c conda-forge autopep8  yapf # needed for jupyter linting\nconda install -n myenv -c conda-forge numpy matplotlib scipy pandas  seaborn sklearn\n\n## ** sometimes use pip not conda**##\nconda install -n flask -c conda-forge stemming # fails\n\/Users\/poudel\/miniconda3\/envs\/flask\/bin\/pip install stemming # works\n\n\n# test it\njupyter-notebook  a.ipynb # Kernel choose myenv\n\n# to remove\njupyter kernelspec list\nsudo -H jupyter kernelspec remove myenv\n\n# if we had installed environment using sudo\ncd  \/Users\/poudel\/miniconda3\/envs\nThen delete the envs. ",
+    "uid" : "71A868A1-CFEC-43A6-9908-548DA2D6D115",
+    "name" : "conda add new kernel",
+    "keyword" : "new_kernel"
+  }
+}

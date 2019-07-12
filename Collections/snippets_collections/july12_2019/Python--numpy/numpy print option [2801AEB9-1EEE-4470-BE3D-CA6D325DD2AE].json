@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "print(np.array_repr({cursor}, precision=2, suppress_small=True))",
+    "uid" : "2801AEB9-1EEE-4470-BE3D-CA6D325DD2AE",
+    "name" : "numpy print option",
+    "keyword" : "npp"
+  }
+}

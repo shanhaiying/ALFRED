@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "pd.DataFrame(np.array_split({cursor},5)).T",
+    "uid" : "BAACCEB4-83DB-4043-9705-B850BC594940",
+    "name" : "nice print",
+    "keyword" : "nice"
+  }
+}

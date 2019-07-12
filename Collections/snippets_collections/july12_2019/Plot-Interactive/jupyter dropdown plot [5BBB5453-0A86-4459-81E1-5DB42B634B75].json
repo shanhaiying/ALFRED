@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "import numpy as np\nimport pandas as pd\n\nimport ipywidgets as widgets\nfrom ipywidgets import interact, interactive, fixed, interact_manual\n\ndf = pd.DataFrame({'Age': [10,20,30,40,50],\n                                  'Height': [60,62,63,65,73]})\n\ndrop_down=widgets.Dropdown(options=df.columns.values,value=df.columns[0],\n    description='Column:',disabled=False)\n\ndef update_barchart(columns):\n    return df.groupby(columns).size().plot(kind='bar',stacked=True)\n\ninteractive(update_barchart, columns=drop_down)",
+    "uid" : "5BBB5453-0A86-4459-81E1-5DB42B634B75",
+    "name" : "jupyter dropdown plot",
+    "keyword" : "plot_dropdown"
+  }
+}

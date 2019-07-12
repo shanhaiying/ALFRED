@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "df.groupby({cursor})",
+    "uid" : "810B5ECD-1886-468F-B729-68FAD60932CC",
+    "name" : "pandas groupby",
+    "keyword" : "pdg"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "missing_df = (data.isnull().sum().to_frame().sort_values(by=0)\n              .rename(columns={0:'count'}).query('count > 0'))\n\ntrace = [go.Bar(\n            x=missing_df.index.values, \n            y=missing_df.values.ravel(),\n            text=missing_df.values.ravel(),\n            textposition = 'auto',\n            marker=dict(\n                color='rgb(158,202,225)',\n                line=dict(\n                    color='rgb(8,48,107)',\n                    width=1.5),\n            ),\n            opacity=0.6\n        \n    )]\n\niplot(trace)",
+    "uid" : "4C53A059-CA8A-4EEF-8A96-6A27DAC55330",
+    "name" : "viz plotly missing values",
+    "keyword" : "viz_plotly_missing_values"
+  }
+}

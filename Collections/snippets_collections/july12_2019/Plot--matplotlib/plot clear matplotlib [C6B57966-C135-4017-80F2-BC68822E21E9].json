@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "t = np.linspace(0, 5*np.pi, 501) # Define parameter for parametric plot.\nplt.plot(t, np.sin(t)**2) # Generate plot.\nplt.plot(t, np.sin(t)**3) # Create new plot on same axes.\nax = plt.gca() # Gain control of axes.\nax.hold(False) # Turn hold off.\nplt.plot(t, np.sin(t)**4) # Create new plot; old data erased.",
+    "uid" : "C6B57966-C135-4017-80F2-BC68822E21E9",
+    "name" : "plot clear matplotlib",
+    "keyword" : "clear_plot"
+  }
+}

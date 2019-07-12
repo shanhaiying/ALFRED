@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "%%javascript\nIPython.OutputArea.auto_scroll_threshold = 9999;",
+    "uid" : "06A06983-A97B-4120-8B37-1DAFEA0E5F1D",
+    "name" : "Large output jupyter notebook",
+    "keyword" : "large_output"
+  }
+}

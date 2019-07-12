@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "def annnotate_vstacked(df,col,agg,top=False):\n    '''\n    Example:\n    df = sns.load_dataset('iris')\n    col = 'species'\n    agg = mean # sum, count, np.median, min, max, std\n    \n    Usage:\n    ax = df.groupby('species').agg(agg).plot.bar(stacked=True)\n    annnotate_vstacked(df,'species',agg,top=False)\n    \n    '''\n    ys = df.groupby(col).agg(agg).values.T\n    middle = ys.cumsum(axis=0) - ys\/2\n    for i in range(len(ys.T)):\n        for j in range(len(ys)):\n            mid = middle[j][i]\n            val = ys[j][i]\n            ax.text(i, mid, \"%.2g\"%val, ha=\"center\", va=\"bottom\")\n    if top:\n        for i,y in enumerate(ys.sum(axis=0)):\n            print(i,y,y)\n            ax.text(i, y, \"%.2g\"%val, ha=\"center\", va=\"bottom\")\n            \n            \ndf = sns.load_dataset('iris')\nagg = 'sum'\nax = df.groupby('species').agg(agg).plot.bar(stacked=True)\nannnotate_vstacked(df,'species',agg,top=False)\nprint((df.groupby('species').agg('mean').reset_index()))",
+    "uid" : "2D8ECAE1-FEFB-41F4-A347-EAB26D513722",
+    "name" : "annotate vstacked",
+    "keyword" : "ann_vstacked"
+  }
+}

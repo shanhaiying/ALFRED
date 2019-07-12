@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "import numpy as np\n\ndef gaussian(x, mu, sig):\n    return 1.\/(np.sqrt(2.*np.pi)*sig) * np.exp(-np.power((x - mu)\/sig, 2.)\/2)",
+    "uid" : "0FAF25AB-CB22-44DB-895A-A9698B7E3A6B",
+    "name" : "Gaussian function",
+    "keyword" : "gau"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "subject = ['Moe','Larry','Curly','Moe','Larry','Curly','Moe','Larry','Curly','Moe','Larry','Curly']\nscore = [1,6,2,8,2,9,4,5,1,5,2,8]\n\naggs = [\"count\",\"sum\",\"avg\",\"median\",\"mode\",\"rms\",\"stddev\",\"min\",\"max\",\"first\",\"last\"]\n\nagg = []\nagg_func = []\nfor i in range(0, len(aggs)):\n    agg = dict(\n        args=['transforms[0].aggregations[0].func', aggs[i]],\n        label=aggs[i],\n        method='restyle'\n    )\n    agg_func.append(agg)\n\n\ndata = [dict(\n  type = 'scatter',\n  x = subject,\n  y = score,\n  mode = 'markers',\n  transforms = [dict(\n    type = 'aggregate',\n    groups = subject,\n    aggregations = [dict(\n        target = 'y', func = 'sum', enabled = True)\n    ]\n  )]\n)]\n\nlayout = dict(\n  title = '<b>Plotly Aggregations<\/b><br>use dropdown to change aggregation',\n  xaxis = dict(title = 'Subject'),\n  yaxis = dict(title = 'Score', range = [0,22]),\n  updatemenus = [dict(\n        x = 0.85,\n        y = 1.15,\n        xref = 'paper',\n        yref = 'paper',\n        yanchor = 'top',\n        active = 1,\n        showactive = False,\n        buttons = agg_func\n  )]\n)\n\niplot({'data': data,'layout': layout}, validate=False)",
+    "uid" : "35034C79-40AA-4AB9-8413-1049DF6A60DD",
+    "name" : "plot plotly aggregation functions",
+    "keyword" : "plot_plotly_aggregation_functions"
+  }
+}

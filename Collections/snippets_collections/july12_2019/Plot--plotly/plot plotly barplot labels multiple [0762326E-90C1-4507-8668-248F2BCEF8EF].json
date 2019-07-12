@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "x = ['Product A', 'Product B', 'Product C']\ny = [20, 14, 23]\ny2 = [16,12,27]\n\ntrace1 = go.Bar(\n    x=x,\n    y=y,\n    text=y,\n    textposition = 'auto',\n    marker=dict(\n        color='rgb(158,202,225)',\n        line=dict(\n            color='rgb(8,48,107)',\n            width=1.5),\n        ),\n    opacity=0.6\n)\n\ntrace2 = go.Bar(\n    x=x,\n    y=y2,\n    text=y2,\n    textposition = 'auto',\n    marker=dict(\n        color='rgb(58,200,225)',\n        line=dict(\n            color='rgb(8,48,107)',\n            width=1.5),\n        ),\n    opacity=0.6\n)\n\ndata = [trace1,trace2]\n\niplot(data, filename='grouped-bar-direct-labels')",
+    "uid" : "0762326E-90C1-4507-8668-248F2BCEF8EF",
+    "name" : "plot plotly barplot labels multiple",
+    "keyword" : "plot_plotly_barplot_labels_multiple"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "#  (apply is too slow!)\ndf = pd.DataFrame({'A': list('abc')*1000000, 'B': [10, 20,200]*1000000,\n                  'C': [0.1,0.2,0.3]*1000000})\n                  \n# fastest (100ms)\nfor c in df.select_dtypes(include = [np.number]).columns:\n    df[c] = np.log10(df[c].values)\n\n# 3 times slower 300ms\nlog10_df = pd.concat([df.select_dtypes(exclude=np.number),\n                      df.select_dtypes(include=np.number).apply(np.log10)],\n                      axis=1)\n# 6 times slower\nlog10_df = df.apply(lambda x: np.log10(x) if np.issubdtype(x.dtype, np.number) else x)\n\n## apply is slow, however, we can we it for aggregations\ndf = pd.DataFrame({\"User\": [\"a\", \"b\", \"b\", \"c\", \"b\", \"a\", \"c\"],\n                  \"Amount\": [10.0, 5.0, 8.0, 10.5, 7.5, 8.0, 9],\n                  'Score': [9, 1, 8, 7, 7, 6, 9]})\ndef my_agg(x):\n    mydict = {\n        'Amount_mean': x['Amount'].mean(),\n        'Amount_std':  x['Amount'].std(),\n        'Amount_range': x['Amount'].max() - x['Amount'].min(),\n        'Score_Max':  x['Score'].max(),\n        'Score_Sum': x['Score'].sum(),\n        'Amount_Score_Sum': (x['Amount'] * x['Score']).sum()}\n\n    return pd.Series(mydict, list(mydict.keys()))\n\ndf.groupby('User').apply(my_agg) # has columns 'Amount_mean', 'Amount_std', ...\n\n# apply with multiple arguments\ns = pd.Series(np.random.randint(0,10, 10))\ndef between(x, low, high):\n    return x >= low and x =< high\ns.apply(between, args=(3,6))\ns.apply(between, low=3, high=6)\ns.apply(between, args=(3,), high=6)",
+    "uid" : "D3964293-ED60-4295-A1C3-979C0ADD39DC",
+    "name" : "pdh apply",
+    "keyword" : "pdh-apply"
+  }
+}

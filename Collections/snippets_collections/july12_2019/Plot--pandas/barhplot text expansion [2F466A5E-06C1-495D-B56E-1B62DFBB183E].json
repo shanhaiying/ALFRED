@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "barhplot({cursor}, x='',y='',title='')",
+    "uid" : "2F466A5E-06C1-495D-B56E-1B62DFBB183E",
+    "name" : "barhplot text expansion",
+    "keyword" : "barhplot"
+  }
+}

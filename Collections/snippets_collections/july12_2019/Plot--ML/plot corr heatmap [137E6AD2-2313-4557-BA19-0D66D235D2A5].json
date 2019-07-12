@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "# white style\nsns.set(style=\"white\")\n\n# correlation matrix\ncorr = iris.corr()\n\n# mask for the upper triangle\nmask = np.zeros_like(corr, dtype=np.bool)\nmask[np.triu_indices_from(mask)] = True\n\n# figure\nfig, ax = plt.subplots(figsize=(6, 6))\n\n# custom diverging colormap\ncmap = sns.diverging_palette(220, 10, as_cmap=True)\n\n# heatmap\nsns.heatmap(corr, mask=mask, cmap=cmap, vmax=.3,annot=True,fmt='g',\n            square=True, linewidths=.5, ax=ax)\n\nplt.tight_layout()\nplt.show()",
+    "uid" : "137E6AD2-2313-4557-BA19-0D66D235D2A5",
+    "name" : "plot corr heatmap",
+    "keyword" : "plot_corr_heatmap"
+  }
+}

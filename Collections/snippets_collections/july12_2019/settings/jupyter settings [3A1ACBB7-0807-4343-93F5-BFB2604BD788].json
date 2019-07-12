@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "%%javascript\nIPython.OutputArea.auto_scroll_threshold = 9999;",
+    "uid" : "3A1ACBB7-0807-4343-93F5-BFB2604BD788",
+    "name" : "jupyter settings",
+    "keyword" : "jupyter_settings"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "%%bash\nhead -n 1 a.csv\necho \"\"\nhead -n 2 a.csv | tail -n 1",
+    "uid" : "F75F7765-C799-4B41-836D-500D5CA18979",
+    "name" : "Bash first and second line",
+    "keyword" : "bash_first_sec_line"
+  }
+}

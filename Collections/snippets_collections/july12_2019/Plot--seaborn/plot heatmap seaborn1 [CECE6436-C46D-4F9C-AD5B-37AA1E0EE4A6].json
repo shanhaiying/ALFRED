@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "def heatmap_3cols(df,idx,col,val):\n    df1 = (pd.pivot_table(index=idx,\n                         columns=col,\n                         values=val,\n                         data=df,\n                         aggfunc=\"sum\")\n                         .fillna(0))\n\n    for i in df1.columns:\n        df1[i] = df1[i].astype(np.int64)\n\n    plt.figure(figsize=(12,8))\n    fig = sns.heatmap(df1.transpose(),\n                      cmap=\"inferno\",\n                      annot=True,\n                      fmt=\"d\",\n                      linecolor=\"white\",\n                      linewidths=2)\n\n    plt.xticks(fontsize =12)\n    plt.yticks(fontsize =12,rotation=0)\n    plt.ylabel(col,fontsize=15)\n    plt.xlabel(idx,fontsize=15)\n    plt.title('',fontsize=15,color=\"k\")\n    plt.show()\n\nheatmap_3cols(df, '', '', '')",
+    "uid" : "CECE6436-C46D-4F9C-AD5B-37AA1E0EE4A6",
+    "name" : "plot heatmap seaborn1",
+    "keyword" : "plt_heatmap"
+  }
+}

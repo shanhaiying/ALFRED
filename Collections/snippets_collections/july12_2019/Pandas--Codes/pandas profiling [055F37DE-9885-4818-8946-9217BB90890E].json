@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "import pandas as pd\nimport pandas_profiling\npd.set_option('display.max_columns',500)\nnp.random.seed(100)\n\ndf = pd.DataFrame(np.random.rand(100, 5),columns=['a', 'b', 'c', 'd', 'e'])\n\nprofile = pandas_profiling.ProfileReport(df, check_correlation = False)\nprofile1 = pandas_profiling.ProfileReport(pd.DataFrame(df['a']), check_correlation = False)\n\n# write output html\nprofile.to_file(\"output.html\")\n\n# small summary dictionary and dataframe\nmydict = profile.get_description()['table']\ndesc = pd.DataFrame(mydict,index=[0]).T\nprint(desc)\n\n# large summary dataframe\nprofile.get_description()['variables']\n\n# print profile in jupyter-notebook\nprofile\n\n# look at help of profile\nhelp(profile) # learn how to use this module",
+    "uid" : "055F37DE-9885-4818-8946-9217BB90890E",
+    "name" : "pandas profiling",
+    "keyword" : "pd_profiling"
+  }
+}

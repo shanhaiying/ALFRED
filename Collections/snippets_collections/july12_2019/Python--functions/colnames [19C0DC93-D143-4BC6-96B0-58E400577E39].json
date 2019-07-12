@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "def commented_colnames(ifile):\n    \"\"\" Create column names list from first comment line of a datafile.\"\"\"\n    colnames = []\n    with open(infile) as fi:\n        for l in fi:\n            if l.strip().startswith('#'):\n                names = l.strip('#')\n                colnames = [i for i in names.split()]\n                break\n    return colnames",
+    "uid" : "19C0DC93-D143-4BC6-96B0-58E400577E39",
+    "name" : "colnames",
+    "keyword" : "colnames"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "def scatterplot():\n    sc1 = go.Scatter(x=[1,2,3,4,5],\n                     y=[10,20,30,40,50],\n                     mode = 'lines+markers',\n                     name = 'plot1')\n    \n    sc2 = go.Scatter(x=[1,2,3,4,5],\n                     y=[100,200,300,400,500],\n                     mode = 'lines+markers',\n                     name = 'plot2')\n    \n    mydata= [sc1,sc2]\n    layout = go.Layout(\n                    title=' ',\n                    xaxis=dict(\n                               title='XLABEL',\n                               titlefont=dict(\n                               family='Courier New, monospace',\n                               size=18,\n                               color='#7f7f7f')),\n                     yaxis=dict(title='YLABEL',\n                                titlefont=dict(\n                                          family='Courier New, monospace',\n                                          size=18,\n                                          color='#7f7f7f')))\n    \n    myfig = go.Figure(data=mydata, layout=layout)\n\n    # iplot plots in jupyter-notebook, plot opens in new tab.\n    return plot(myfig, filename='myplot.html')\n\n# plot\nscatterplot()",
+    "uid" : "5FF0CCDB-2600-46BA-8E62-837D47F92CE1",
+    "name" : "plot plotly scatterplot",
+    "keyword" : "plot_scatter_plotly"
+  }
+}

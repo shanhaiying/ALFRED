@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "import statsmodels.api as sm\nfrom statsmodels.tsa.stattools import acf, pacf\nfrom statsmodels.tsa.arima_model import ARIMA\nfrom statsmodels.tsa.stattools import adfuller\n\nfrom statsmodels.graphics.tsaplots import plot_acf\nfrom statsmodels.graphics.tsaplots import plot_pacf\n\nimport pmdarima\nfrom pmdarima import auto_arima",
+    "uid" : "518900C9-1BD6-4FB4-8E28-3B66DDDA4B70",
+    "name" : "arima",
+    "keyword" : "arima"
+  }
+}

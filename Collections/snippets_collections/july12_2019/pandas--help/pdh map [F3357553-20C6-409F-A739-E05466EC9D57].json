@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "s = pd.Series([14,1524,2534,3544,65])\nage_map = {\n    14: '0-14',\n    1524: '15-24',\n    2534: '25-34',\n    3544: '35-44',\n    4554: '45-54',\n    5564: '55-64',\n    65: '65+'\n}\ns.map(age_map)\n\n# using regex\ns = s.astype(str).str.replace(r'14', r'0-14',regex=True)\n                 .str.replace(r'65', r'65+',regex=True)\n                 .str.replace(r'(\\d\\d)(\\d\\d)', r'\\1-\\2',regex=True))",
+    "uid" : "F3357553-20C6-409F-A739-E05466EC9D57",
+    "name" : "pdh map",
+    "keyword" : "pdh-map"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "def plot_poly(x,y,degree, *args):\n    \"\"\" Plot the data with given degree of polynomial.\n    \n    Example:\n    plot_poly(x,y,3)\n    plot_poly(x,y,3,'x','y','title')\n    \n    Returns: p\n    \n    Usage:\n    x_value = 100\n    p(x_value) gives the polynomial fit of x_value\n    \n    \"\"\"\n    plt.figure(figsize=(12,8))\n    plt.title('')\n    plt.plot(x, y,'b.')\n\n    # polynomial fit\n    z = np.polyfit(x ,y,degree)\n    p = np.poly1d(z)\n\n\n    # polynomial plot\n    xp = np.linspace(x.min(), x.max(), 1000)\n    signs = ['+' if i>0 else '-' for i in p.coeffs][::-1]\n    label = '  '.join(['%s %.2g x**%i'%(signs[i], abs(p.coeffs[~i]),i) for i in reversed(range(degree+1))])\n    label = label.replace('x**0','')\n    label = label.replace('x**1','x')\n    label = label.lstrip('+')\n    plt.plot(xp, p(xp), '-',label=label)\n    if len(args) > 0: plt.xlabel(args[0])\n    if len(args) > 1: plt.ylabel(args[1])\n    if len(args) > 2: plt.title(args[2])\n    plt.legend()\n    \n    return p\nplot_poly(x,y,degree,xlabel)",
+    "uid" : "930B47FB-1E2D-462D-8424-72C82760D8D7",
+    "name" : "rsh plot polynomials",
+    "keyword" : "plt_poly"
+  }
+}

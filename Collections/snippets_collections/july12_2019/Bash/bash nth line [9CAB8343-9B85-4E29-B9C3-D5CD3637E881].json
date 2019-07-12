@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "head -3 a.txt | tail -1 # fastest\n\nsed '3q;d' a.txt    # slowest\n\nsed '3q;d' a.sh | bash   # run the command in 3rd line. e.g. echo c gives only c.",
+    "uid" : "9CAB8343-9B85-4E29-B9C3-D5CD3637E881",
+    "name" : "bash nth line",
+    "keyword" : "nth_line"
+  }
+}

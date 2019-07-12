@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "infile = \"\"\ncolnames = [\"c0\", \"c1\"]\ndf = pd.read_csv(infile, sep=\"\\s+\", header=None, skiprows=0,\n                 comment=\"#\", names=colnames, usecols=(0, 1))",
+    "uid" : "2A3BC2D7-1740-4C18-8F00-FB8E483237B0",
+    "name" : "pandas fileread",
+    "keyword" : "filereadpd"
+  }
+}

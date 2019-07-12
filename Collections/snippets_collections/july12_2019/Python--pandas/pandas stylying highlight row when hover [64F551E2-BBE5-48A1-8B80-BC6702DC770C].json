@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "# highlight row when hover\nfrom IPython.display import HTML\n\ndef hover(hover_color=\"#ffff99\"):\n    return dict(selector=\"tr:hover\",\n                props=[(\"background-color\", \"%s\" % hover_color)])\n\nstyles = [\n    hover(),\n    dict(selector=\"th\", props=[(\"font-size\", \"150%\"),\n                               (\"text-align\", \"center\")]),\n    dict(selector=\"caption\", props=[(\"caption-side\", \"bottom\")])\n]\nhtml = (df.style.set_table_styles(styles)\n          .set_caption(\"Hover to highlight.\"))\nhtml",
+    "uid" : "64F551E2-BBE5-48A1-8B80-BC6702DC770C",
+    "name" : "pandas stylying highlight row when hover",
+    "keyword" : "pd_stylying_hover_row"
+  }
+}

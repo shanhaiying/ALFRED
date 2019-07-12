@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "```bash\n{cursor}\n```",
+    "uid" : "1181AE9C-ACE4-4B38-827F-734F48DE1E07",
+    "name" : "markdown bash",
+    "keyword" : "bsh"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "class Solution:\n    def twoSum(nums, target):\n        \"\"\"\n        :type nums: List[int]\n        :type target: int\n        :rtype: int\n        \"\"\"\n        pass\n\n\n\n# Gives Name Error\nclass Solution:\n    def twoSum(nums: List[int], target: int) -> List[int]:\n      pass",
+    "uid" : "19B4D72A-80D4-4721-BEA0-D870BEFEA750",
+    "name" : "leetcode function data type",
+    "keyword" : "leetcode_function_data_type"
+  }
+}

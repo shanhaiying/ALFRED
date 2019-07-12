@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "\\begin{equation}\n{cursor}\n\\end{equation}",
+    "uid" : "0977c815-7e41-457b-9d9c-bf1d6bf26dba",
+    "name" : "equation",
+    "keyword" : "eq"
+  }
+}

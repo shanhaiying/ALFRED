@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "let scrollstep = 120\n\n\n\" Settings\nlet blacklists = [\"*:\/\/localhost:*\", \"*:\/\/codepen.io\/*\", \"*:\/\/draw.io\/*\", \"*:\/\/*slack.com\/*\", \"*:\/\/codesandbox.io\/*\", \"*:\/\/codewars.com\/*\", \"*:\/\/discordapp.com\/*\", \":\/\/gitter.im\/*\"]",
+    "uid" : "17FE815C-7016-4748-BDB6-0D6F2417FDF4",
+    "name" : "svimrc",
+    "keyword" : "svimrc"
+  }
+}

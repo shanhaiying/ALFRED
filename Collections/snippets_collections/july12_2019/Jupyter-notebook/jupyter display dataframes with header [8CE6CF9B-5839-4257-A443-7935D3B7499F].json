@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "class displayh(object):\n    \"\"\"Display HTML representation of multiple objects with headers\n\n    Usage: displayh('df', \"df.groupby('col_0').std()\")\n    \"\"\"\n    template = \"\"\"<div style=\"float: left; padding: 10px;\">\n    <p style='font-family:\"Courier New\", Courier, monospace'>{0}<\/p>{1}\n    <\/div>\"\"\"\n    def __init__(self, *args):\n        self.args = args\n        \n    def _repr_html_(self):\n        return '\\n'.join(self.template.format(a, eval(a)._repr_html_())\n                         for a in self.args)\n    \n    def __repr__(self):\n        return '\\n\\n'.join(a + '\\n' + repr(eval(a))\n                           for a in self.args)\n",
+    "uid" : "8CE6CF9B-5839-4257-A443-7935D3B7499F",
+    "name" : "jupyter display dataframes with header",
+    "keyword" : "jupyter_display_table_with_header"
+  }
+}

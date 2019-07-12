@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "x = np.random.randn(1000)  \nhist_data = [x]\ngroup_labels = ['distplot']\n\nfig = ff.create_distplot(hist_data, group_labels)\niplot(fig, filename='Basic Distplot')",
+    "uid" : "9699C871-E339-4CA7-9750-1558BB589E04",
+    "name" : "plot plotly distplot basic",
+    "keyword" : "plot_plotly_distplot_basic"
+  }
+}

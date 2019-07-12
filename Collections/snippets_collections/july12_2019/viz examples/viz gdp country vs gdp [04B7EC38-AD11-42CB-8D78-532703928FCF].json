@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "(gdp\n .drop('country_code',1)\n .query(\"\"\" year == 2017 \"\"\")\n .set_index('country_name')['value']\n .nlargest(10)\n .sort_values()\n .div(1e12)\n .plot\n .barh(color=sns.color_palette('husl',10),figsize=(12,8),\n       title='Top 10 GDP countries for year 2017')\n)\n\nplt.xlabel('GDP (Trillion$)')\nplt.ylabel('Country')\n",
+    "uid" : "04B7EC38-AD11-42CB-8D78-532703928FCF",
+    "name" : "viz gdp country vs gdp",
+    "keyword" : "viz_gdp_country_vs_gdp"
+  }
+}

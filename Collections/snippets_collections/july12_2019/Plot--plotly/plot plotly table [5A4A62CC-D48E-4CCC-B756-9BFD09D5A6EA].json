@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "df = pd.DataFrame({'name':list('ABC'),\n                  'salary': [1000,2000,3000]})\n\ntable = ff.create_table(df)\niplot(table, filename='jupyter-table1')",
+    "uid" : "5A4A62CC-D48E-4CCC-B756-9BFD09D5A6EA",
+    "name" : "plot plotly table",
+    "keyword" : "plot_plotly_table"
+  }
+}

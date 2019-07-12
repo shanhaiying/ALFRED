@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "from matplotlib import cm\ncolor = cm.inferno_r(np.linspace(.4,.8, 30))\n\nimport random\nimport pandas as pd\n\nx = [{i:random.randint(1,5)} for i in range(30)]\ndf = pd.DataFrame(x)\ndf.plot(kind='bar', stacked=True, color=color, legend=False, figsize=(12,4))",
+    "uid" : "C3255EA0-FAA2-402D-929E-BD8C5EC3653F",
+    "name" : "plot colormap",
+    "keyword" : "plot_colormap"
+  }
+}

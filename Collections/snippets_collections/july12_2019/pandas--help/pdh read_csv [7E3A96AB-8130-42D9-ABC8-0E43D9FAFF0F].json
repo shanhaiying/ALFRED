@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "usecols_func = lambda x: 'likes_' in x or x == 'A'\ndf = pd.read_csv('data.csv', index_col='A', usecols=usecols_func)",
+    "uid" : "7E3A96AB-8130-42D9-ABC8-0E43D9FAFF0F",
+    "name" : "pdh read_csv",
+    "keyword" : "pdh-read_csv"
+  }
+}

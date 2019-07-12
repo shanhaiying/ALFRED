@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "df.style.format(\"{:.2%}\")  # makes 0.25 as 25.00%  and 2 as 200.00%",
+    "uid" : "39F0A16A-8E7C-44A6-9D00-D6F034FF73FD",
+    "name" : "pandas stylying percent",
+    "keyword" : "pd_stylying_percent"
+  }
+}

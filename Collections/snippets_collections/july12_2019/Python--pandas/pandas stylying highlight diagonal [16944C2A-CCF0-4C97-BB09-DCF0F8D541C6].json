@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "def highlight_diag(df):\n    '''\n    Usage: df.style.apply(highlight_diag, axis=None)\n    '''\n    a = np.full(df.shape, '', dtype='<U24')\n    np.fill_diagonal(a, 'background-color: yellow')\n    return pd.DataFrame(a, index=df.index, columns=df.columns)\n\ndf.style.apply(highlight_diag, axis=None)",
+    "uid" : "16944C2A-CCF0-4C97-BB09-DCF0F8D541C6",
+    "name" : "pandas stylying highlight diagonal",
+    "keyword" : "pandas_stylying_highlight_diagonal"
+  }
+}

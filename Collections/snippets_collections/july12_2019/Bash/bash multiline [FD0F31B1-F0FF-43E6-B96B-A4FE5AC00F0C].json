@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "cat > out.csv << EOL\rlines\rEOL",
+    "uid" : "FD0F31B1-F0FF-43E6-B96B-A4FE5AC00F0C",
+    "name" : "bash multiline",
+    "keyword" : "multi"
+  }
+}

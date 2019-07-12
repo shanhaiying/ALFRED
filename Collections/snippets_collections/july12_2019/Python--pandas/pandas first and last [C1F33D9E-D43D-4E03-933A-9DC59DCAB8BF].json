@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "import pandas as pd\nimport string\n\ndf = pd.DataFrame({'c0':range(1,10), 'c1': list(string.ascii_letters[0:9])})\ndf2 = df.iloc[[0, -1]]\n\n# first and last 10\ndf = pd.concat([df.head(10), df.tail(10)])",
+    "uid" : "C1F33D9E-D43D-4E03-933A-9DC59DCAB8BF",
+    "name" : "pandas first and last",
+    "keyword" : "pd_first_last"
+  }
+}

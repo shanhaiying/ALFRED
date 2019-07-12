@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : ".pipe(lambda x: x.set_axis([f'{a}_{b}' if b == '' else f'{a}'\n                                 for a,b in x.columns],\n                                axis=1, inplace=False))",
+    "uid" : "40FD118B-013C-493C-9F39-871DA5B564B2",
+    "name" : "pipe columns",
+    "keyword" : "pipecols"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "def lineplot(df1,x,y,hue):\n    import matplotlib.pyplot as plt\n    import seaborn as sns\n    from matplotlib.ticker import PercentFormatter\n    \n    sns.set_context(\"notebook\", font_scale=1.5, rc={\"lines.linewidth\": 2.5})\n    plt.figure(figsize=(12,8))\n    ax = sns.lineplot(x=x, y=y, hue=hue, data=df1)\n    ax.yaxis.set_major_formatter(PercentFormatter(1.0))\n    plt.show()",
+    "uid" : "0364E70C-2E08-4470-8F42-C05032565904",
+    "name" : "plot line seaborn",
+    "keyword" : "lineplot"
+  }
+}

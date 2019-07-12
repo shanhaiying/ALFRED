@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "def stripplot(df,x,y):\n    sns.stripplot(x=x,y=y,data=df,jitter=True,edgecolor='gray',size=8,\n                  palette='winter',orient='v')\n    plt.show()",
+    "uid" : "B8FE0630-67F6-4D2D-A454-0CE138FE6837",
+    "name" : "plot stripplot seaborn",
+    "keyword" : "stripplot"
+  }
+}

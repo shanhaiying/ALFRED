@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "import os\nos.path.join(os.path.dirname(name), 'updated_' + os.path.basename(name))",
+    "uid" : "24198E1A-7F87-4E52-9E1B-84E7557B3EF9",
+    "name" : "python new path",
+    "keyword" : "new_path"
+  }
+}

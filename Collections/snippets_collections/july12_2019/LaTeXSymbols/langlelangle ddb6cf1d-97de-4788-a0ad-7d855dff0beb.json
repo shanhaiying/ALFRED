@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "⟪",
+    "dontautoexpand" : true,
+    "uid" : "ddb6cf1d-97de-4788-a0ad-7d855dff0beb",
+    "name" : "\\langle\\!\\langle",
+    "keyword" : ";\\langle\\!\\langle"
+  }
+}

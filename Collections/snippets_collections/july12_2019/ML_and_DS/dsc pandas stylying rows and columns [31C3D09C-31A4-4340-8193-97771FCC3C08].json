@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "(df.style\n     .apply(lambda x: ['background: yellow' if (x.name == 'colA')\n                                else '' for i in x], axis=0)\n     .apply(lambda x: ['background: lightblue' if (x.name == 'colB')\n                                else '' for i in x], axis=0)\n     .apply(lambda x: ['background: lightblue' if (x.name == 'colC')\n                                else '' for i in x], axis=0)\n     .apply(lambda x: ['background: lightgreen' if (x['colD'] == True)\n                                else '' for i in x], axis=1)\n)",
+    "uid" : "31C3D09C-31A4-4340-8193-97771FCC3C08",
+    "name" : "dsc pandas stylying rows and columns",
+    "keyword" : "dsc_pandas_stylying_rows_and_columns"
+  }
+}

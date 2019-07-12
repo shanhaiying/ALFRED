@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "def myplot(ifile,x,y):\n    plt.scatter(x,y)\n    plt.xlabel('x')\n    plt.ylabel('y')\n    plt.title('mul 10000')\n    plt.show()",
+    "uid" : "3F173AF5-A569-439A-9A3F-EDF9B9DF45E9",
+    "name" : "myplot",
+    "keyword" : "myplot"
+  }
+}

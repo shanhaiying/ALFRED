@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "regexp = r\"(.* Runtime\\s+)(\\d+)(.*)\"\ndtypes = [('a',str), ('num',np.int32), ('b',str)]\noutput = np.fromregex(ifile,regexp, dtypes)\nnums = output['num']",
+    "uid" : "E7A40534-CFA3-446B-934F-0B8124BDDBBB",
+    "name" : "python fromregex",
+    "keyword" : "from_regex"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "%\n%----------------------------------------------------\n%    Frame : \n%----------------------------------------------------\n%\n\\begin{frame}{{cursor}}\n \\begin{itemize} \n  \\item \n  \\item \n  \\item \n  \\item \n \\end{itemize}\n\\end{frame}",
+    "uid" : "97131a7a-b721-46e4-b924-45aaa64e439a",
+    "name" : "beamer frame",
+    "keyword" : "bmfr"
+  }
+}

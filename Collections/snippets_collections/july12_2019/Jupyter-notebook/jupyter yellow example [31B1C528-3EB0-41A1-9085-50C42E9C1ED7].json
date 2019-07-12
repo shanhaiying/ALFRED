@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "<div class=\"alert alert-block alert-warning\">\n<b>Example:<\/b> \n<\/div>",
+    "uid" : "31B1C528-3EB0-41A1-9085-50C42E9C1ED7",
+    "name" : "jupyter yellow example",
+    "keyword" : "jnb_yellow"
+  }
+}

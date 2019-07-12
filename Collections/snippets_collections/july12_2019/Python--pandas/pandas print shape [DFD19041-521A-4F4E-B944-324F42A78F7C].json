@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "print(df{cursor}.shape)",
+    "uid" : "DFD19041-521A-4F4E-B944-324F42A78F7C",
+    "name" : "pandas print shape",
+    "keyword" : "dfs"
+  }
+}

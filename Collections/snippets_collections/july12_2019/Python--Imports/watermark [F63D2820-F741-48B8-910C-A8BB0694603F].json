@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "import watermark\n%load_ext watermark\n%watermark -iv",
+    "uid" : "F63D2820-F741-48B8-910C-A8BB0694603F",
+    "name" : "watermark",
+    "keyword" : "watermark"
+  }
+}

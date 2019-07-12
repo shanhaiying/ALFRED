@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "barplot({cursor}, x='',y='',title='',palette='viridis')",
+    "uid" : "75927A05-F9E9-4D6D-BCE4-D95BFD158440",
+    "name" : "barplot text expansion",
+    "keyword" : "barplot"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "conda create -n myrpy python=3.5\nsource activate myrpy\n\nwhich pip\n\npip install --upgrade pip\n\npip install rpy2",
+    "uid" : "C787328F-A574-46E2-B10C-27CD50403A0E",
+    "name" : "conda newenv",
+    "keyword" : "newenv"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "def display_gif(png):\n    \"\"\"Rename a.gif to a.png and use this function.\"\"\"\n    from IPython import display\n    return display.HTML('<img src=\"{}\">'.format(png))",
+    "uid" : "9080F512-BEEC-44F7-B1AD-56A79FA97138",
+    "name" : "ipython display gif",
+    "keyword" : "ipy_gif"
+  }
+}

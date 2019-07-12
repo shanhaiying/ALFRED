@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "df.head(2).append(df.tail(2))",
+    "uid" : "6C25D1F2-D604-4DBB-865B-2A4ACAE0062A",
+    "name" : "dataframe head tail",
+    "keyword" : "dfht"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "def barhplot(df,year,color_map):\n    colors = df.index.map(color_map)\n    plt.figure(figsize=(12,8))\n    ax = df.plot.barh(color=colors,width=0.9)\n    \n    for p in ax.patches:\n        x = p.get_width()*0.1\n        y = p.get_y()+ 0.2\n        text = '{:.2f}'.format(p.get_width())\n        ax.text(x, y,'(' + str(year) + ') $' + text + ' Trillion',fontsize=15,color='indigo')\n    plt.title('Top 10 countries based on GPD for year: {}'.format(year),fontsize=20)\n    plt.xticks(rotation=90)\n    plt.xlim(0,20)\n    plt.xlabel('GDP $Trillion')\n    plt.ylabel('Country')\n    plt.tight_layout()\n    plt.savefig('images\/year_{}'.format(year))\n    \n    return None\n\ndef run_loop(gdp,color_map):\n    for i,year in enumerate(gdp['year'].unique()):\n        df = (gdp\n               .drop('country_code',1)\n               .query(\"\"\" year == @year \"\"\")\n               .set_index('country_name')['value']\n               .nlargest(10)\n               .sort_values()\n               .div(1e12)\n                )\n\n        barhplot(df,year,color_map);\n\ncolors15 = ['#78C850', '#F08030', '#6890F0', '#A8B820', '#A8A878',\n            '#A040A0', '#F8D030', '#E0C068', '#EE99AC', '#C03028',\n            '#F85888', '#B8A038', '#705898', '#98D8D8', '#7038F8']\n\ncountries = gdp.sort_values('value').dropna(how='any').groupby('year').tail(10).country_name.unique()\ncolor_map = dict(zip(countries,colors15[0:13]))\n\n# run_loop(gdp,color_map)\n\n\n%%bash\n\n\/bin\/rm -rf out_gifski.gif\n\/usr\/local\/bin\/gifski -o out_gifski.gif --fps 1 images\/*.png",
+    "uid" : "9AACAF3F-854C-4C25-A885-AA1DF684E6E4",
+    "name" : "viz animated plot gdp top 10",
+    "keyword" : "viz_animated_plot_gdp_top_10"
+  }
+}

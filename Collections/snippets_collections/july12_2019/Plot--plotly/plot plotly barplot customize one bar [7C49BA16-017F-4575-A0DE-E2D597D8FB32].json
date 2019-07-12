@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "trace0 = go.Bar(\n    x=['Feature A', 'Feature B', 'Feature C',\n       'Feature D', 'Feature E'],\n    y=[20, 14, 23, 25, 22],\n    marker=dict(\n        color=['rgba(204,204,204,1)', 'rgba(222,45,38,0.8)',\n               'rgba(204,204,204,1)', 'rgba(204,204,204,1)',\n               'rgba(204,204,204,1)']),\n)\n\ndata = [trace0]\nlayout = go.Layout(\n    title='Least Used Feature',\n)\n\nfig = go.Figure(data=data, layout=layout)\niplot(fig, filename='color-bar')",
+    "uid" : "7C49BA16-017F-4575-A0DE-E2D597D8FB32",
+    "name" : "plot plotly barplot customize one bar",
+    "keyword" : "plot_plotly_barplot_customize_one_bar"
+  }
+}

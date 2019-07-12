@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "from IPython.display import Markdown, display\n\ndef printmd(string, color=None):\n    colorstr = \"<span style='color:{}'>{}<\/span>\".format(color, string)\n    display(Markdown(colorstr))\n\nprintmd(\"**bold and blue**\", color=\"blue\")",
+    "uid" : "AC54AD34-7A57-4D23-8D20-0FB8C45D7242",
+    "name" : "ipython bold color",
+    "keyword" : "bold_color"
+  }
+}

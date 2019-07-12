@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "def commented_colnames(ifile,sep=','):\n    \"\"\" Get column names from first commented line of text file\n    \n    NOTE: np.savetxt automatically gives commented header line.\n    \"\"\"\n    colnames = []\n    with open(ifile) as fi:\n        for l in fi:\n            if l.strip().startswith('#'):\n                names = l.strip('#')\n                colnames = [i for i in names.split(sep)]\n                break\n    return colnames",
+    "uid" : "B6138DFC-BA02-43C9-B96A-68A0924CF24E",
+    "name" : "rsh commented header",
+    "keyword" : "com_header"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "def barplot(df,x,y,figsize=(12,8), palette=None, title=None):\n    # palettes\n    palettes = ['Accent','Accent_r', 'cool_r', 'CMRmap_r','Dark2','Dark2_r',\n            'gist_heat','gist_heat_r','gist_stern','gist_stern_r',\n            'icefire','icefire_r','inferno','inferno_r','magma',\n            'magma_r','mako','mako_r','plasma','plasma_r','PuRd',\n            'PuRd_r','rainbow','rainbow_r','RdPu','RdPu_r','RdYlGn',\n            'RdYlGn_r','Reds','Reds_r','rocket','rocket_r','spring_r',\n            'summer','twilight','twilight_r','viridis','viridis_r']\n\n\n    if palette == None:\n        palette = palettes[np.random.randint(len(palettes))]\n        \n    plt.figure(figsize=figsize)\n    ax = sns.barplot(x=x, y=y, alpha=0.8,palette=palette,data=df)\n    for p in ax.patches:\n        ax.annotate(np.round(p.get_height(), decimals=2), \n                (p.get_x()+p.get_width()\/2.,p.get_height()), \n                ha='center', \n                va='center', \n                xytext=(0, 10), \n                textcoords='offset points')\n    plt.title(title)\n    plt.xticks(rotation=90)\n    plt.show()\n    \nbarplot(acclaimed, x='title',y='vote_average',title='Most acclaimed movie')",
+    "uid" : "24386C87-54A8-4721-94F9-8A7A2105E004",
+    "name" : "plot bar seaborn",
+    "keyword" : "barplot_sns"
+  }
+}

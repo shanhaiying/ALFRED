@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "def plotly_map_usa(df,lat,lon, text,title=''):\n    data = [ go.Scattergeo(\n            locationmode = 'USA-states',\n            lon = df[lon],\n            lat = df[lat],\n            text = df[text],\n            mode = 'markers',\n            marker = dict( \n                size = 8, \n                opacity = 0.8,\n                reversescale = True,\n                autocolorscale = False,\n                symbol = 'square',\n                line = dict(\n                    width=1,\n                    color='rgba(102, 102, 102)'\n                ),\n\n            ))]\n\n    layout = dict(\n            title = '', \n            geo = dict(\n                scope='usa',\n                projection=dict( type='albers usa' ),\n                showland = True,\n                landcolor = \"rgb(250, 250, 250)\",\n                subunitcolor = \"rgb(217, 217, 217)\",\n                countrycolor = \"rgb(217, 217, 217)\",\n                countrywidth = 0.5,\n                subunitwidth = 0.5        \n            ),\n        )\n\n    fig = go.Figure(data=data, layout=layout )\n    iplot(fig)",
+    "uid" : "394259AA-C42F-4949-8BE3-6A3D59C9DD04",
+    "name" : "plot plotly map usa",
+    "keyword" : "plot_plotly_map_usa"
+  }
+}

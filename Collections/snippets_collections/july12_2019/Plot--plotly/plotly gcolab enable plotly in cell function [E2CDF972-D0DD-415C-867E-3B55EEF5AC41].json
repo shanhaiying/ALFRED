@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "def enable_plotly_in_cell():\n    ''' Use this function in each cell to show plot in Google Colaboratory.'''\n    import IPython\n    from plotly.offline import init_notebook_mode\n    display(IPython.core.display.HTML('''<script src=\"\/static\/components\/requirejs\/require.js\"><\/script>'''))\n    init_notebook_mode(connected=False)",
+    "uid" : "E2CDF972-D0DD-415C-867E-3B55EEF5AC41",
+    "name" : "plotly gcolab enable plotly in cell function",
+    "keyword" : "plotly_gcolab"
+  }
+}

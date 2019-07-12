@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "## WARNING: If dataset is smaller than 15k rows, eval is several order slower than normal methods.\n##          DO NOT USE eval and query if you have less than 10k rows.\n## pandas eval uses very less memory\n## pd.eval used numexpr module, and operations are fast and memory efficient.\npd.eval('df1 + df2 + df3 + df4') # eval is better than plain df1 + df2 + df3 + df4\npd.eval('df.A[0] + df2.iloc[1]')\ndf.eval('(A + B) \/ (C - 1)')\ndf.eval('A + @column_mean') # column_mean = np.mean(df.A)\ndf.eval('D = (A + B) \/ C', inplace=True) # creates new column\npd.eval('(df1 < 0.5) and (df2 < 0.5) or (df3 < df4)')\ndf.eval('tip * sin(30 * @pi\/180)') # pi = np.pi  # sin\/cos\/log are supported but not pi.\ndf.eval(\"\"\"c = a + b\n           d = a + b + c\n           a = 1\"\"\", inplace=False)\n           \n## Use plain ol' python for dataframe with rows less than 15k\n## df is seaborn tips data.\n%timeit df.tip + df.tip + df.tip + df.tip # 195 µs\n%timeit pd.eval('df.size + df.size + df.size + df.size', engine='python') # 555 µs (3 times slower)\n%timeit pd.eval('df.tip + df.tip + df.tip + df.tip') # 1.08 ms (5.5 times slower)\n\n## example2\ncols = ['A-B\/A+B','A-C\/A+C','B-C\/B+C']\nx = pd.DataFrame([df.eval(col).values for col in cols], columns=cols)\ndf.assign(**x)",
+    "uid" : "B076F48D-1233-4FD0-8F25-3782CDB2437E",
+    "name" : "pdh eval",
+    "keyword" : "pdh-eval"
+  }
+}

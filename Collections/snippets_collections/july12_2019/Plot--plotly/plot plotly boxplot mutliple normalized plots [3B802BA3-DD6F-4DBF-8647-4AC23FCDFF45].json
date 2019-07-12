@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "x = ['day 1', 'day 1', 'day 1', 'day 1', 'day 1', 'day 1',\n     'day 2', 'day 2', 'day 2', 'day 2', 'day 2', 'day 2']\n\ntrace0 = go.Box(\n    y=[0.2, 0.2, 0.6, 1.0, 0.5, 0.4, 0.2, 0.7, 0.9, 0.1, 0.5, 0.3],\n    x=x,\n    name='kale',\n    marker=dict(\n        color='#3D9970'\n    )\n)\ntrace1 = go.Box(\n    y=[0.6, 0.7, 0.3, 0.6, 0.0, 0.5, 0.7, 0.9, 0.5, 0.8, 0.7, 0.2],\n    x=x,\n    name='radishes',\n    marker=dict(\n        color='#FF4136'\n    )\n)\ntrace2 = go.Box(\n    y=[0.1, 0.3, 0.1, 0.9, 0.6, 0.6, 0.9, 1.0, 0.3, 0.6, 0.8, 0.5],\n    x=x,\n    name='carrots',\n    marker=dict(\n        color='#FF851B'\n    )\n)\ndata = [trace0, trace1, trace2]\nlayout = go.Layout(\n    yaxis=dict(\n        title='normalized moisture',\n        zeroline=False\n    ),\n    boxmode='group'\n)\n\nfig = go.Figure(data=data, layout=layout)\niplot(fig)",
+    "uid" : "3B802BA3-DD6F-4DBF-8647-4AC23FCDFF45",
+    "name" : "plot plotly boxplot mutliple normalized plots",
+    "keyword" : "plot_plotly_boxplot_mutliple_normalized_plots"
+  }
+}

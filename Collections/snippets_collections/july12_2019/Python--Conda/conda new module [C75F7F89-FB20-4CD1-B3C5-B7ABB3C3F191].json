@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "# we want to install new moduel \"pivottablejs\" to dataSc environment\n\n\n# make sure python3 is activated\necho 'export PATH=\"\/Users\/poudel\/miniconda3\/bin:$PATH\"' >> ~\/.bash_profile\n\nsource ~\/.bash_profile\n\n\n# activate dataSc environment    \nsource activate dataSc\n\n\n# install the package\npip install --user pivottablejs",
+    "uid" : "C75F7F89-FB20-4CD1-B3C5-B7ABB3C3F191",
+    "name" : "conda new module",
+    "keyword" : "new_module"
+  }
+}

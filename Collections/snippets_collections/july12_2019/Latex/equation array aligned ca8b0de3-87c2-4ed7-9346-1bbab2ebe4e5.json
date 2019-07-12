@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : " \\begin{eqnarray}\\label{[eq:{cursor}]}\n&=&  \\\\\n&=& \n\\end{eqnarray}",
+    "uid" : "ca8b0de3-87c2-4ed7-9346-1bbab2ebe4e5",
+    "name" : "equation array aligned",
+    "keyword" : "eqal"
+  }
+}

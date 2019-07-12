@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "import numpy as np\n\narr_1d = np.arange(10)\niplot([go.Box(y=arr_1d)])",
+    "uid" : "0F47FF1A-696A-453D-88C5-D8CC2AA7E14D",
+    "name" : "plot plotly boxplot basic",
+    "keyword" : "plot_boxplot_plotly"
+  }
+}

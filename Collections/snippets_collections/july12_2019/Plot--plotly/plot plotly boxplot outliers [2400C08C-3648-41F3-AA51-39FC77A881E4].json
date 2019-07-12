@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "def boxplot_with_colored_outliers(lst):\n    '''Boxplot of a list.'''\n    # First find outliers\n    quartile_1, quartile_3 = np.percentile(lst, [25, 75])\n    iqr = quartile_3 - quartile_1\n    lower_bound = quartile_1 - (iqr * 1.5)\n    upper_bound = quartile_3 + (iqr * 1.5)\n    idx_outliers, = np.where((lst > upper_bound) | (lst < lower_bound))\n    \n    # create trace to plot\n    trace0 = go.Box(y = lst,\n                    name = 'All Points',\n                    jitter=0.3,\n                    pointpos = -2,\n                    opacity = 0.8,\n                    boxpoints = 'all',\n                    selectedpoints = idx_outliers,\n                    marker = dict(color='brown', opacity = 1.0),\n                    line = dict(color = 'rgb(7,40,89)'))\n\n    data = [trace0]\n\n    layout = go.Layout(title='Box plot with outliers')\n\n    fig = go.Figure(data=data,layout=layout)\n    return iplot(fig)\n\nlst = [1,2,3,4,5,6,70,8,9,80]\nboxplot_with_colored_outliers(lst)",
+    "uid" : "2400C08C-3648-41F3-AA51-39FC77A881E4",
+    "name" : "plot plotly boxplot outliers",
+    "keyword" : "plot_boxplot_plotly_outliers"
+  }
+}

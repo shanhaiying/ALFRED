@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "# partition kth=-3 makes last 3 columns higest values but order\n# may be arbitrary.\n\n# sum_max_3columns \n\n# df['sum_max3'] = np.sum(np.partition(df.values, kth=-3)[:, -3:], axis=1)\n\ndf.assign(max3=np.sum(np.partition(df.values, kth=-3)[:, -3:], axis=1))",
+    "uid" : "42709294-981B-450F-9353-4C80C803CD8B",
+    "name" : "sum maximum3",
+    "keyword" : "sum_max3"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "%%bash\n\ncat > a.R <<EOL\n#!\/usr\/bin\/env Rscript \n\n# Date: {date}\n\nlibrary(tidyverse)\nlibrary(janitor)\nlibrary(dplyr)\nlibrary(ggplot2)\n\n\n\nEOL\n\n# Run code\n\/usr\/local\/bin\/Rscript a.R",
+    "uid" : "288114FE-15B5-407A-8DD4-F8ABC3E1F74D",
+    "name" : "R in jupyter",
+    "keyword" : "rjup"
+  }
+}

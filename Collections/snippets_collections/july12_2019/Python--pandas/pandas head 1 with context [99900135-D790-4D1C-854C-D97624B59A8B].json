@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "with pd.option_context('display.max_rows', 1,\n                       'display.max_columns', None,\n                       'display.max_colwidth', -1):\n    display(df.head(1))",
+    "uid" : "99900135-D790-4D1C-854C-D97624B59A8B",
+    "name" : "pandas head 1 with context",
+    "keyword" : "pdh1"
+  }
+}

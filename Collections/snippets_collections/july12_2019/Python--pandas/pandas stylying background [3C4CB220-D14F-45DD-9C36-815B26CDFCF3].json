@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "## background\nhttps:\/\/matplotlib.org\/gallery\/color\/colormap_reference.html\ndf.style.background_gradient() # default is cmap='PuBu'\ndf.style.background_gradient((cmap='PuBu', low=0, high=0, axis=0, subset=None) # axis=0 means column gradient.\n# uniform sequential cmap= 'plasma', 'inferno'",
+    "uid" : "3C4CB220-D14F-45DD-9C36-815B26CDFCF3",
+    "name" : "pandas stylying background",
+    "keyword" : "pandas_stylying_bkg"
+  }
+}

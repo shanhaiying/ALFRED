@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "#!python\n# -*- coding: utf-8 -*-#\n\"\"\"\n    \nAuthor : Bhishan Poudel\nDate   :\n\"\"\"\n# Imports\nimport numpy as np\nimport pandas as pd\nimport os\nimport sys\nimport argparse",
+    "uid" : "F8AA5052-D8F7-4AC7-884C-B7B7DD9892E0",
+    "name" : "python header",
+    "keyword" : "pyh"
+  }
+}

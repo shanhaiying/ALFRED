@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "import numpy as np\nimport pandas as pd\n\n# plotting\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n%matplotlib inline\nsns.set(color_codes=True)\nsns.set()\n\n# seaborn warnings ignore\nimport warnings\nwarnings.filterwarnings('ignore')\n\n# Jupyter notebook settings for pandas\npd.set_option('display.float_format', '{:,.2f}'.format) # numbers sep by comma\npd.set_option('display.max_rows', 100) # None for all the rows\npd.set_option('display.max_columns', 100) # None for all the columns\npd.set_option('display.max_colwidth', 100)\n\n\n# ipython\nfrom IPython.display import Image",
+    "uid" : "B725EB44-99BA-49CB-96EB-BF93057CEC08",
+    "name" : "udemy imports",
+    "keyword" : "imp2"
+  }
+}

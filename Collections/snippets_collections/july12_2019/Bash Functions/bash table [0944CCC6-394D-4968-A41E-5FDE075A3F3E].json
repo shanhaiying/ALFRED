@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "#!\/bin\/bash\n\nfor y in {1..5}\ndo\n  for x in {1..10}\n    do echo -n \"| $((y*x)) \"\n  done\n  echo\ndone | column -t",
+    "uid" : "0944CCC6-394D-4968-A41E-5FDE075A3F3E",
+    "name" : "bash table",
+    "keyword" : "bf1"
+  }
+}

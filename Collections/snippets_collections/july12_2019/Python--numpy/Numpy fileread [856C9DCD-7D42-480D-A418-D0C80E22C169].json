@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "infile = \"\"\nx = np.genfromtxt(infile, delimiter=None, usecols=(0),\n                  dtype=str, unpack=True)\ny = np.genfromtxt(infile, delimiter=None, usecols=(1),\n                  dtype=np.float64,skip_header=0, unpack=True)",
+    "uid" : "856C9DCD-7D42-480D-A418-D0C80E22C169",
+    "name" : "Numpy fileread",
+    "keyword" : "fileread"
+  }
+}

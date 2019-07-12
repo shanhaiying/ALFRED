@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "##------------------------------\n## create multi-index dataframe\nindex_matrix = [['a','b'],['c','d'],['e','f']]\ndata_c0 = [10,20]\ndata_c1 = [100,200]\nindex = pd.MultiIndex.from_arrays(index_matrix, names=['index_c0', 'index_c1', 'index_c2'])\ndf = pd.DataFrame({'data_c0': data_c0,'data_c1': data_c1}, index=index)\nprint(df)\n                            data_c0  data_c1\nindex_c0 index_c1 index_c2                  \na        c        e              10      100\nb        d        f              20      200\n\n****reset index****\nprint(df.reset_index())\n  index_c0 index_c1 index_c2  data_c0  data_c1\n0        a        c        e       10      100\n1        b        d        f       20      200\n\n##------------------------------\n## create multi-index dataframe using groupby\ndf = pd.DataFrame({\"User\": [\"a\", \"b\", \"b\", \"c\", \"b\", \"a\", \"c\"],\n                  \"Amount\": [10.0, 5.0, 8.0, 10.5, 7.5, 8.0, 9],\n                  'Score': [9, 1, 8, 7, 7, 6, 9]})\nx = df.groupby('User').agg({\"Score\": [\"mean\",  \"std\"], \"Amount\": \"mean\"}).reset_index(drop=True)\n      Score              Amount\n       mean       std      mean\n0  7.500000  2.121320  9.000000\n1  5.333333  3.785939  6.833333\n2  8.000000  1.414214  9.750000\n\n****remove multi-index****\nx.columns = [i[0]+'_'+i[1] for i in x.columns.ravel()]\n   Score_mean  Score_std  Amount_mean\n0    7.500000   2.121320     9.000000\n1    5.333333   3.785939     6.833333\n2    8.000000   1.414214     9.750000",
+    "uid" : "A548627D-EA4C-4F51-B787-0CEFD47FA3C3",
+    "name" : "pdh multiindex",
+    "keyword" : "pdh-multiindex"
+  }
+}

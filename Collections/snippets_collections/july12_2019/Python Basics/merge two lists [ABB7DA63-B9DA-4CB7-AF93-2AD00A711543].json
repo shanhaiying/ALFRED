@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "from itertools import zip_longest\n\ndef merge_lists(a, b): \n  return [[x for x in t if x is not None] for t in zip_longest(a, b)]",
+    "uid" : "ABB7DA63-B9DA-4CB7-AF93-2AD00A711543",
+    "name" : "merge two lists",
+    "keyword" : "merge_two_lists"
+  }
+}

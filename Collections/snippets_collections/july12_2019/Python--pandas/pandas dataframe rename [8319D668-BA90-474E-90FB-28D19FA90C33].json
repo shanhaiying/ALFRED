@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "df.rename(columns={': ''}, inplace=True)",
+    "uid" : "8319D668-BA90-474E-90FB-28D19FA90C33",
+    "name" : "pandas dataframe rename",
+    "keyword" : "rename"
+  }
+}

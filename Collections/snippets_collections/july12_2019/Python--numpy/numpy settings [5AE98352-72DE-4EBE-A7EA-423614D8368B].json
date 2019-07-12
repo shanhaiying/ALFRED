@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "np.set_printoptions(formatter={'float': lambda x: \"{0:0.2f}\".format(x)})",
+    "uid" : "5AE98352-72DE-4EBE-A7EA-423614D8368B",
+    "name" : "numpy settings",
+    "keyword" : "np_settings"
+  }
+}

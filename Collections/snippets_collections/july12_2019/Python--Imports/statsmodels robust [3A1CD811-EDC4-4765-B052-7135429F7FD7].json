@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "import statsmodels.robust as smrb # smrb.mad() etc",
+    "uid" : "3A1CD811-EDC4-4765-B052-7135429F7FD7",
+    "name" : "statsmodels robust",
+    "keyword" : "smrb"
+  }
+}

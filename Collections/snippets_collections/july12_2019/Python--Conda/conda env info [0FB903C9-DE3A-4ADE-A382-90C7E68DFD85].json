@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "conda info --envs",
+    "uid" : "0FB903C9-DE3A-4ADE-A382-90C7E68DFD85",
+    "name" : "conda env info",
+    "keyword" : "env"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "setdiff1d, setxor1d\nunion1d, intersect1d\nisin, in1d\nunique\n\n# np.in1d\ntest = np.array([0, 1, 2, 5, 0])\nstates = [0, 2]\nmask = np.in1d(test, states)\n",
+    "uid" : "F9B5C955-E154-4054-89DD-BBD1236BE707",
+    "name" : "numpy help set routines",
+    "keyword" : "np_help_set_routines"
+  }
+}

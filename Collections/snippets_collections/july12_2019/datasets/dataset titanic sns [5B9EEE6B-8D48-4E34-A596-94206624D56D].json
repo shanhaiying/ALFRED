@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "titanic = sns.load_dataset('titanic')\ntitanic.head()",
+    "uid" : "5B9EEE6B-8D48-4E34-A596-94206624D56D",
+    "name" : "dataset titanic sns",
+    "keyword" : "dataset_titanic_sns"
+  }
+}

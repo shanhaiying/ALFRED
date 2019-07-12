@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "def plot_category_vs_demand(warehouse_name, years):\n    fig, axes = plt.subplots(nrows=1, ncols=len(years))\n\n    dfA = (df.groupby(['Warehouse','Year','Product_Category'])['Order_Demand']\n           .mean().unstack().loc[[warehouse_name]])\n\n    for i,year in enumerate(years):\n        axx = (dfA.loc[(warehouse_name, year)]\n            .nlargest(10)\n            .plot(kind='bar',figsize=(16,6),\n                  title='Year ' + str(year), ax=axes[i]))\n\n        for p in axx.patches:\n            axx.annotate(np.round(p.get_height(), decimals=2), \n                        (p.get_x()+p.get_width()\/2.,p.get_height()), \n                        ha='center', \n                        va='center', \n                        xytext=(0, 10),\n                        rotation=30,\n                        textcoords='offset points')\n\n\n    plt.subplots_adjust(left=0.1, right=0.9, top=0.9, bottom=0.1)\n    plt.suptitle('ProductCategory vs OrderDemand for Warehouse ' + warehouse_name,fontweight=\"bold\")\n    \n# data\ndf = pd.read_csv('https:\/\/github.com\/bhishanpdl\/Datasets\/blob\/master\/Historical%20Product%20Demand.csv?raw=true')\ndf['Date'] = pd.to_datetime(df['Date'])\ndf['Order_Demand'] = pd.to_numeric(df.Order_Demand, errors = 'coerce')\ndf = df.dropna()\ndf = df.sort_values('Date')\ndf['Year'] = df.Date.dt.year\ndf['Month'] = df.Date.dt.month\ndf.head()\n\n# plot  \nyears = [2016,2015,2014]\nplot_category_vs_demand('Whse_A', years)",
+    "uid" : "547E7C37-33EA-48A6-8FA6-B0E247E23141",
+    "name" : "plot bar subplots pandas",
+    "keyword" : "plot_bar_subplots_pandas"
+  }
+}

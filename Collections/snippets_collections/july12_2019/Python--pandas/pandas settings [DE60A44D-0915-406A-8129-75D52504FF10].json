@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "# Jupyter notebook settings for pandas\npd.set_option('display.max_columns', None)\npd.set_option('display.float_format', '{:,.2f}'.format) # numbers sep by comma\npd.set_option('display.max_rows', 100) # None for all the rows\npd.set_option('display.max_colwidth', 500)",
+    "uid" : "DE60A44D-0915-406A-8129-75D52504FF10",
+    "name" : "pandas settings",
+    "keyword" : "pd_settings"
+  }
+}

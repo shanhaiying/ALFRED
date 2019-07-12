@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "Alfred's Help site documentation on Snippets and Text Expansion:\nhttps:\/\/www.alfredapp.com\/help\/features\/snippets\/",
+    "dontautoexpand" : true,
+    "uid" : "40DE51E2-753D-49E8-8503-07B6C6CC3747",
+    "name" : "Help Site - Snippets and Text Expansion",
+    "keyword" : "!sniphelp"
+  }
+}

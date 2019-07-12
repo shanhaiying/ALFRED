@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "import numpy as np\nimport pandas as pd\n\n# plotting\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n%matplotlib inline\nsns.set(color_codes=True)\nsns.set()\nsns.set_style('darkgrid')\n%config InlineBackend.figure_format = 'svg'",
+    "uid" : "1F0CF23E-2312-4594-A690-B3CFD2BB1CFA",
+    "name" : "imports",
+    "keyword" : "imp"
+  }
+}

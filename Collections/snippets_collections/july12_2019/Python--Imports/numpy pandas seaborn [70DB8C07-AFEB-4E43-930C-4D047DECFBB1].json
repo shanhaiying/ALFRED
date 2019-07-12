@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "import numpy as np\nimport pandas as pd\nimport seaborn as sns\nsns.set(color_codes=True)\n\npd.options.display.max_columns = 500\npd.options.display.max_rows = 500",
+    "uid" : "70DB8C07-AFEB-4E43-930C-4D047DECFBB1",
+    "name" : "numpy pandas seaborn",
+    "keyword" : "npds"
+  }
+}

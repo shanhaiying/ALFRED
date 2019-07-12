@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "employee.groupby(['RACE', 'GENDER'])['BASE_SALARY'].mean().astype(int).unstack('GENDER')\n\n# example 2\nflights.groupby(['AIRLINE', 'ORG_AIR'])['CANCELLED'].sum().unstack('ORG_AIR', fill_value=0)\nflights.pivot_table(index='AIRLINE', columns='ORG_AIR', values='CANCELLED', aggfunc='sum',fill_value=0).round(2)",
+    "uid" : "CD9E8796-57F5-4F20-B0DF-4AD36A297C8A",
+    "name" : "pdh unstack",
+    "keyword" : "pdh-unstack"
+  }
+}

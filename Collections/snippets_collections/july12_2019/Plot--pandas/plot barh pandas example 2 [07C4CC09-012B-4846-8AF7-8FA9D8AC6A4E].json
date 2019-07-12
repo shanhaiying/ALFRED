@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "ax = df.sort_values(by='',ascending=True).plot(kind='barh',\n                                 color='c',\n                                title='',\n                                figsize=(12,8))\nax.set_xlabel('')\nax.set_ylabel('')\nfor p in ax.patches:\n    ax.annotate(str(int(p.get_width())), \n                (p.get_x() + p.get_width(), p.get_y()),\n                xytext=(16, 0),\n                textcoords='offset points',\n                horizontalalignment='right')",
+    "uid" : "07C4CC09-012B-4846-8AF7-8FA9D8AC6A4E",
+    "name" : "plot barh pandas example 2",
+    "keyword" : "pd_barh_eg2"
+  }
+}

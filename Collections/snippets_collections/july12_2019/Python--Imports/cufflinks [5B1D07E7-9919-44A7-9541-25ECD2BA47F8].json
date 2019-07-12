@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "import cufflinks as cf\ncf.go_offline(connected=True)\ncf.set_config_file(theme='pearl')",
+    "uid" : "5B1D07E7-9919-44A7-9541-25ECD2BA47F8",
+    "name" : "cufflinks",
+    "keyword" : "cufflinks"
+  }
+}

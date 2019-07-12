@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "df = pd.read_csv( \n          'https:\/\/archive.ics.uci.edu\/ml\/machine-learning-'+\n          'databases\/iris\/iris.data',sep= ',', header= None)",
+    "uid" : "B5CB80B8-5301-4A36-8979-776AE65ACBB4",
+    "name" : "data iris",
+    "keyword" : "data_iris"
+  }
+}

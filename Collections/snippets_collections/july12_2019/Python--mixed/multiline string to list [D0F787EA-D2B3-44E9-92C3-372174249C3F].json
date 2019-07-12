@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "a = '''11 2 4\n4 5 6\n10 8 -12\n'''\n\nar = [[int(i) for i in i.split(' ')] for i in a.split('\\n') if i.strip()]",
+    "uid" : "D0F787EA-D2B3-44E9-92C3-372174249C3F",
+    "name" : "multiline string to list",
+    "keyword" : "multiline_to_list"
+  }
+}

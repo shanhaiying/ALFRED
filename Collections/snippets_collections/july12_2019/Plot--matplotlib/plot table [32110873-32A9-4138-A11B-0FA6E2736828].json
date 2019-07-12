@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "fig, ax =plt.subplots()\ntable_data = np.random.random((10,3))\ncollabel=(\"c1\", \"c2\", \"c3\")\nax.axis('tight')\nax.axis('off')\nthe_table = ax.table(cellText=table_data,colLabels=collabel,loc='center')\nax.plot(table_data[:,0],table_data[:,1])\nplt.show()",
+    "uid" : "32110873-32A9-4138-A11B-0FA6E2736828",
+    "name" : "plot table",
+    "keyword" : "plot_table"
+  }
+}

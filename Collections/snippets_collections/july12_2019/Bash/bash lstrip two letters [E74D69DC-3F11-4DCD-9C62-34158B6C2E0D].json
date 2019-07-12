@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "cat input_file | sed 's\/^..\/\/' > output_file",
+    "uid" : "E74D69DC-3F11-4DCD-9C62-34158B6C2E0D",
+    "name" : "bash lstrip two letters",
+    "keyword" : "bash_lstrip_two_letters"
+  }
+}

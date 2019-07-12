@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "def plot_two_scatters(varx, vary, df1, df2, title1, title2, xlabel, ylabel, **kwargs):\n    \"\"\"function to make 2 side-by-side scatter plots to compare 2 dataframes\n    \n    Usage: plot_two_scatters('A', 'B', df1, df2, '', '', '', '')\n    \n    \"\"\"\n    fig2, ax2 = plt.subplots(nrows=1, ncols=2)\n    fig2.set_size_inches(24, 8)\n    plt.subplots_adjust(wspace=0.2)\n    \n    df1.plot(kind='scatter', x=varx, y=vary, ax=ax2[0], title=title1, **kwargs)\n    ax2[0].set_xlabel(xlabel)\n    ax2[0].set_ylabel(ylabel)\n\n    df2.plot(kind='scatter', x=varx, y=vary, ax=ax2[1], title=title2, **kwargs)\n    ax2[1].set_xlabel(xlabel)\n    ax2[1].set_ylabel(ylabel)\n\n    return fig2, ax2",
+    "uid" : "7031649D-5B63-4D81-A73F-2A165F533F58",
+    "name" : "plot scatter pandas two dataframes",
+    "keyword" : "plot_scatter_pd_two_dfs"
+  }
+}

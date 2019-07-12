@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "def lmplot(df,x,y,hue=None):\n    sns.lmplot(data=df,x=x,y=y,lowess=True, aspect=2,hue=hue,\n               line_kws={'color' : 'black'});\n    plt.show()",
+    "uid" : "A9EEC48A-C309-4AB4-9460-6C541FBA3C6E",
+    "name" : "plot lmplot seaborn",
+    "keyword" : "lmplot"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "def combine_colA_colBwithListDict(dff, col, coldict, key, series_name):\n    '''\n    Example:\n    title      revenue      production_companies \n    Toy Story  373554033.0  [{'name': 'Pixar Animation Studios', 'id': 3}] \n    Jumanji    262797249.0  [{'name': 'TriStar Pictures', 'id': 559},                 \n                         {'name': 'Teitler Film', 'id': 2550}, \n                         {'name': 'Interscope Communications', 'id': 10201}]\n    \n    Usage:\n    df = movie[['production_companies','revenue','title']].copy()\n    company_revenue = combine_colA_colBwithListDict(df, 'revenue',\n                                  'production_companies',\n                                  'name', 'company')\n                                  \n    Post Usage:\n    1. dropna(how='any')\n    2. pivot_table with agg mean, sum, count\n    3. top10 = sort_values head10\n    4. sns.barplot('company','sum',data=top10) and plt.xticks(rotation=90)\n    '''\n    dff[coldict] = dff[coldict].fillna('[]')\n    dff[coldict] = dff[coldict].apply(ast.literal_eval)\n    dff[coldict] = dff[coldict].apply(lambda x: [i[key] for i in x] \n                                    if isinstance(x, list)\n                                    else [])\n\n    s = dff.apply(lambda x: pd.Series(x[coldict]),axis=1)\n    s = s.stack()\n    s = s.reset_index(level=1, drop=True)\n    s.name = series_name\n\n    com_df = dff.drop(coldict, axis=1).join(s)\n    return com_df",
+    "uid" : "792F4939-FB5D-4E36-B137-A70170224332",
+    "name" : "data cleaning 2",
+    "keyword" : "data_cleaning2"
+  }
+}

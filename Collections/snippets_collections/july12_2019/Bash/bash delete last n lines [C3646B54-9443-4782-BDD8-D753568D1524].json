@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "# delete last 2 lines\n!tail -n 5 a.csv\n!sed '$d' a.csv | sed '$d' | sed '$d' | tail -n 3\n!sed '$d' a.csv | sed '$d' | sed '$d' > b.csv\n!tail -n 3 b.csv",
+    "uid" : "C3646B54-9443-4782-BDD8-D753568D1524",
+    "name" : "bash delete last n lines",
+    "keyword" : "delete_last_n_lines"
+  }
+}

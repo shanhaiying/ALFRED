@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "subject = ['Moe','Larry','Curly','Moe','Larry','Curly','Moe','Larry','Curly','Moe','Larry','Curly']\nscore = [1,6,2,8,2,9,4,5,1,5,2,8]\n\ndata = [dict(\n  type = 'scatter',\n  x = subject,\n  y = score,\n  mode = 'markers',\n  transforms = [dict(\n    type = 'aggregate',\n    groups = subject,\n    aggregations = [dict(\n        target = 'y', func = 'sum', enabled = True),\n    ]\n  )]\n)]\n\niplot({'data': data}, validate=False)",
+    "uid" : "C2115127-4AAD-4F7E-9B5B-455DF5D0ABF9",
+    "name" : "plot plotly aggregation basic",
+    "keyword" : "plot_plotly_aggregation_basic"
+  }
+}

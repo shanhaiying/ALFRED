@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "def plot_missing_numbers(df):\n    df.isna().mean().mul(100).iloc[::-1].sort_values().plot(\n        kind='barh', figsize=(14,5), grid=True, \n        title='Percentage of missing values for each feature', color='#ff4500')\n    plt.xlabel('Percentage')\n    plt.ylabel('Feature')\n    plt.show()\n    return plt\n\nplot_missing_numbers(df)",
+    "uid" : "BF43DCA7-791E-40B9-8FF6-23EB72B8A46A",
+    "name" : "plot missing number",
+    "keyword" : "plot_missing_number"
+  }
+}

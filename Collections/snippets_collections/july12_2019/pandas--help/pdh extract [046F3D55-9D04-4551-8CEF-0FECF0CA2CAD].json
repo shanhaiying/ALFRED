@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "s = pd.Series(['M35 35-39', 'M40 40-44', 'M45 45-49', 'M50 50-54', 'M55 55-59',\n       'M60 60-64', 'M65 65-69', 'M70 70-74', 'M75 75-79', 'M80 80+'])\nstr.extract('(?P<Sex>[MF])\\d\\d\\s(?P<AgeGroup>\\d{2}[-+](?:\\d{2})?)', expand=True)\n\n# series split expand\ndf = pd.DataFrame({'c0': [' a b c ', 'd e f', 'g h i ']})\ndf[['c1','c2','c3']] = df['c0'].str.split(expand=True) # extra whitespaces are removed\ndf = df.drop('c0',1)",
+    "uid" : "046F3D55-9D04-4551-8CEF-0FECF0CA2CAD",
+    "name" : "pdh extract",
+    "keyword" : "pdh-extract"
+  }
+}

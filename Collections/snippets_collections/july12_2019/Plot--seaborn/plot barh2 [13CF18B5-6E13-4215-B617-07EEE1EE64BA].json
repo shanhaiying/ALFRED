@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "def plot_barh2(df,x1,x2,y):\n    \"\"\"\n    e.g.\n    x1, x2 = state, city\n    y = income\n    \"\"\"\n    df1 = (df.groupby([x1,x2])[y]\n           .sum()\n           .reset_index()\n           .sort_values(by=y,ascending=False)\n           .drop_duplicates(subset=[x1],keep=\"first\"))\n\n    fig = plt.figure(figsize=(10,17))\n    ax = sns.barplot(y = x1,x = y, data = df1,\n                     palette=[\"skyblue\"])\n\n    for i,j in enumerate(df1.values):\n        ax.text(.7,i,j[1]+ ' ' + str(j[2]) ,fontsize =10)\n\n    plt.title(\"\",fontsize = 20)\n    plt.xlabel(y,fontsize = 20)\n    plt.ylabel(x1,fontsize = 20)\n    fig.set_facecolor(\"w\");\n\nplot_barh2(df,\"\", \"\", \"\")",
+    "uid" : "13CF18B5-6E13-4215-B617-07EEE1EE64BA",
+    "name" : "plot barh2",
+    "keyword" : "plot_barh2"
+  }
+}

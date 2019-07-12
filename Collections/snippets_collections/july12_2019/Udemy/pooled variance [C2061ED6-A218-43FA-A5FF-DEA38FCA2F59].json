@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "sp2 =  ((nx-1) * sx**2 + (ny-1) * sy**2 ) \/ (nx +ny -2)\nsp2",
+    "uid" : "C2061ED6-A218-43FA-A5FF-DEA38FCA2F59",
+    "name" : "pooled variance",
+    "keyword" : "sp2"
+  }
+}

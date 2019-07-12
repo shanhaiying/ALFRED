@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "def boxplot(df,x,y):\n    sns.boxplot(x=x,y=y,data=df,linewidth=2.5,orient='v',dodge=False)\n    plt.show()",
+    "uid" : "EE9755D9-55F6-467F-9481-DDD9A445326C",
+    "name" : "plot boxplot seaborn",
+    "keyword" : "boxplot"
+  }
+}

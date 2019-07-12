@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "git clone \"https:\/\/github.com\/bluenote10\/PandasDataFrameGUI.git\"\ncd dfgui\npip install -e .\nconda package --pkg-name=dfgui --pkg-version=0.1 # this should create a package file\nconda install --offline dfgui-0.1-py27_0.tar.bz2 # this should install into your conda environment",
+    "uid" : "2B0895A3-853C-4F68-8C72-3C4BA126D5FC",
+    "name" : "conda install library from github",
+    "keyword" : "conda_install_library_from_github"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "df1 = df.groupby(\"state\")[\"n_killed\"].sum().reset_index().sort_values(by=\"n_killed\",ascending=False)\ndf2 = df.groupby(\"state\")[\"n_injured\"].sum().reset_index().sort_values(by=\"n_injured\",ascending=False)\n\nNUM = 10\nfig = plt.figure(figsize=(12,10))\n\n# first plot\nplt.subplot(121)\nax = sns.barplot(x=\"\", y = \"state\",data=df1[:NUM],\n                 palette=\"Set1\",linewidth=1,edgecolor = \"k\"*NUM)\nplt.ylabel(\"\",fontsize=15)\nplt.xlabel(\"\",fontsize=15)\nplt.title(\"\")\nfor i,j in enumerate(df1[\"\"][:NUM]):\n    ax.text(.9,i,j,weight=\"bold\",fontsize=15)\nplt.grid(True,alpha= .3)\n\n\n# second plot\nplt.subplot(122)\nax = sns.barplot(x=\"\",y=\"state\",data=df2[:NUM],\n                 palette=\"Set1\",linewidth=1,edgecolor = \"k\"*NUM)\nplt.ylabel(\"\")\nplt.xlabel(\"\",fontsize=15)\nplt.subplots_adjust(wspace=.3)\nplt.title(\"\")\nfor i,j in enumerate(df2[\"n_injured\"][:NUM]):\n    ax.text(.9,i,j,weight=\"bold\",fontsize=15)\nplt.grid(True,alpha= .3)\n    \nfig.set_facecolor(\"w\")",
+    "uid" : "081CD039-DF27-45AD-9DCF-C96FF3B8CE2C",
+    "name" : "plot side by side bar seaborn",
+    "keyword" : "sns_side_by_side_bar_plot"
+  }
+}

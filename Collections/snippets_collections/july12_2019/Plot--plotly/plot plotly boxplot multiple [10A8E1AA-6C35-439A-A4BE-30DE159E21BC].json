@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "trace0 = go.Box(\n    y=[2.37, 2.16, 4.82, 1.73, 1.04, 0.23, 1.32, 2.91, 0.11, 4.51, 0.51, 3.75, 1.35, 2.98, 4.50, 0.18, 4.66, 1.30, 2.06, 1.19],\n    name='Only Mean',\n    marker=dict(\n        color='rgb(8, 81, 156)',\n    ),\n    boxmean=True\n)\ntrace1 = go.Box(\n    y=[2.37, 2.16, 4.82, 1.73, 1.04, 0.23, 1.32, 2.91, 0.11, 4.51, 0.51, 3.75, 1.35, 2.98, 4.50, 0.18, 4.66, 1.30, 2.06, 1.19],\n    name='Mean & SD',\n    marker=dict(\n        color='rgb(10, 140, 208)',\n    ),\n    boxmean='sd'\n)\ndata = [trace0, trace1]\niplot(data)",
+    "uid" : "10A8E1AA-6C35-439A-A4BE-30DE159E21BC",
+    "name" : "plot plotly boxplot multiple",
+    "keyword" : "plot_plotly_boxplot_multiple"
+  }
+}

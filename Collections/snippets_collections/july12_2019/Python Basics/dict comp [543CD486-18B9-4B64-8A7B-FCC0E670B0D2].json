@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "d = {k:v for (k,v) in zip(l1,l2) if v >2 if v < 5}\n\nd = { v:i for i,v in enumerate(string.ascii_lowercase) if i >5 if i < 10}\n\n\n# for loop is in the end\n# k and v each have if else conditions separately\nd = { k*2 if cond1 else k : v*2 if cond2 else v \n         for k,v in mydict.items() }",
+    "uid" : "543CD486-18B9-4B64-8A7B-FCC0E670B0D2",
+    "name" : "dict comp",
+    "keyword" : "dict_comp"
+  }
+}

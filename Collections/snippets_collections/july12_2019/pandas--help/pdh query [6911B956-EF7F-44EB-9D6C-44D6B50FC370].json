@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "## NOTE: pd.query uses pd.eval and which uses numexpr library.\n##       From official documentation eval is several order magnitude slower if df has <15k rows.\n## NOTE: To use query, always rename columns with spaces to underscores\ndf.columns = df.columns.map(lambda x: x.replace(' ', '_') if isinstance(x, str) else x)\n\ndf = pd.DataFrame({'a': [1,2,3],'b': [4,5,6], 'c': [7,8,9]})\ndf.query('a==1 and  b==4 and not c == 8')\ndf.query('a==1 &  b==4 &  ~c == 8')\ndf.query('a != a.min()')\ndf.query('a not in b')  # df[df.a.isin(df.b)]\ndf.query('c != [1, 2]') # df.query('[1, 2] not in c')\ndf.query('a < b < c and (not mask) or d > 2')\ndf.query('a == @myvalue')\ndf.query('a == @mydict['mykey']) \n\n## exclude all rows if any row value is minimum of that column\ndf.columns = df.columns.map(lambda x: x.replace(' ', '_') if isinstance(x, str) else x)\nq = ' and '.join([f'{i} != {i}.min()' for i in df.columns])\ndf.query(q)",
+    "uid" : "6911B956-EF7F-44EB-9D6C-44D6B50FC370",
+    "name" : "pdh query",
+    "keyword" : "pdh-query"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "Prefix\/Suffix   A               Bold            Dollar         Bold Dollar\n---------------------------------------------------------------------------\nPartial         pay             paby            payx           pabyx\nAngle           aay             aaby            aayx           aabyx\nBold            bay             bay             bayx           bayx    \n----------------------------------------------------------------------------\nBar             ab              abb             abx            abbx\nPrime           ap              apb             apx            apbx\nHat             ah              ahb             ahx            ahbx\nStar            as              asb             asx            asbx\nTilde           at              atb             atx            atbx\nModulus         am              amb             amx            ambx\nDot             ad              adb             adx            adbx\nZero            a0              a0b             a0x            a0bx\nOne             a1              a1b             a1x            a1bx\nTwo             a2              a2b             a2x            a2bx\nThree           a3              a3b             a3x            a3bx",
+    "uid" : "0a4bc319-b43a-448c-b291-81ae703a3c1d",
+    "name" : "Greek Snippets",
+    "keyword" : "greek"
+  }
+}

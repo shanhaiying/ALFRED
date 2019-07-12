@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "p = sns.regplot(x='',y='',data=df)\n\nslope, intercept, r_value, p_value, std_err = scipy.stats.linregress(x=p.get_lines()[0].get_xdata(),y=p.get_lines()[0].get_ydata())\n\ntext = 'y = {:.2f}x + {:.2f}'.format(slope, intercept)\n\nplt.title(text);",
+    "uid" : "ED32D9E8-AB09-4A66-9641-1416BC578D6B",
+    "name" : "plot seaborn regplot",
+    "keyword" : "plot_seaborn_regplot"
+  }
+}

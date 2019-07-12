@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "from __future__ import print_function, division,with_statement,unicode_literals,absolute_import",
+    "uid" : "0827AA7E-926E-41B3-BF3F-16781F379AB2",
+    "name" : "python future imports",
+    "keyword" : "fut"
+  }
+}

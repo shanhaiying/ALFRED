@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "from IPython.display import Image\nImage(filename=('..\/data\/images\/.png'))",
+    "uid" : "833A3B46-D322-4E66-B8D3-F7DEBD86C6E0",
+    "name" : "jupyterImage",
+    "keyword" : "jnb_image"
+  }
+}

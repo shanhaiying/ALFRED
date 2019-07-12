@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "df.style.apply(lambda x: \n    ['background: lightgreen' if (x.colA == 'foo' or x.colA == 'bar')\n                                else '' for i in x], axis=1)",
+    "uid" : "9A0CA909-9E0C-4F6A-8A54-793FE7715ADF",
+    "name" : "dsc pandas stylying row",
+    "keyword" : "dsc_pandas_stylying_row"
+  }
+}

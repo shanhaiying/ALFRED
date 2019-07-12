@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "Prefix with y:  PAB   Partial,Angle,Bold\n\nPrefix with y: PAB\npay = \\partial{\\alpha}  Partial\naay = \\langle \\alpha \\rangle\nbay = \\boldsymbol{\\alpha} ",
+    "uid" : "3a1a5b2a-0bb3-4d16-8558-b280d4407aa6",
+    "name" : "Latex Greek prefixes",
+    "keyword" : "prefix"
+  }
+}

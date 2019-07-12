@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "from sklearn import datasets # sklearn.datasets does not work\niris = datasets.load_iris() \nprint(datasets.load_iris().DESCR)\n'''\nattributes:\ndir(datasets.load_iris()) ==> .data .feature_names .target .target_names .filename .DESCR\n'''\niris_df = pd.DataFrame(iris.data, columns=iris.feature_names)\n\n[ i for i in dir(datasets) if 'load_' in i]\n\n'load_boston', 'load_breast_cancer','load_diabetes', 'load_digits', 'load_files'\n'load_iris', 'load_linnerud','load_mlcomp','load_sample_image','load_sample_images',\n'load_svmlight_file', 'load_svmlight_files', 'load_wine'",
+    "uid" : "4194DBA4-DE87-4A91-9829-6D6961188A67",
+    "name" : "dataset sklearn",
+    "keyword" : "dataset_sklearn"
+  }
+}

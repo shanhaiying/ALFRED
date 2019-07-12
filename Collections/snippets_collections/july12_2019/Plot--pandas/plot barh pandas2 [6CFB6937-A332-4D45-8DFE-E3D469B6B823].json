@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "def barh(ser):\n    ax=ser.plot.barh(width=0.9,figsize=(12,10),\n                     color=sns.color_palette('inferno_r',len(ser)))\n    for i, v in enumerate(ser): \n        ax.text(.8, i, v,fontsize=10,color='green',weight='bold')\n    # make top bar red\n    ax.patches[i].set_facecolor('r')  \n    return ax\n\n# plot\nser = mov['director'].value_counts()[:15].sort_values(ascending=True)\n\nax = barh(ser)\nplt.title('')\nplt.show()",
+    "uid" : "6CFB6937-A332-4D45-8DFE-E3D469B6B823",
+    "name" : "plot barh pandas2",
+    "keyword" : "plot-barh-pandas2"
+  }
+}

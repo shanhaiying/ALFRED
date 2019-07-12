@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "data = [[2000, 2000, 2000, 2001, 2001, 2001, 2002, 2002, 2002],\n        ['Jan', 'Feb', 'Mar', 'Jan', 'Feb', 'Mar', 'Jan', 'Feb', 'Mar'],\n        [1, 2, 3, 4, 5, 6, 7, 8, 9]]\n\nrows = list(zip(data[0], data[1], data[2]))\nheaders = ['Year', 'Month', 'Value']\ndf = pd.DataFrame(rows, columns=headers)\n\npivot_df = df.pivot(index='Year', columns='Month', values='Value')\n\n#Note: .loc[:,['Jan','Feb', 'Mar']] is used here to rearrange the layer ordering\ncolors = [\"#006D2C\", \"#31A354\",\"#74C476\"]\npivot_df.loc[:,['Jan','Feb', 'Mar']].plot.bar(stacked=True, color=colors, figsize=(10,7))",
+    "uid" : "C40BAEF3-2A6F-4632-8DF3-C7E45C49B4CC",
+    "name" : "pandas pivot",
+    "keyword" : "pd_pivot"
+  }
+}

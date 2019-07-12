@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "from scipy.stats import shapiro\n\nimport statsmodels.api as sm # sm.graphics.influence_plot(fitted)\nimport statsmodels.formula.api as smf\n\nfrom statsmodels.stats.outliers_influence import OLSInfluence as influence\nfrom statsmodels.graphics.gofplots import qqplot\nfrom statsmodels.graphics.correlation import plot_corr\nfrom statsmodels.stats.outliers_influence import variance_inflation_factor as vif",
+    "uid" : "9FF901C6-7DA4-4A36-BA59-C67F8281F3E5",
+    "name" : "statsmodels all",
+    "keyword" : "small"
+  }
+}

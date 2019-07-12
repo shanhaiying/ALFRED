@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : ".rename(columns={'{cursor}':''})",
+    "uid" : "8F7A973E-E9DA-4493-AAC8-F09397E2713E",
+    "name" : "rename columns",
+    "keyword" : "rnm"
+  }
+}

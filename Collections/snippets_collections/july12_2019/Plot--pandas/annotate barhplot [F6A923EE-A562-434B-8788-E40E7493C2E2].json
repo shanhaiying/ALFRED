@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "def annnotate_barhplot(df,col,agg):\n    '''\n    Example:\n    col = 'species'\n    agg = mean  # sum, count, np.median\n    \n    Usage:\n    df = sns.load_dataset('iris')\n    df = df[['species','sepal_length','sepal_width','petal_length']]\n    ax = (df.groupby('species').agg('mean').plot.barh())\n    annnotate_barhplot(df,'species','mean')\n    \n    Check:\n    (df.groupby('species').agg('mean')).reset_index()\n    \n    '''\n    vals = df.groupby(col).agg(agg).values\n    nbars = vals.shape[1]\n    h = ax.patches[0].get_height()\n    heights = np.arange(-(nbars-1)\/2,(nbars-1)\/2+0.9*h,step=1)*h\n    heights = np.vstack([heights + i for i in range(vals.shape[1])])\n    for i in range(len(vals)):\n        for j in range(nbars):\n            x = vals[i][j]\n            y = heights[i][j]\n            ax.text(x\/2, y, \"%.2g\"%x, ha=\"left\", va=\"center\")\n            \ndf = sns.load_dataset('iris')\ndf = df[['species','sepal_length','sepal_width','petal_length']]\nax = (df.groupby('species').agg('mean').plot.barh())\nannnotate_barhplot(df,'species','mean')\nprint((df.groupby('species').agg('mean').reset_index()))",
+    "uid" : "F6A923EE-A562-434B-8788-E40E7493C2E2",
+    "name" : "annotate barhplot",
+    "keyword" : "ann_barhplot"
+  }
+}

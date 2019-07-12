@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "# fstring example\n[f'c{x}' for x in range(3)]",
+    "uid" : "8AB5BF60-C26F-4C2B-87AE-1CEEAF3E2D95",
+    "name" : "python fstring",
+    "keyword" : "p;fstring"
+  }
+}

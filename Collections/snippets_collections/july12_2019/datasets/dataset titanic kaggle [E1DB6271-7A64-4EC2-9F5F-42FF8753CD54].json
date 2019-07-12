@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "train = pd.read_csv('https:\/\/raw.githubusercontent.com\/bhishanpdl\/Datasets\/master\/titanic_kaggle_train.csv')\ntrain.head(2).append(train.tail(2)).pipe(display)\n\ntest = pd.read_csv('https:\/\/raw.githubusercontent.com\/bhishanpdl\/Datasets\/master\/titanic_kaggle_test.csv')\ntest.head(2).append(test.tail(2))",
+    "uid" : "E1DB6271-7A64-4EC2-9F5F-42FF8753CD54",
+    "name" : "dataset titanic kaggle",
+    "keyword" : "titanic_kaggle"
+  }
+}

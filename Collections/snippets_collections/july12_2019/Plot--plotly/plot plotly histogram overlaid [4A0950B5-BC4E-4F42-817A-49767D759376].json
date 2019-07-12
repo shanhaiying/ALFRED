@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "x0 = np.random.randn(500)\nx1 = np.random.randn(500)+1\n\ntrace1 = go.Histogram(\n    x=x0,\n    opacity=0.75\n)\ntrace2 = go.Histogram(\n    x=x1,\n    opacity=0.75\n)\n\ndata = [trace1, trace2]\nlayout = go.Layout(barmode='overlay')\n\nfig = go.Figure(data=data, layout=layout)\niplot(fig, filename='overlaid histogram')",
+    "uid" : "4A0950B5-BC4E-4F42-817A-49767D759376",
+    "name" : "plot plotly histogram overlaid",
+    "keyword" : "plot_plotly_histogram_overlaid"
+  }
+}

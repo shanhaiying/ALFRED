@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "def missing_number_percent(df):\n  total = df.isnull().sum().sort_values(ascending = False)\n  percent = df.isna().mean().sort_values(ascending=False).round(4) * 100\n  res = pd.concat([total, percent], axis = 1,keys= ['Total', 'Percent'])\n  return res\n\nmissing_number_percent(train)",
+    "uid" : "C535F0C6-A29B-44AA-8479-EA8FDB5C6B07",
+    "name" : "missing number percent",
+    "keyword" : "missing_number_percent"
+  }
+}

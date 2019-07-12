@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "from tqdm import trange",
+    "uid" : "243a6f35-e413-47db-b468-83ed55063335",
+    "name" : "tqdm",
+    "keyword" : "tqdm"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "## example1\npd.DataFrame({'c0' : [2,3],'c1' : ['A', 'B']}).stack() # gives only one series with multi-index\n\n## example2\nData:\n         Apple  Orange  Banana\nTexas       12      10      40\nArizona      9       7      12\nFlorida      0      14     190\n\nThis data is not TIDY, there must be variable names and values.\n(df.stack()\n  .rename_axis(['state','fruit'])\n  .reset_index(name='weight'))\n  \n## example3\nreligion  <$10k  $10-20k  $20-30k  $30-40k  $40-50k  $50-75k\nAgnostic     27       34       60       81       76      137\n\n## using stack *********************\n(df.set_index('religion')\n  .stack() \n  .rename_axis(['religion','income'])\n  .reset_index(name='frequency'))\n  \n## using melt *********************\n(pd.melt(df, id_vars=['religion'], value_vars=df.columns.values[1:],\n             var_name='income', value_name='frequency')\n  .sort_values(by='religion')\n  .head())\n",
+    "uid" : "6B73BA83-AABD-484F-8BDF-967EBA9384B4",
+    "name" : "pdh stack",
+    "keyword" : "pdh-stack"
+  }
+}

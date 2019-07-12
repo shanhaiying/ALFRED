@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "%%capture",
+    "uid" : "15740EEF-B072-412B-A4E9-6AF36E655763",
+    "name" : "ipython hide ouptuts",
+    "keyword" : "ipython_hide_ouptuts"
+  }
+}

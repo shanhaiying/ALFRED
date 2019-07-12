@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "import numpy as np\nimport matplotlib.pyplot as plt\nfrom matplotlib.offsetbox import OffsetImage,AnnotationBbox\n\ndef get_flag(name):\n    path = \"flags\/{}.png\".format(name.title())\n    im = plt.imread(path)\n    return im\n\ndef offset_image(coord, name, ax):\n    img = get_flag(name)\n    im = OffsetImage(img, zoom=0.2)\n    im.image.axes = ax\n\n    ab = AnnotationBbox(im, (coord, 0),  xybox=(0., -16.), frameon=False,\n                        xycoords='data',  boxcoords=\"offset points\", pad=0)\n\n    ax.add_artist(ab)\n\ndef myplot(countries,values):\n    fig, ax = plt.subplots()\n\n    ax.bar(range(len(countries)), values, width=0.5,align=\"center\")\n    ax.set_xticks(range(len(countries)))\n    ax.set_xticklabels(countries)\n    ax.tick_params(axis='x', which='major', pad=26)\n\n    for i, c in enumerate(countries):\n        offset_image(i, c, ax)\n\n    plt.show()\n\nif __name__ == '__main__':\n    countries = ['ad','ae','af','ag','ai']\n    values = [20, 15, 30, 5, 26]\n    myplot(countries,values)",
+    "uid" : "22ED92E2-E52C-4112-8EE1-48DCA23B1A34",
+    "name" : "plot flag",
+    "keyword" : "flag_plot"
+  }
+}

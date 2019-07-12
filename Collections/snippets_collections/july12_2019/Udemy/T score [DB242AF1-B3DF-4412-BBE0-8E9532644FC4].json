@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "std_err = np.sqrt(sp2\/nx + sp2\/ny)\nT = (xbar - ybar) \/ std_err  # when mu_x - mu_y = 0\nT",
+    "uid" : "DB242AF1-B3DF-4412-BBE0-8E9532644FC4",
+    "name" : "T score",
+    "keyword" : "T_score"
+  }
+}

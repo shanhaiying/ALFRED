@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "1. seaborn factorplot is deprecated\nFrom:  sns.factorplot(\"sex\", data=df);\nTo: sns.catplot(\"sex\",data=df,kind=\"count\")\n\n2. basemap not found\n# install high resolution basemap\nconda install -n dataSc -c conda-forge basemap-data-hires\n\n3.  plotly cufflinks problem\npip install git+git:\/\/github.com\/santosjorge\/cufflinks.git#egg=cufflinks -U",
+    "uid" : "23A52FDE-E8A3-4B97-BA6F-E6D429BE07A1",
+    "name" : "troubleshoot",
+    "keyword" : "troubleshoot"
+  }
+}

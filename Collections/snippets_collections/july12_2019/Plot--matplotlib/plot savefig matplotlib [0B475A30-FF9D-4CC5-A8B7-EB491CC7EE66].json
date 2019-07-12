@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "plt.savefig(\".png\",dpi = 300, height = 6, width = 8)",
+    "uid" : "0B475A30-FF9D-4CC5-A8B7-EB491CC7EE66",
+    "name" : "plot savefig matplotlib",
+    "keyword" : "savefig"
+  }
+}

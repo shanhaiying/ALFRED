@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "from IPython.display import display_html\ndef displayss(*args):\n    '''  Display pandas dataframe side by side in Jupyter notebook.\n    Usage: dispalyss(df1, df2)\n    '''\n    html_str=''\n    for df in args:\n        if type(df) == pd.core.series.Series:\n            df = df.to_frame()\n        html_str+=df.to_html()\n    display_html(html_str.replace('table','table style=\"display:inline\"'),raw=True)",
+    "uid" : "B93D34B8-0CD9-424B-A95E-3543BCF01BE9",
+    "name" : "jupyter display side by side",
+    "keyword" : "jnb_display_side_by_side"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "Tips For Better Snippet Expansion\n\nTo get the most out of the expansion feature, your keywords need to be memorable but shouldn't be triggered by mistake. Here are some ideas to help you set useful snippet keywords.\n\n* Use non-word keywords to avoid unexpected expansion; Don't use the keyword \"date\" to paste the date, otherwise every time you try to type \"it's a date!\", you'll find yourself saying \"it's a 01\/06\/16!\" as your snippet auto-expands.\n* Start all your snippets with the same non-alphanumeric character, such as an exclamation mark, colon or semi-colon. (e.g. \"!office\")\n* Use unusual capitalisation (Alfred will respect the capitalisation you set, e.g. \"officE\")\n* Use double characters (e.g. \"ttime\")",
+    "dontautoexpand" : true,
+    "uid" : "6E154AD2-9261-4252-860A-9021D9421E76",
+    "name" : "Tips For Better Snippet Expansion",
+    "keyword" : "!sniptips"
+  }
+}

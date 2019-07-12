@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "from sklearn.externals.joblib import Memory\nmemory = Memory(cachedir='\/tmp', verbose=0)\n\n@memory.cache\ndef computation(p1, p2):\n    return p1 * p2\n    \n    \n    \n# example 2\n@memory.cache\ndef kmeans(X, k):\n    return KMeans(k=k).fit_predict(X)\n# many cells further\nclusters = kmeans(X, k=10)\nalgorithm1(clusters)\nalgorithm2(clusters)\nclusters = kmeans(X, k=5)\nalgorithm1(clusters)\nalgorithm2(clusters)",
+    "uid" : "5A9ECACE-E8CF-45D8-8C3C-9EEF70E59A30",
+    "name" : "memory cache",
+    "keyword" : "memory_cache"
+  }
+}

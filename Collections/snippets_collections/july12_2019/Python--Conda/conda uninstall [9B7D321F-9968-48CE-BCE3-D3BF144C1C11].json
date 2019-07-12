@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "conda info --envs # or, conda env list\nsudo -H conda remove --name mynev --all",
+    "uid" : "9B7D321F-9968-48CE-BCE3-D3BF144C1C11",
+    "name" : "conda uninstall",
+    "keyword" : "conda_uninstall"
+  }
+}

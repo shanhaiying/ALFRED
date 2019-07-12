@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "import qgrid\nqg = qgrid.show_grid(df, show_toolbar=True)\nqg",
+    "uid" : "39394E66-5128-4341-BDEA-44979E086E5C",
+    "name" : "qgrid",
+    "keyword" : "qgrid"
+  }
+}

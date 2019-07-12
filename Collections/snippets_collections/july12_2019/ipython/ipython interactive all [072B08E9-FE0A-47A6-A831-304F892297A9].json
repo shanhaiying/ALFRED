@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "from IPython.core.interactiveshell import InteractiveShell\n\n# pretty print all cell's output and not just the last one\nInteractiveShell.ast_node_interactivity = \"all\"\n\n# pretty print only the last output of the cell\n# InteractiveShell.ast_node_interactivity = \"last_expr\"",
+    "uid" : "072B08E9-FE0A-47A6-A831-304F892297A9",
+    "name" : "ipython interactive all",
+    "keyword" : "inter_all"
+  }
+}

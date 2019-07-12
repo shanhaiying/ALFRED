@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "import statsmodels.api as sm",
+    "uid" : "de67a31b-4cd6-4b48-a47f-732dd23f8d25",
+    "name" : "statsmodels",
+    "keyword" : "sm"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "import statsmodels.formula.api as smf",
+    "uid" : "41E5B482-26F9-4DC2-AC2B-00B9B3A53D80",
+    "name" : "statsmodels.formula.api",
+    "keyword" : "smf"
+  }
+}

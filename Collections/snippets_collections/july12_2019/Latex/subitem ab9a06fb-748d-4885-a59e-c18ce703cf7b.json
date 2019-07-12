@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "\\newcommand{\\SubItem}[1]{\n    {\\setlength\\itemindent{15pt} \\item[-] #1}\n}\n",
+    "uid" : "ab9a06fb-748d-4885-a59e-c18ce703cf7b",
+    "name" : "subitem",
+    "keyword" : "subitem"
+  }
+}

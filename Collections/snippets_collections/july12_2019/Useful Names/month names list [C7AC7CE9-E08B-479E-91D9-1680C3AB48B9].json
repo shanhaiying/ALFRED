@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "my_month_names = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']",
+    "uid" : "C7AC7CE9-E08B-479E-91D9-1680C3AB48B9",
+    "name" : "month names list",
+    "keyword" : "my_month_names"
+  }
+}

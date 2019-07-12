@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "\/\/ Bookmark any webpage and change content with this javascript\n\njavascript:top.location=%22http:\/\/htmlpreview.github.com\/?%22+document.URL",
+    "uid" : "6EEC8F9E-1CC2-470C-813A-0701E27EEDD4",
+    "name" : "html preview",
+    "keyword" : "html_preview"
+  }
+}

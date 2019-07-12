@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "with np.printoptions(precision=2,suppress=True):\n    print({cursor})",
+    "uid" : "047CC879-A540-450A-B72B-564133601019",
+    "name" : "numpy print option",
+    "keyword" : "npp2"
+  }
+}

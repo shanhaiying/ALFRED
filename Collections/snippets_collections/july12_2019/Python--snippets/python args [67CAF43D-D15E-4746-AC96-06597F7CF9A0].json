@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "import argparse\nparser = argparse.ArgumentParser()\nparser.add_argument(\"-v\", \"--verbosity\", required=True,type=int,help='')\nargs = parser.parse_args()\nv = args.verbosity",
+    "uid" : "67CAF43D-D15E-4746-AC96-06597F7CF9A0",
+    "name" : "python args",
+    "keyword" : "args"
+  }
+}

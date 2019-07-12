@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "import seaborn as sns\n\niris = sns.load_dataset('iris')",
+    "uid" : "DEA12912-9F7B-4A7C-8337-C2CD1CA07121",
+    "name" : "dataset iris",
+    "keyword" : "dataset_iris"
+  }
+}
