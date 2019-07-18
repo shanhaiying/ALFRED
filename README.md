@@ -1,15 +1,3 @@
-Table of Contents
-=================
-   * [Currently Useful Shortcuts](#currently-useful-shortcuts)
-   * [Alfred Settings](#alfred-settings)
-   * [Alfred Tips](#alfred-tips)
-   * [My useful workflows](#my-useful-workflows)
-   * [Usage Tricks](#usage-tricks)
-   * [Workflow python2 and python3](#workflow-python2-and-python3)
-   * [Snippet working for substring](#snippet-working-for-substring)
-   * [Replace substring from copied text](#replace-substring-from-copied-text)
-   * [Workflow Tips](#workflow-tips)
-   * [Useful Links](#useful-links)
 
 # Currently Useful Shortcuts
 ```
@@ -32,6 +20,11 @@ NOTE: Please regularly disable unused workflows and unused key mappings.
   copy the python class from leetcode
   leet keyword will reformat the class and paste in visual studio code.
 ```
+
+# Useful Workflows
+- Imgur Uploader (setup your own api key in imgur, install Json Helper macos app). Select an image in Finder, type
+  imgur in alfred it will give url link in clipboard.
+
 
 # New Alfred Settings
 ```
