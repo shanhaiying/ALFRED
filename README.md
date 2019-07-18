@@ -12,6 +12,7 @@ Table of Contents
    * [Snippet working for substring](#snippet-working-for-substring)
    * [Replace substring from copied text](#replace-substring-from-copied-text)
    * [Workflow Tips](#workflow-tips)
+   * [Run command if file exists](#run-command-if-file-exists)
    * [Useful Links](#useful-links)
 
 # Currently Useful Shortcuts
@@ -163,6 +164,16 @@ browser = os.environ['browser']
 
 # Or
 browser = os.getenv('browser')
+```
+
+# Run command if file exists
+```bash
+# execute script
+if [  -f "/Users/poudel/miniconda3/bin/python" ]; then
+   /Users/poudel/miniconda3/bin/python hello.py
+else
+    python hello.py
+fi
 ```
 
 # Useful Links
