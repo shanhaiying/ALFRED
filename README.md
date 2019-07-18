@@ -24,6 +24,19 @@ NOTE: Please regularly disable unused workflows and unused key mappings.
 # Useful Workflows
 - [last2imgur](https://github.com/aviaryan/alfred-last2imgur) upload last screenshot to imgur. 
   This workflow does not require any other dependencies. We just need to edit the default path of screenshot in getfile.sh.
+  
+# Useful Applescripts
+```applescript
+-- Path of currently selected file in Finder
+	tell application "Finder"
+		set someSource to selection as alias list
+		if someSource = {} then
+			return "Select a file in Finder first"
+		end if
+		set theFile to item 1 of someSource as alias
+        return POSIX path of theFile
+	end tell
+```
 
 
 # New Alfred Settings
