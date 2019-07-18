@@ -22,7 +22,7 @@ NOTE: Please regularly disable unused workflows and unused key mappings.
 ```
 
 # Useful Workflows
-- Imgur Uploader (setup your own api key in imgur, install Json Helper macos app). Select an image in Finder, type
+- [Imgur Uploader](https://github.com/frdmn/alfred-imgur) (setup your own api key in imgur, install Json Helper macos app). Select an image in Finder, type
   imgur in alfred it will give url link in clipboard.
 
 
