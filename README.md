@@ -1,3 +1,18 @@
+Table of Contents
+=================
+   * [Currently Useful Shortcuts](#currently-useful-shortcuts)
+   * [Useful Workflows](#useful-workflows)
+   * [Useful Applescripts](#useful-applescripts)
+   * [New Alfred Settings](#new-alfred-settings)
+   * [Alfred Settings](#alfred-settings)
+   * [Alfred Tips](#alfred-tips)
+   * [My useful workflows](#my-useful-workflows)
+   * [Usage Tricks](#usage-tricks)
+   * [Workflow python2 and python3](#workflow-python2-and-python3)
+   * [Snippet working for substring](#snippet-working-for-substring)
+   * [Replace substring from copied text](#replace-substring-from-copied-text)
+   * [Workflow Tips](#workflow-tips)
+   * [Useful Links](#useful-links)
 
 # Currently Useful Shortcuts
 ```
