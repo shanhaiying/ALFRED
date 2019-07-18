@@ -22,8 +22,8 @@ NOTE: Please regularly disable unused workflows and unused key mappings.
 ```
 
 # Useful Workflows
-- [Imgur Uploader](https://github.com/frdmn/alfred-imgur) (setup your own api key in imgur, install Json Helper macos app). Select an image in Finder, type
-  imgur in alfred it will give url link in clipboard.
+- [last2imgur](https://github.com/aviaryan/alfred-last2imgur) upload last screenshot to imgur. 
+  This workflow does not require any other dependencies. We just need to edit the default path of screenshot in getfile.sh.
 
 
 # New Alfred Settings
