@@ -1,17 +1,12 @@
 Table of Contents
 =================
    * [Currently Useful Shortcuts](#currently-useful-shortcuts)
-   * [Useful Workflows](#useful-workflows)
+   * [My useful workflows](#my-useful-workflows)
    * [Useful Applescripts](#useful-applescripts)
-   * [New Alfred Settings](#new-alfred-settings)
+   * [Alfred arguments bash and python](#alfred-arguments-bash-and-python)
    * [Alfred Settings](#alfred-settings)
    * [Alfred Tips](#alfred-tips)
-   * [My useful workflows](#my-useful-workflows)
-   * [Usage Tricks](#usage-tricks)
    * [Workflow python2 and python3](#workflow-python2-and-python3)
-   * [Snippet working for substring](#snippet-working-for-substring)
-   * [Replace substring from copied text](#replace-substring-from-copied-text)
-   * [Workflow Tips](#workflow-tips)
    * [Run command if file exists](#run-command-if-file-exists)
    * [Useful Links](#useful-links)
 
@@ -37,7 +32,9 @@ NOTE: Please regularly disable unused workflows and unused key mappings.
   leet keyword will reformat the class and paste in visual studio code.
 ```
 
-# Useful Workflows
+# My useful workflows
+- `gh alfred` to visit this github Alfred repository.
+- Copy something or copy from clipboard viewer. Hit `qq` or `qq sh (for shell)` then we can see copied text in Fenetre app where we can see syntax highlight and also copy file contents.
 - [last2imgur](https://github.com/aviaryan/alfred-last2imgur) upload last screenshot to imgur. 
   This workflow does not require any other dependencies. We just need to edit the default path of screenshot in getfile.sh.
   
@@ -54,8 +51,35 @@ NOTE: Please regularly disable unused workflows and unused key mappings.
 	end tell
 ```
 
+# Alfred arguments bash and python
+https://www.alfredforum.com/topic/9070-how-to-workflowenvironment-variables/
 
-# New Alfred Settings
+Using args in Bash
+```bash
+# If we use split we need to use comma and it gives split1 and split2
+# But, I like to use space as the delimiter and then we need to split the args using following way
+args=( $my_args_name )
+split0="${args[0]}"
+split1="${args[1]}"
+```
+
+Using arguments in Python
+```python
+import os
+args = os.environ['my_args_name']
+args = os.getenv('my_args_name')
+
+then,
+arg0, arg1 = args.split(' ')
+```
+
+
+# Alfred Settings
+- Web Bookmarks:  show bookmarks via keyword bm  (works for chrome and safari)
+- Calculator : Enable advanced calulator and standard calculator.
+- Clipboard double alt, snippet double cmd, Alfred Hotkey double shift.
+
+For brand new Alfred use following settings:
 ```
 Note: Web searches are deleted if we upgrade Alfred3 to Alfred 4, but workflows are kept intact.
 
@@ -87,30 +111,27 @@ Note: Web searches are deleted if we upgrade Alfred3 to Alfred 4, but workflows 
     
  7. Features > iTunes
     Disable hotkey and keywords, I don't use iTunes.
-
 ```
 
-# Alfred Settings
-- Web Bookmarks:  show bookmarks via keyword bm  (works for chrome and safari)
-- Calculator : Enable advanced calulator and standard calculator.
-- Clipboard double alt, snippet double cmd, Alfred Hotkey double shift.
 
 # Alfred Tips
 [Alfred Cheatsheet](https://www.alfredapp.com/help/getting-started/cheatsheet/).  
+
 - We can use SQL like string search in Clipboard search: eg. `pa%das` search `pandas`.
+
 - First copy some contents, hit `alt alt` to view clipboard history, hit `cmd s` to save as the snippet.
+
 - When downloading collections of [Emojis workflow](http://joelcalifa.com/blog/alfred-emoji-snippet-pack/) unckeck strip option to keep all emojis text expansion options. e.g. :joy: will expand to joy symbol.
+
 - `Alfred > Clipboard > Merging > Select Fast append selected text`. Then copy something, select another text and hit `cmd c c`, it will be appended to previous copy and can be pasted as a whole.
+
 - Open URL supports {query}. Example: Use `http://www.google.com/search?q={query}&btnI` for google lucky query.
 
-# My useful workflows
-- Copy something or copy from clipboard viewer. Hit `qq` or `qq sh (for shell)` then we can see copied text in Fenetre app where we can see syntax highlight and also copy file contents.
-
-# Usage Tricks
-1. Using action modifiers
+-  Using action modifiers
   + For example type `github`, hit ctrl you will see fallback option, hit ctrl enter, it will google search github.
   
-2. Use `bm` to search Safari and Chrome bookmarks.
+- Use `bm` to search Safari and Chrome bookmarks.
+
 
 # Workflow python2 and python3
 Most of Alfred workflows are in python2. For exmple "adsinspire", "arxiv" research workflows does not work with python3.
@@ -133,44 +154,11 @@ sudo ln -s /usr/local/bin/python2 /usr/bin/python
 # Now Workflow will work.
 ```
 
-# Snippet working for substring
-> example: Pandas data manipulation
-  `df...gri`  expands to `df.groupby([''], as_index=False)['']`.
-  Auto Expansion Options check on Expand snippet mid-string.
-  
-
-# Replace substring from copied text
-```python
-import sys
-import re
-import subprocess
-
-# First create a variable called 'args' from first workflow item and use it in python script.
-query = sys.argv[1]
-old, new = query.split(' ')
-
-lines = subprocess.check_output('pbpaste').split('\n')
-lines = "\n".join([l.replace(old,new) for l in lines])
-
-sys.stdout.write(lines)
-```
-
-# Workflow Tips
-To use args in python:
-https://www.alfredforum.com/topic/9070-how-to-workflowenvironment-variables/
-```python
-import os
-browser = os.environ['browser']
-
-# Or
-browser = os.getenv('browser')
-```
-
 # Run command if file exists
 ```bash
 # execute script
-if [  -f "/Users/poudel/miniconda3/bin/python" ]; then
-   /Users/poudel/miniconda3/bin/python hello.py
+if [  -f "/Users/poudel/miniconda3/envs/dataSc/bin/python" ]; then
+   /Users/poudel/miniconda3/envs/dataSc/bin/python hello.py
 else
     python hello.py
 fi
