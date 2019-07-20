@@ -56,8 +56,16 @@ https://www.alfredforum.com/topic/9070-how-to-workflowenvironment-variables/
 
 Using args in Bash
 ```bash
-# If we use split we need to use comma and it gives split1 and split2
-# But, I like to use space as the delimiter and then we need to split the args using following way
+# using built-in split
+We can not use space as separator (can use comma, colon etc) and gives split1 split2 split3 etc.
+But I like to separate arguments by space, as that is the most natural way of doing it.
+
+# using cut
+fN=`echo $1 | cut -d' ' -f1`
+x=`echo $1 | cut -d' ' -f2`
+y=`echo $1 | cut -d' ' -f3`
+
+# or using array
 args=( $my_args_name )
 split0="${args[0]}"
 split1="${args[1]}"
