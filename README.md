@@ -60,15 +60,19 @@ Using args in Bash
 We can not use space as separator (can use comma, colon etc) and gives split1 split2 split3 etc.
 But I like to separate arguments by space, as that is the most natural way of doing it.
 
-# using cut
+# split the arguments
 fN=`echo $1 | cut -d' ' -f1`
 x=`echo $1 | cut -d' ' -f2`
 y=`echo $1 | cut -d' ' -f3`
 
-# or using array
-args=( $my_args_name )
-split0="${args[0]}"
-split1="${args[1]}"
+# split the argument variable called c0_c1
+c0=`echo "$c0_c1" | cut -d' ' -f1`
+c1=`echo "$c0_c1" | cut -d' ' -f2`
+
+# using array does not work in pisces
+#args=( $my_args_name )
+#split0="${args[0]}"
+#split1="${args[1]}"
 ```
 
 Using arguments in Python
@@ -162,13 +166,18 @@ sudo ln -s /usr/local/bin/python2 /usr/bin/python
 # Now Workflow will work.
 ```
 
-# Run command if file exists
+# Run python script
 ```bash
-# execute script
-if [  -f "/Users/poudel/miniconda3/envs/dataSc/bin/python" ]; then
-   /Users/poudel/miniconda3/envs/dataSc/bin/python hello.py
+# split the args variable
+c0=`echo "$c0_c1" | cut -d' ' -f1`
+c1=`echo "$c0_c1" | cut -d' ' -f2`
+
+# run the python script
+if [ -f "/Users/poudel/miniconda3/envs/dataSc/bin/python" ]
+then
+  /Users/poudel/miniconda3/envs/dataSc/bin/python scatterplot.py "$1" "${c0-0}" "${c1-1}"
 else
-    python hello.py
+  /Users/poudel/Library/Enthought/Canopy/edm/envs/User/bin/python scatterplot.py "$1" "${c0-0}" "${c1-1}"
 fi
 ```
 
