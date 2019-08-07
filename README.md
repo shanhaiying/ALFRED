@@ -39,6 +39,12 @@ NOTE: Please regularly disable unused workflows and unused key mappings.
   This workflow does not require any other dependencies. We just need to edit the default path of screenshot in getfile.sh.
   
 # Useful Applescripts
+Calling Alfred from itself. First create a `input > keyword`. Then use this applescript. Then use key combo `cmd shift left` to select current line leftwards. Then use keycombo `cmd c` to copy it. Then do whatever you like with the copied text.
+```applescript
+tell application "Alfred 4" to search "{query}"
+```
+
+Another example:
 ```applescript
 -- Path of currently selected file in Finder
 	tell application "Finder"
