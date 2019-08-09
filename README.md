@@ -291,3 +291,54 @@ if not sep.strip() == ',':
     
 plotly_scatterplot(infile, cols, header, sep, names)
 ```
+
+# Current browser URL
+```applescript
+tell application "System Events"
+	set myApp to name of first application process whose frontmost is true
+	if myApp is "Google Chrome" then
+		tell application "Google Chrome" to return URL of active tab of front window
+	else if myApp is "Opera" then
+		tell application "Opera" to return URL of front document
+	else if myApp is "Safari" then
+		tell application "Safari" to return URL of front document
+	else if myApp is "Firefox" then
+		tell application "System Events"
+			keystroke "l" using command down
+			keystroke "c" using command down
+		end tell
+		delay 0.5
+		return the clipboard
+	else
+		return
+	end if
+end tell
+```
+```bash
+import sys
+import os
+
+query = sys.argv[1]
+args = os.environ['browser']
+
+if args:
+    if args[0] == 'c':
+        cmd = 'open -a ' + '"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" '
+        cmd = cmd + '"' + query.rstrip() + '"'
+        os.system(cmd)
+
+    if args[0] == 's':
+        cmd = 'open -a ' + '"/Applications/Safari.app/Contents/MacOS/Safari" '
+        cmd = cmd + '"' + query.rstrip() + '"'
+        os.system(cmd)
+
+    if args[0] == 'f':
+        cmd = 'open -a ' + '"/Applications/Firefox.app/Contents/MacOS/firefox" '
+        cmd = cmd + '"' + query.rstrip() + '"'
+        os.system(cmd)
+
+    if args[0] == 'b':
+        cmd = 'open -a ' + '"/Applications/Brave Browser.app/Contents/MacOS/Brave Browser" '
+        cmd = cmd + '"' + query.rstrip() + '"'
+        os.system(cmd)
+```
