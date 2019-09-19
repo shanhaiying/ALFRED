@@ -1,3 +1,15 @@
+Table of Contents
+=================
+   * [Currently Useful Shortcuts](#currently-useful-shortcuts)
+   * [My useful workflows](#my-useful-workflows)
+   * [Useful Applescripts](#useful-applescripts)
+   * [Alfred arguments bash and python](#alfred-arguments-bash-and-python)
+   * [Alfred Settings](#alfred-settings)
+   * [Alfred Tips](#alfred-tips)
+   * [Workflow python2 and python3](#workflow-python2-and-python3)
+   * [Run python script](#run-python-script)
+   * [Current browser URL](#current-browser-url)
+
 # Currently Useful Shortcuts
 ```
 NOTE: Please regularly disable unused workflows and unused key mappings.
@@ -190,110 +202,6 @@ else
 fi
 ```
 
-# Scatterplot using plotly
-```python
-# File: plotly_scatterplot.py
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-import sys
-
-
-import plotly.offline as py
-import plotly.graph_objs as go
-
-def get_header_sep(infile):
-    header = None
-    sep = r'\s+'
-    names = None
-    with open(infile) as fo:
-        for line in fo:
-            # when first row is commented
-            #   #a,b,c   or #1,2,3
-            if line.startswith('#'):
-                header = None
-                if ',' in line:
-                    names = line.lstrip('#').split(',')
-                    names = [i.strip() for i in names]
-                    sep = ','
-                else:
-                    names = line.lstrip('#').split()
-                    sep = ' '
-            
-            # when first row is not commented
-            #    a,b,c  or 1,2,3
-            else:
-                if ',' in line:
-                    sep = ','
-                else:
-                    sep = ' '
-                
-
-                parts = line.strip().split(sep)
-                # when first row is   1.0,2.0,3.0
-                if parts[0].replace('.','').isnumeric():
-                    header = None
-                    names = None
-                else:
-                    # when first row is   a,b,c
-                    header = 0
-                    names = None
-            break
-    return header, sep, names
-
-def plotly_scatterplot(infile, cols, header, sep, names):
-    df = pd.read_csv(infile,header=header,sep=sep,
-                     comment='#',names=names,engine='python')
-    
-    # make columns strings or digits
-
-    cols = [ int(col) if str(cols[0]).isdigit() else str(col) for col in cols ]
-    c0, c1 = cols
-
-    # x and y axis names
-    x_col = df.columns[int(c0)] if str(c0).isdigit() else c0
-    y_col = df.columns[int(c1)] if str(c1).isdigit() else c1
-
-    sc1 = go.Scatter(x=df[x_col],
-                     y=df[y_col],
-                     mode = 'markers',
-                     #text = [str(i)+','+str(j) for i,j in zip(df[x_col].values,df[y_col].values)],
-                     name = 'plot1')
-
-    mydata= [sc1]
-    layout = go.Layout(
-                    title=' ',
-                    xaxis=dict(
-                               title=x_col,
-                               titlefont=dict(
-                               family='Courier New, monospace',
-                               size=18,
-                               color='#7f7f7f')),
-                     yaxis=dict(title=y_col,
-                                titlefont=dict(
-                                          family='Courier New, monospace',
-                                          size=18,
-                                          color='#7f7f7f')))
-    
-    myfig = go.Figure(data=mydata, layout=layout)
-
-    # iplot plots in jupyter-notebook, plot opens in new tab.
-    return py.plot(myfig, filename='myplot.html')
-
-# plot      
-infile = sys.argv[1].strip()
-cols = [0,1 ]
-if sys.argv[2]:
-    cols = sys.argv[2].split(' ')
-
-# read data
-header, sep, names = get_header_sep(infile)
-
-if not sep.strip() == ',':
-    sep = r'\s+'
-    
-plotly_scatterplot(infile, cols, header, sep, names)
-```
 
 # Current browser URL
 ```applescript
