@@ -1,15 +1,3 @@
-Table of Contents
-=================
-   * [Currently Useful Shortcuts](#currently-useful-shortcuts)
-   * [My useful workflows](#my-useful-workflows)
-   * [Useful Applescripts](#useful-applescripts)
-   * [Alfred arguments bash and python](#alfred-arguments-bash-and-python)
-   * [Alfred Settings](#alfred-settings)
-   * [Alfred Tips](#alfred-tips)
-   * [Workflow python2 and python3](#workflow-python2-and-python3)
-   * [Run python script](#run-python-script)
-   * [Scatterplot using plotly](#scatterplot-using-plotly)
-
 # Currently Useful Shortcuts
 ```
 NOTE: Please regularly disable unused workflows and unused key mappings.
@@ -44,7 +32,20 @@ Calling Alfred from itself. First create a `input > keyword`. Then use this appl
 tell application "Alfred 4" to search "{query}"
 ```
 
-Another example:
+**Path of frontmost Finder window**
+```applescript
+-- Path of frontmost Finder window
+tell application "Finder"
+	set someSource to selection as alias list
+	if someSource = {} then
+		return "Select a file in Finder first"
+	end if
+	set theFile to item 1 of someSource as alias
+    return POSIX path of theFile
+end tell
+```
+
+**Path of currently selected file in Finder**
 ```applescript
 -- Path of currently selected file in Finder
 	tell application "Finder"
@@ -56,6 +57,8 @@ Another example:
         return POSIX path of theFile
 	end tell
 ```
+
+
 
 # Alfred arguments bash and python
 https://www.alfredforum.com/topic/9070-how-to-workflowenvironment-variables/
