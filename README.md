@@ -106,6 +106,12 @@ def write_to_clipboard(output):
     process.communicate(output.encode('utf-8'))
 ```
 
+## Add prefix and suffix to each lines
+```bash
+pbpaste | sed -e "s/^/${arg}/g" | cat
+pbpaste | sed -e "s/$/${arg}/g" | cat
+```
+
 
 # Alfred arguments bash and python
 https://www.alfredforum.com/topic/9070-how-to-workflowenvironment-variables/
