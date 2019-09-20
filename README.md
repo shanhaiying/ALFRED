@@ -1,14 +1,37 @@
-Table of Contents
-=================
-   * [Currently Useful Shortcuts](#currently-useful-shortcuts)
-   * [My useful workflows](#my-useful-workflows)
-   * [Useful Applescripts](#useful-applescripts)
-   * [Alfred arguments bash and python](#alfred-arguments-bash-and-python)
-   * [Alfred Settings](#alfred-settings)
-   * [Alfred Tips](#alfred-tips)
-   * [Workflow python2 and python3](#workflow-python2-and-python3)
-   * [Run python script](#run-python-script)
-   * [Current browser URL](#current-browser-url)
+- [Tips](#tips)
+- [Run python script](#run-python-script)
+- [Currently Useful Shortcuts](#currently-useful-shortcuts)
+- [My useful workflows](#my-useful-workflows)
+- [Useful Scripts](#useful-scripts)
+  * [Run another Alfred command](#run-another-alfred-command)
+  * [Path of frontmost Finder window](#path-of-frontmost-finder-window)
+  * [Path of currently selected file in Finder](#path-of-currently-selected-file-in-finder)
+  * [Read and write to clipbodef read_from_clipboard():](#read-and-write-to-clipbodef-read-from-clipboard---)
+- [Alfred arguments bash and python](#alfred-arguments-bash-and-python)
+- [Alfred Settings](#alfred-settings)
+- [Alfred Tips](#alfred-tips)
+- [Workflow python2 and python3](#workflow-python2-and-python3)
+- [Current browser URL](#current-browser-url)
+
+# Tips
+- Make sure you have correct python in `/usr/bin/python`. Do not write python scripts directly on the Alfred, always
+  use script and run that script using bash so that we can use the scipt anywhere else.
+- My python location is different for different computers.
+
+# Run python script
+```bash
+# split the args variable
+c0=`echo "$c0_c1" | cut -d' ' -f1`
+c1=`echo "$c0_c1" | cut -d' ' -f2`
+
+# run the python script
+if [ -f "/Users/poudel/miniconda3/envs/dataSc/bin/python" ]
+then
+  /Users/poudel/miniconda3/envs/dataSc/bin/python scatterplot.py "$1" "${c0-0}" "${c1-1}"
+else
+  /Users/poudel/Library/Enthought/Canopy/edm/envs/User/bin/python scatterplot.py "$1" "${c0-0}" "${c1-1}"
+fi
+```
 
 # Currently Useful Shortcuts
 ```
@@ -38,13 +61,14 @@ NOTE: Please regularly disable unused workflows and unused key mappings.
 - [last2imgur](https://github.com/aviaryan/alfred-last2imgur) upload last screenshot to imgur. 
   This workflow does not require any other dependencies. We just need to edit the default path of screenshot in getfile.sh.
   
-# Useful Applescripts
+# Useful Scripts
 Calling Alfred from itself. First create a `input > keyword`. Then use this applescript. Then use key combo `cmd shift left` to select current line leftwards. Then use keycombo `cmd c` to copy it. Then do whatever you like with the copied text.
+## Run another Alfred command
 ```applescript
 tell application "Alfred 4" to search "{query}"
 ```
 
-**Path of frontmost Finder window**
+## Path of frontmost Finder window
 ```applescript
 -- Path of frontmost Finder window
 tell application "Finder"
@@ -57,7 +81,7 @@ tell application "Finder"
 end tell
 ```
 
-**Path of currently selected file in Finder**
+## Path of currently selected file in Finder
 ```applescript
 -- Path of currently selected file in Finder
 	tell application "Finder"
@@ -70,6 +94,17 @@ end tell
 	end tell
 ```
 
+## Read and write to clipbodef read_from_clipboard():
+```python
+def read_from_clipboard():
+    return subprocess.check_output(
+        'pbpaste', env={'LANG': 'en_US.UTF-8'}).decode('utf-8')
+
+def write_to_clipboard(output):
+    process = subprocess.Popen(
+        'pbcopy', env={'LANG': 'en_US.UTF-8'}, stdin=subprocess.PIPE)
+    process.communicate(output.encode('utf-8'))
+```
 
 
 # Alfred arguments bash and python
@@ -185,21 +220,6 @@ sudo ln -s /usr/local/bin/python2 /usr/bin/python
 
 /usr/bin/python --version # Python 2.7.14
 # Now Workflow will work.
-```
-
-# Run python script
-```bash
-# split the args variable
-c0=`echo "$c0_c1" | cut -d' ' -f1`
-c1=`echo "$c0_c1" | cut -d' ' -f2`
-
-# run the python script
-if [ -f "/Users/poudel/miniconda3/envs/dataSc/bin/python" ]
-then
-  /Users/poudel/miniconda3/envs/dataSc/bin/python scatterplot.py "$1" "${c0-0}" "${c1-1}"
-else
-  /Users/poudel/Library/Enthought/Canopy/edm/envs/User/bin/python scatterplot.py "$1" "${c0-0}" "${c1-1}"
-fi
 ```
 
 
