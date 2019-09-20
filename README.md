@@ -112,6 +112,11 @@ pbpaste | sed -e "s/^/${arg}/g" | cat
 pbpaste | sed -e "s/$/${arg}/g" | cat
 ```
 
+## Delete empty lines
+```bash
+pbpaste | sed '/^$/d' | cat
+```
+
 
 # Alfred arguments bash and python
 https://www.alfredforum.com/topic/9070-how-to-workflowenvironment-variables/
