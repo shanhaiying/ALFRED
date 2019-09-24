@@ -56,6 +56,14 @@ myjson = """
 
 myjson = myjson.strip()
 sys.stdout.write(myjson)
+
+
+# call it later
+import os, sys
+
+a = os.getenv('a')
+
+sys.stdout.write(a)
 ```
 
 # Currently Useful Shortcuts
