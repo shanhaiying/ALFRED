@@ -33,6 +33,31 @@ else
 fi
 ```
 
+# Creating multiple arguments variables using python
+```python
+import sys
+
+s = "apple banana; car truck"
+lst = s.split(';')
+
+a = lst[0]
+b = lst[1]
+
+
+myjson = """
+{"alfredworkflow": {
+    "arg": "",
+    "variables": {"a": "%s",
+                  "b": "%s"
+                 }
+   }
+}
+""" % (a,b)
+
+myjson = myjson.strip()
+sys.stdout.write(myjson)
+```
+
 # Currently Useful Shortcuts
 ```
 NOTE: Please regularly disable unused workflows and unused key mappings.
