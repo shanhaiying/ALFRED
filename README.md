@@ -36,26 +36,21 @@ fi
 # Creating multiple arguments variables using python
 ```python
 import sys
+import json
 
-s = "apple banana; car truck"
-lst = s.split(';')
+lst = ['some data', 'some more data']
 
-a = lst[0]
-b = lst[1]
-
-
-myjson = """
-{"alfredworkflow": {
-    "arg": "",
-    "variables": {"a": "%s",
-                  "b": "%s"
-                 }
-   }
+data = {
+    'alfredworkflow': {
+        'arg': '',
+        'variables': {
+            'a': lst[0],
+            'b': lst[1],
+        },
+    }
 }
-""" % (a,b)
 
-myjson = myjson.strip()
-sys.stdout.write(myjson)
+json.dump(data, sys.stdout)
 
 
 # call it later
