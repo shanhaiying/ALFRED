@@ -4,7 +4,7 @@ Table of Contents
    * [reading clipboard](#reading-clipboard)
 
 # Using External Trigger Example
-```
+```python
 # A1: Keyword: with name split imports
 
 # A2: Run Script: with bash command pbpaste
