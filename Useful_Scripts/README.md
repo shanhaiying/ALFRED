@@ -5,11 +5,11 @@ Table of Contents
 
 # Using External Trigger Example
 ```
-# A1: keyword object with name split imports
+# A1: Keyword: with name split imports
 
-# A2: Run Script with bash command pbpaste
+# A2: Run Script: with bash command pbpaste
 
-# A3: Run Script with python commands
+# A3: Run Script: with python commands
 import sys
 import time
 import os
